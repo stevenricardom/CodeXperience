@@ -1,17 +1,11 @@
 [gd_scene format=3 uid="uid://eqg2hn2up722"]
 
-[ext_resource type="PackedScene" uid="uid://njx823gyk04n" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_hand.tscn" id="2_jwc88"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="2_eucq5"]
 [ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/camera_config/config_camera_world.tres" id="2_qlui0"]
-[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="3_cyr82"]
-[ext_resource type="PackedScene" uid="uid://raeeicvvindd" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_hand.tscn" id="4_6x0x5"]
-[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="5_dwdow"]
-[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="6_m3vhf"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_r3hmc"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_qlui0"]
 
 [node name="XROrigin3D" type="XROrigin3D" unique_id=1114172364]
-
-[node name="PlayerBody" parent="." unique_id=1903749912 instance=ExtResource("6_m3vhf")]
-collision_layer = 524290
-collision_mask = 1
 
 [node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=813102283]
 environment = ExtResource("2_qlui0")
@@ -19,13 +13,11 @@ environment = ExtResource("2_qlui0")
 [node name="RightHand" type="XRController3D" parent="." unique_id=339993953]
 tracker = &"right_hand"
 
-[node name="RightHand" parent="RightHand" unique_id=274393493 instance=ExtResource("4_6x0x5")]
-
-[node name="MovementTurn" parent="RightHand" unique_id=1339479634 instance=ExtResource("5_dwdow")]
+[node name="RightHand" parent="RightHand" unique_id=335709563 instance=ExtResource("2_eucq5")]
 
 [node name="LeftHand" type="XRController3D" parent="." unique_id=1664995147]
 tracker = &"left_hand"
 
-[node name="LeftHand" parent="LeftHand" unique_id=1341473017 instance=ExtResource("2_jwc88")]
+[node name="LeftHand" parent="LeftHand" unique_id=295491913 instance=ExtResource("3_r3hmc")]
 
-[node name="MovementDirect" parent="LeftHand" unique_id=506095187 instance=ExtResource("3_cyr82")]
+[node name="PlayerBody" parent="." unique_id=544158746 instance=ExtResource("4_qlui0")]
