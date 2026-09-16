@@ -42,15 +42,6 @@ PlayerXR (XROrigin3D)
 └── XRToolsPlayerBody (CapsuleShape3D & Físicas)
 ```
 
-### Configuración del Mapa de Capas (Layers)
-| Categoría | Capa 1 | Capa 2 | Capa 3 | Capa 4 |
-| :--- | :--- | :--- | :--- | :--- |
-| **3D Render** | World (Escenario) | Player_FPS_Hide (Cabeza) | Tractors (Vehículos) | Viewmodel_UI (UI 3D) |
-| **3D Physics** | Environment (Entorno) | Player (Jugador) | Tractors (Tractores) | Interactables (Paneles/NPCs) |
-| **3D Navigation** | Pedestrian_Path | Tractor_Path (Rutas IA) | - | - |
-
----
-
 ## 🚀 Instalación y Configuración
 
 ### Prerrequisitos
