@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="CodeXperience"
+run/main_scene="uid://b1ce4yeiyjlxu"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=60
 config/icon="res://icon.svg"
@@ -29,6 +30,17 @@ window/stretch/aspect="expand"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
+
+[layer_names]
+
+3d_physics/layer_1="Environmet-World"
+3d_physics/layer_2="PlayerBody"
+3d_physics/layer_3="Pickeables"
+3d_physics/layer_4="Wall-Walking"
+3d_physics/layer_5="IU/LaserPointing"
+3d_physics/layer_6="TeleportArea"
+3d_physics/layer_7="TeleportTarget"
+3d_physics/layer_8="Tractors/Machine"
 
 [physics]
 
