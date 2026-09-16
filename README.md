@@ -29,19 +29,6 @@ Un **Serious Game 3D interactivo y adaptativo** diseñado para enseñar y evalua
 * **Ecosistema VR:** [Godot XR Tools](https://godotvr.github.io/godot-xr-tools/), plugin `XR Simulator` y estándar **OpenXR**.
 * **Lenguaje principal:** GDScript con tipado fuerte.
 
-### Estructura del Jugador XR Híbrido
-```text
-PlayerXR (XROrigin3D)
-├── XRCamera3D 
-├── LeftHand (XRController3D)
-│   ├── Mesh (left_hand.tscn)
-│   └── MovementDirect (movement_direct.tscn)
-├── RightHand (XRController3D)
-│   ├── Mesh (right_hand.tscn)
-│   └── MovementTurn (movement_turn.tscn)
-└── XRToolsPlayerBody (CapsuleShape3D & Físicas)
-```
-
 ## 🚀 Instalación y Configuración
 
 ### Prerrequisitos
