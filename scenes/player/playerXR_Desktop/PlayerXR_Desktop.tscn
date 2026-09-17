@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="2_eucq5"]
 [ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/camera_config/config_camera_world.tres" id="2_qlui0"]
-[ext_resource type="Script" uid="uid://c42m42no6tqpn" path="res://scenes/player/playerXR/hand_limiter.gd" id="2_r3hmc"]
+[ext_resource type="Script" uid="uid://c42m42no6tqpn" path="res://scenes/player/playerXR_Desktop/hand_limiter.gd" id="2_r3hmc"]
 [ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_r3hmc"]
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_qlui0"]
 
-[node name="XROrigin3D" type="XROrigin3D" unique_id=1114172364]
+[node name="PlayerXR_Desktop" type="XROrigin3D" unique_id=1114172364]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=813102283]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.799574, 0)
