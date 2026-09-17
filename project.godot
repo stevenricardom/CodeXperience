@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CodeXperience"
-run/main_scene="uid://eqg2hn2up722"
+run/main_scene="uid://cjgcb75f6qhbj"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=60
 config/icon="res://icon.svg"
