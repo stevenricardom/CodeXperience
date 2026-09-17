@@ -1,0 +1,44 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dip3jv2jpoy32"
+path.s3tc="res://.godot/imported/Tractor by Poly by Google - 5TGoA5N14c5_Tractor_BaseColor.png-c287ec63d50ffef552bc010e51f8cf19.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "4d7dfe7516970df3d50f00d70de4bea7"
+}
+
+[deps]
+
+source_file="res://resources/models/farm_models/vehicles/tractor/Tractor by Poly by Google - 5TGoA5N14c5_Tractor_BaseColor.png"
+dest_files=["res://.godot/imported/Tractor by Poly by Google - 5TGoA5N14c5_Tractor_BaseColor.png-c287ec63d50ffef552bc010e51f8cf19.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
