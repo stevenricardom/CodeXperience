@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://eqg2hn2up722" path="res://scenes/player/playerXR/PlayerXR.tscn" id="2_1fp7r"]
 [ext_resource type="MeshLibrary" uid="uid://c6hqk7874rb0" path="res://assets/tiles/assets_platforms_mesh2.tres" id="2_sl2e5"]
+[ext_resource type="PackedScene" uid="uid://whyv3opf7s0p" path="res://scenes/tractor/tractor.tscn" id="3_1fp7r"]
 
 [node name="World" type="Node3D" unique_id=456698886]
 
@@ -14,3 +15,6 @@ data = {
 
 [node name="XROrigin3D" parent="." unique_id=1114172364 instance=ExtResource("2_1fp7r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9594398, 0)
+
+[node name="tiletractor" parent="." unique_id=1343212140 instance=ExtResource("3_1fp7r")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 2.432962, 1.507598, -3.7019162)
