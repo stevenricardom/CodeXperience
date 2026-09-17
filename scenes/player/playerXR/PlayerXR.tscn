@@ -13,21 +13,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.799574, 0)
 environment = ExtResource("2_qlui0")
 
 [node name="RightHand" type="XRController3D" parent="." unique_id=339993953]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11678755, 0.6739115, -0.21599197)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11678755, 0.7369303, -0.21599197)
 tracker = &"right_hand"
 script = ExtResource("2_r3hmc")
 max_reach = 0.5
-max_drop = 0.3
+max_drop = 0.25
+max_side = 0.3
 
 [node name="RightHand" parent="RightHand" unique_id=335709563 instance=ExtResource("2_eucq5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007300824, 0.00035625696, 0)
 
 [node name="LeftHand" type="XRController3D" parent="." unique_id=1664995147]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10802849, 0.674, -0.22431614)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10802849, 0.7370188, -0.22431614)
 tracker = &"left_hand"
 script = ExtResource("2_r3hmc")
 max_reach = 0.5
-max_drop = 0.3
+max_drop = 0.25
+max_side = 0.3
 
 [node name="LeftHand" parent="LeftHand" unique_id=295491913 instance=ExtResource("3_r3hmc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002142191, -0.000852406, 0)
