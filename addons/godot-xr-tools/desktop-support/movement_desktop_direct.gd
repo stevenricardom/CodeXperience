@@ -54,14 +54,13 @@ func is_xr_class(xr_name: String) -> bool:
 
 
 ## Perform jump movement
-func physics_movement(
-		_delta: float,
-		player_body: XRToolsPlayerBody,
-		_disabled: bool,
-) -> bool:
-	# Skip if the controller isn't active
-	if not player_body.enabled or xr_start_node.is_xr_active():
-		return false
+func physics_movement(_delta: float, player_body: XRToolsPlayerBody, _disabled: bool):
+	# Si no hay staging/StartXR en la escena, xr_start_node será null:
+	# en ese caso asumimos que NO estamos en XR real y dejamos que el
+	# movimiento de escritorio funcione con normalidad.
+	if !player_body.enabled or (xr_start_node and xr_start_node.is_xr_active()):
+		return
+
 
 	# Calculate input vector
 	var input_dir = Input.get_vector(
