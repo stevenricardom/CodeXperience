@@ -29,7 +29,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/asset_placer/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg")
+enabled=PackedStringArray("res://addons/asset_placer/plugin.cfg", "res://addons/godot-asset-placer-1.6.0/addons/asset_placer/plugin.cfg", "res://addons/godot-asset-placer-1.7.0-alpha1/addons/asset_placer/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg")
 
 [layer_names]
 
