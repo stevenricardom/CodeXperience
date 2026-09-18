@@ -1,0 +1,77 @@
+[gd_scene format=4 uid="uid://bariu4hsyavrs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vlro7"]
+resource_name = "dirtDark"
+albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0mfqd"]
+resource_name = "dirt"
+albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_n5u04"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.27899998, 0.779, 0.05, 0.779),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAACAAEAAQAFAAQABAAFAAYABgAHAAQACAAJAAoACgALAAgACgAJAAwADAANAAoA"),
+"name": "dirtDark",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 14,
+"vertex_data": PackedByteArray("n+v/////AAANzP//L4oAALLdAAD/fwAA//8AAP//AAD/fwAATCIAAM91///xMwAAAAD//18UAAAAAAAAAAAAAKBIAAD//wAAmjEAAGTOAACFP///ecAAAP9c/////wAAAAAAAF63AAAAAP///6IAAA==")
+}, {
+"aabb": AABB(-0.5, 0, -0.27899998, 0.779, 0.05, 0.779),
+"format": 34896613377,
+"index_count": 27,
+"index_data": PackedByteArray("AAABAAIAAwABAAAAAAAEAAMAAgAFAAAAAgAGAAUAAgAHAAYAAgAIAAcACQAGAAcABwAKAAkA"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("AAD///+iAAAAAP//XxQAAM91///xMwAAAAAAAAAAAAAAAAAAXrcAAIU///95wAAA/1z/////AACf6/////8AAA3M//8vigAAoEgAAP//AAD//wAA//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7tblp"]
+resource_name = "crops_dirtRowCorner_Mesh crops_dirtRowCorner"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.27899998, 0.779, 0.05, 0.779),
+"attribute_data": PackedByteArray("swPmkkRZ5pL4XMGtAADBrXvN//8ep///X6IX5oDTF+ZL/OaS///BrQajwa26puaSNlXeeciq3nl7rrmUg1G5lIMy//9+LBfmn10X5uBY//8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAA"),
+"material": SubResource("StandardMaterial3D_vlro7"),
+"name": "dirtDark",
+"primitive": 3,
+"uv_scale": Vector4(43.714443, 29.278584, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("n+v/////Z9ANzP//L4pn0LLdAAD/f2fQ//8AAP//Z9CgSAAA//+EuJoxAABkzoS4hT///3nAhLj/XP////+EuAAA//9fFFb2AAAAAAAAVvb/fwAATCJW9s91///xM1b2Dcz//y+KJuPPdf//8TMm4/9/AABMIibjst0AAP9/JuMAAAAAXrdupgAA////om6mhT///3nAbqaaMQAAZM5upu25JhntuSYZ7bkmGe25JhnTqXe706l3u9Opd7vTqXe7TawnBU2sJwVNrCcFTawnBfay7Q72su0O9rLtDvay7Q6/yr+kv8q/pL/Kv6S/yr+k")
+}, {
+"aabb": AABB(-0.5, 0, -0.27899998, 0.779, 0.05, 0.779),
+"attribute_data": PackedByteArray("AAANuwAAUlHGW7hoezHn0HJI//+Mt///9Z6oqIy3AXprxy+GkzgvhnJIAXqMtwF6a8cvhpM4L4ZySAF6"),
+"format": 34896613399,
+"index_count": 27,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAgAEAAMAAgAFAAQAAgAGAAUABwAIAAkACQAKAAcACwAMAA0ADQAOAAsA"),
+"material": SubResource("StandardMaterial3D_0mfqd"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(39.37008, 41.37008, 0, 0),
+"vertex_count": 15,
+"vertex_data": PackedByteArray("AAD///+i/78AAP//XxT/v891///xM/+/hT///3nA/7//XP//////v5/r//////+/Dcz//y+K/7+f6/////8AgP//AAD//wCAoEgAAP//AID/XP////8AgAAA////ov+/AAAAAF63/78AAAAAAAD/vwAA//9fFP+/////f////3////9//v//f////3////9/////f/9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_n5u04")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_cal6c"]
+data = PackedVector3Array(0.217, 0.049999997, 0.5, 0.1209, 0.049999997, 0.1415, 0.17459999, 0, 0.1105, 0.17459999, 0, 0.1105, 0.27899998, 0, 0.5, 0.217, 0.049999997, 0.5, -0.27899998, 0, 0.5, -0.3491, 0, 0.34899998, -0.3067, 0.049999997, 0.3067, -0.3067, 0.049999997, 0.3067, -0.217, 0.049999997, 0.5, -0.27899998, 0, 0.5, -0.5, 0.049999997, -0.217, -0.5, 0, -0.27899998, -0.1105, 0, -0.17459999, -0.1105, 0, -0.17459999, -0.1415, 0.049999997, -0.1209, -0.5, 0.049999997, -0.217, 0.1209, 0.049999997, 0.1415, -0.1415, 0.049999997, -0.1209, -0.1105, 0, -0.17459999, -0.1105, 0, -0.17459999, 0.17459999, 0, 0.1105, 0.1209, 0.049999997, 0.1415, -0.5, 0, 0.27899998, -0.5, 0.049999997, 0.217, -0.3067, 0.049999997, 0.3067, -0.3067, 0.049999997, 0.3067, -0.3491, 0, 0.34899998, -0.5, 0, 0.27899998, -0.5, 0.049999997, 0.217, -0.5, 0.049999997, -0.217, -0.1415, 0.049999997, -0.1209, -0.1415, 0.049999997, -0.1209, -0.3067, 0.049999997, 0.3067, -0.5, 0.049999997, 0.217, -0.1415, 0.049999997, -0.1209, -0.217, 0.049999997, 0.5, -0.3067, 0.049999997, 0.3067, -0.1415, 0.049999997, -0.1209, 0.217, 0.049999997, 0.5, -0.217, 0.049999997, 0.5, -0.1415, 0.049999997, -0.1209, 0.1209, 0.049999997, 0.1415, 0.217, 0.049999997, 0.5, 0.217, 0.049999997, 0.5, 0.27899998, 0, 0.5, -0.27899998, 0, 0.5, -0.27899998, 0, 0.5, -0.217, 0.049999997, 0.5, 0.217, 0.049999997, 0.5, -0.5, 0.049999997, 0.217, -0.5, 0, 0.27899998, -0.5, 0, -0.27899998, -0.5, 0, -0.27899998, -0.5, 0.049999997, -0.217, -0.5, 0.049999997, 0.217)
+
+[node name="crops_dirtRowCorner" type="MeshInstance3D" unique_id=1741452927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_7tblp")
+
+[node name="crops_dirtRowCorner_col" type="StaticBody3D" parent="." unique_id=444247820]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="crops_dirtRowCorner_col" unique_id=2088602867]
+shape = SubResource("ConcavePolygonShape3D_cal6c")

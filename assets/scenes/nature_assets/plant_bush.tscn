@@ -1,0 +1,50 @@
+[gd_scene format=4 uid="uid://bxiwg13tkgcfl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vo4te"]
+resource_name = "grass"
+albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_m7cdr"]
+_surfaces = [{
+"aabb": AABB(-0.198, 0, -0.198, 0.396, 0.24444358, 0.396),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAQAAAAIAAAABAAMAAQAAAAMAAwAEAAEABAADAAEAAwAEAAUABAADAAUABgAHAAUABwAGAAUABwAGAAgABgAHAAgACAAJAAcACQAIAAcACAAKAAkACgAIAAkACwAMAAUADAALAAUADQALAAwACwANAAwADgAMAA0ADAAOAA0ADwANAA4ADQAPAA4ABQAQABEAEAAFABEAEgAQABEAEAASABEAEQATABIAEwARABIAEgATABQAEwASABQA"),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 21,
+"vertex_data": PackedByteArray("iq7Wo2YlAAB0UdajZiUAAP9/spsAAAAAiq4ve2NQAAB0US97Y1AAAP9/AAD/fwAAiq4ve5yvAAB0US97nK8AAIqu1qOY2gAAdFHWo5jaAAD/f7Kb//8AAJyvesCKrgAAnK96wHRRAACY2v//iq4AAJja//90UQAA//9H8/9/AABjUHrAdFEAAGNQesCKrgAAZiX//3RRAABmJf//iq4AAAAAR/P/fwAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_biwnf"]
+resource_name = "plant_bush_Mesh plant_bush"
+_surfaces = [{
+"aabb": AABB(-0.198, 0, -0.198, 0.396, 0.24444358, 0.396),
+"attribute_data": PackedByteArray("AACby///m8v/f1/q//+bywAAm8v/f1/qAAAIJP//CCT//5xMAACcTP//CCQAAAgk//+cTAAAnEwAAD5E//8+RP9/Yo3//z5EAAA+RP9/Yo3//5xMAACcTAAACCT//wgkAACcTP//nEwAAAgk//8IJAAAbi8AAAAA//8AAP//bi8AAAAAAABuL///AAD//24vAAA+RP//PkT/f2KN//8+RAAAPkT/f2KN/39c2gAANLv//zS7AAA0u/9/XNr//zS7//8AAP//bi8AAG4vAAAAAP//bi///wAAAABuLwAAAAAAAAgl//8IJf9/Yo3//wglAAAIJf9/Yo0AADS7//80u/9/XNr//zS7AAA0u/9/XNr//5vL/39f6gAAm8v/f1/q//+bywAAm8v//wgl/39ijQAACCX/f2KN//8IJQAACCU="),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgACAAJAAYACgALAAwADQAMAAsADgAPABAAEQASABMAFAAVABYAFgAXABQAGAAZABoAGwAaABkAHAAdAB4AHgAfABwAIAAhACIAIwAiACEAJAAlACYAJwAoACkAKgArACwALQAuAC8AMAAxADIAMgAzADAANAA1ADYANwA2ADUAOAA5ADoAOwA8AD0APgA/AEAAQQBCAEMARABFAEYARwBIAEkASgBLAEwATQBOAE8A"),
+"material": SubResource("StandardMaterial3D_vo4te"),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(5.6692915, 19.123785, 0, 0),
+"vertex_count": 80,
+"vertex_data": PackedByteArray("iq7Wo2Yl//90UdajZiX///9/spsAAP//dFHWo2YlAACKrtajZiUAAP9/spsAAAAAiq7Wo5ja//90UdajmNr//3RRL3ucr///iq4ve5yv//90UdajmNoAAIqu1qOY2gAAdFEve5yvAACKri97nK8AAIquL3ucr///dFEve5yv////fwAA/3///3RRL3ucrwAAiq4ve5yvAAD/fwAA/38AAIquL3tjUHeqdFEve2NQd6p0UdajZiV3qoqu1qNmJXeqdFEve2NQeCqKri97Y1B4KnRR1qNmJXgqiq7Wo2YleCpjUHrAiq6rxmYl//+KrqvGZiX//3RRq8ZjUHrAdFGrxmYl//+KrpgXY1B6wIqumBdmJf//dFGYF2NQesB0UZgXdFEve2NQypaKri97Y1DKlv9/AAD/f8qWiq4ve2NQyhZ0US97Y1DKFv9/AAD/f8oW//9H8/9/pNCY2v//iq6k0Jja//90UaTQmNr//4qupCX//0fz/3+kJZja//90UaQlmNr//4quq8acr3rAiq6rxpyvesB0UavGmNr//3RRq8acr3rAiq6YF5ja//+KrpgXnK96wHRRmBeY2v//dFGYF5yvesB0UXXBnK96wIqudcH/fwAA/391wZyvesCKrvIKnK96wHRR8gr/fwAA/3/yCmYl//90UaTQZiX//4qupNAAAEfz/3+k0GYl//+KrqQlZiX//3RRpCUAAEfz/3+kJYqu1qOY2o66/3+ym///jrp0UdajmNqOuv9/spv//486iq7Wo5jajzp0UdajmNqPOmNQesB0UXXB/38AAP9/dcFjUHrAiq51wf9/AAD/f/IKY1B6wHRR8gpjUHrAiq7yCv9/RsT/f0bE/39GxP9/R0T/f0dE/39HRP9/T9H/f0/R/39P0f9/T9H/f09R/39PUf9/T1H/f09R/39v4/9/b+P/f2/j/39vY/9/b2P/f29j////f////3////9/////fwAA/38AAP9/AAD/fwAA/38CvAEeArwBHgK8AR4CvAEekUvbaJFL22iRS9tokUvbaP///3////9/////fwAA/38AAP9/AAD/fzbPmyc2z5snNs+bJ3pSClt6UgpbelIKWwGe+8MBnvvDAZ77wwGe+8MkF5HLJBeRyyQXkcskF5HL0JFc3NCRXNzQkVzcQgugxUILoMVCC6DFmqfIsJqnyLCap8iw9SR50vUkedL1JHnS////f////3////9/AAD/fwAA/38AAP9/oqPREaKj0RGio9ERoEW9dKBFvXSgRb10")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_m7cdr")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1a45g"]
+data = PackedVector3Array(0.072, 0.1564, -0.1401, -0.072, 0.1564, -0.1401, 0, 0.1487, -0.198, -0.072, 0.1564, -0.1401, 0.072, 0.1564, -0.1401, 0, 0.1487, -0.198, 0.072, 0.1564, 0.1401, -0.072, 0.1564, 0.1401, -0.072, 0.117599994, 0.0736, -0.072, 0.117599994, 0.0736, 0.072, 0.117599994, 0.0736, 0.072, 0.1564, 0.1401, -0.072, 0.1564, 0.1401, 0.072, 0.1564, 0.1401, -0.072, 0.117599994, 0.0736, 0.072, 0.117599994, 0.0736, -0.072, 0.117599994, 0.0736, 0.072, 0.1564, 0.1401, 0.072, 0.117599994, 0.0736, -0.072, 0.117599994, 0.0736, 0, 0, 0, -0.072, 0.117599994, 0.0736, 0.072, 0.117599994, 0.0736, 0, 0, 0, 0.072, 0.117599994, -0.0736, -0.072, 0.117599994, -0.0736, -0.072, 0.1564, -0.1401, -0.072, 0.1564, -0.1401, 0.072, 0.1564, -0.1401, 0.072, 0.117599994, -0.0736, -0.072, 0.117599994, -0.0736, 0.072, 0.117599994, -0.0736, -0.072, 0.1564, -0.1401, 0.072, 0.1564, -0.1401, -0.072, 0.1564, -0.1401, 0.072, 0.117599994, -0.0736, -0.0736, 0.1838, 0.072, -0.1401, 0.2444, 0.072, -0.1401, 0.2444, -0.072, -0.1401, 0.2444, -0.072, -0.0736, 0.1838, -0.072, -0.0736, 0.1838, 0.072, -0.1401, 0.2444, 0.072, -0.0736, 0.1838, 0.072, -0.1401, 0.2444, -0.072, -0.0736, 0.1838, -0.072, -0.1401, 0.2444, -0.072, -0.0736, 0.1838, 0.072, -0.072, 0.117599994, -0.0736, 0.072, 0.117599994, -0.0736, 0, 0, 0, 0.072, 0.117599994, -0.0736, -0.072, 0.117599994, -0.0736, 0, 0, 0, 0.198, 0.2323, 0, 0.1401, 0.2444, 0.072, 0.1401, 0.2444, -0.072, 0.1401, 0.2444, 0.072, 0.198, 0.2323, 0, 0.1401, 0.2444, -0.072, 0.1401, 0.2444, 0.072, 0.0736, 0.1838, 0.072, 0.0736, 0.1838, -0.072, 0.0736, 0.1838, -0.072, 0.1401, 0.2444, -0.072, 0.1401, 0.2444, 0.072, 0.0736, 0.1838, 0.072, 0.1401, 0.2444, 0.072, 0.0736, 0.1838, -0.072, 0.1401, 0.2444, -0.072, 0.0736, 0.1838, -0.072, 0.1401, 0.2444, 0.072, 0.0736, 0.1838, -0.072, 0.0736, 0.1838, 0.072, 0, 0, 0, 0.0736, 0.1838, 0.072, 0.0736, 0.1838, -0.072, 0, 0, 0, -0.1401, 0.2444, -0.072, -0.1401, 0.2444, 0.072, -0.198, 0.2323, 0, -0.1401, 0.2444, 0.072, -0.1401, 0.2444, -0.072, -0.198, 0.2323, 0, 0.072, 0.1564, 0.1401, 0, 0.1487, 0.198, -0.072, 0.1564, 0.1401, 0, 0.1487, 0.198, 0.072, 0.1564, 0.1401, -0.072, 0.1564, 0.1401, -0.0736, 0.1838, -0.072, 0, 0, 0, -0.0736, 0.1838, 0.072, 0, 0, 0, -0.0736, 0.1838, -0.072, -0.0736, 0.1838, 0.072)
+
+[node name="plant_bush" type="MeshInstance3D" unique_id=554674087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_biwnf")
+
+[node name="plant_bush_col" type="StaticBody3D" parent="." unique_id=1860394919]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="plant_bush_col" unique_id=1152111064]
+shape = SubResource("ConcavePolygonShape3D_1a45g")

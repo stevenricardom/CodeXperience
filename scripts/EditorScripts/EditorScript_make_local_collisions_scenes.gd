@@ -2,9 +2,9 @@
 extends EditorScript
 
 # ⚠️ CAMBIA ESTO: Pon aquí la ruta de la carpeta donde tienes tus archivos .glb
-const DIRECTORIO_ORIGEN = "res://resources/models/nature_models/" 
+const DIRECTORIO_ORIGEN = "res://resources/models/farm_models/vehicles/tractor/" 
 # Ruta donde se guardarán las escenas finales
-const DIRECTORIO_DESTINO = "res://assets/platforms/"
+const DIRECTORIO_DESTINO = "res://assets/scenes/farm_assets/vehicles/"
 
 func _run():
 	print("🚀 Iniciando conversión masiva de .glb a .tscn...")

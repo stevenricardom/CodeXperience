@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://b4okjnj6b1dh7"]
 
-[ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/camera_config/config_camera_world.tres" id="1_5t8be"]
+[ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/meshlibrary/camera_config_meshlibrary/config_camera_world.tres" id="1_5t8be"]
 [ext_resource type="Script" uid="uid://bv8r2nmewbjqk" path="res://scenes/player/playerDesktop/player_desktop.gd" id="1_7whse"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tf0ms"]

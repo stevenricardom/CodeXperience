@@ -1,0 +1,52 @@
+[gd_scene format=4 uid="uid://drv3iotrsvbg3"]
+
+[ext_resource type="Texture2D" uid="uid://csbjfx4e2vgu" path="res://resources/models/farm_models/structures/Textures/Texture Map.png" id="1_861jd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fqd5b"]
+resource_name = "Texture Map"
+cull_mode = 2
+albedo_texture = ExtResource("1_861jd")
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_slo2n"]
+_surfaces = [{
+"aabb": AABB(-0.10499092, 0, -1.75, 0.20998184, 0.08, 3.5),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAACAAQAAQAFAAMAAQAAAAUAAgADAAYABAACAAYABgADAAUAAAAEAAcABAAGAAcAAAAHAAUABgAFAAcA"),
+"name": "Texture Map",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("ewXXvQAAAAAAAOC/ewXXvQAAAAAAAOA/ewXXPQAAAAAAAOA/ewXXvQrXoz0AAOA/ewXXPQAAAAAAAOC/ewXXvQrXoz0AAOC/ewXXPQrXoz0AAOA/ewXXPQrXoz0AAOC/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_thfia"]
+resource_name = "Prop_Plank_01_Prop_Plank_01"
+_surfaces = [{
+"aabb": AABB(-0.10499092, 0, -1.75, 0.20998184, 0.08, 3.5),
+"attribute_data": PackedByteArray("5ycSPxAFxD3nJxI/AAXEPV9CEj8ABcQ9X0ISPxAFxD1fQhI/yKqcPecnEj/Iqpw95ycSP9iqnD1fQhI/2KqcPV9CEj8QBcQ9X0ISPwAFxD1fQhI/yKqcPV9CEj/Yqpw95ycSPwAFxD3nJxI/EAXEPecnEj/Yqpw95ycSP8iqnD3nJxI/EAXEPV9CEj8QBcQ9X0ISP9iqnD3nJxI/2KqcPV9CEj8ABcQ95ycSPwAFxD3nJxI/yKqcPV9CEj/Iqpw9"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
+"material": SubResource("StandardMaterial3D_fqd5b"),
+"name": "Texture Map",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("ewXXvQAAAAAAAOC/ewXXvQAAAAAAAOA/ewXXPQAAAAAAAOA/ewXXPQAAAAAAAOC/ewXXPQrXoz0AAOA/ewXXvQrXoz0AAOA/ewXXvQrXoz0AAOC/ewXXPQrXoz0AAOC/ewXXPQAAAAAAAOC/ewXXPQAAAAAAAOA/ewXXPQrXoz0AAOA/ewXXPQrXoz0AAOC/ewXXvQAAAAAAAOA/ewXXvQAAAAAAAOC/ewXXvQrXoz0AAOC/ewXXvQrXoz0AAOA/ewXXvQAAAAAAAOC/ewXXPQAAAAAAAOC/ewXXPQrXoz0AAOC/ewXXvQrXoz0AAOC/ewXXPQAAAAAAAOA/ewXXvQAAAAAAAOA/ewXXvQrXoz0AAOA/ewXXPQrXoz0AAOA//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f///////P/9///////8//3///////z//f///////P////3////+/////f////7////9/////v////3////+/AAD/f////78AAP9/////vwAA/3////+/AAD/f////7//////////P/////////8//////////z//////////P/9//3////+//3//f////7//f/9/////v/9//3////+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_slo2n")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0josq"]
+data = PackedVector3Array(-0.105, 0, -1.75, -0.105, 0, 1.75, 0.105, 0, 1.75, -0.105, 0, -1.75, 0.105, 0, 1.75, 0.105, 0, -1.75, 0.105, 0.08, 1.75, -0.105, 0.08, 1.75, -0.105, 0.08, -1.75, 0.105, 0.08, 1.75, -0.105, 0.08, -1.75, 0.105, 0.08, -1.75, 0.105, 0, -1.75, 0.105, 0, 1.75, 0.105, 0.08, 1.75, 0.105, 0, -1.75, 0.105, 0.08, 1.75, 0.105, 0.08, -1.75, -0.105, 0, 1.75, -0.105, 0, -1.75, -0.105, 0.08, -1.75, -0.105, 0, 1.75, -0.105, 0.08, -1.75, -0.105, 0.08, 1.75, -0.105, 0, -1.75, 0.105, 0, -1.75, 0.105, 0.08, -1.75, -0.105, 0, -1.75, 0.105, 0.08, -1.75, -0.105, 0.08, -1.75, 0.105, 0, 1.75, -0.105, 0, 1.75, -0.105, 0.08, 1.75, 0.105, 0, 1.75, -0.105, 0.08, 1.75, 0.105, 0.08, 1.75)
+
+[node name="Prop_Plank_01" type="MeshInstance3D" unique_id=2086633777]
+mesh = SubResource("ArrayMesh_thfia")
+
+[node name="Prop_Plank_01_col" type="StaticBody3D" parent="." unique_id=1063499319]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Prop_Plank_01_col" unique_id=723223015]
+shape = SubResource("ConcavePolygonShape3D_0josq")

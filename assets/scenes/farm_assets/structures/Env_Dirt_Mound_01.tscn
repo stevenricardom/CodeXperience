@@ -1,0 +1,54 @@
+[gd_scene format=4 uid="uid://b0yq8ug7ghhjr"]
+
+[ext_resource type="Texture2D" uid="uid://csbjfx4e2vgu" path="res://resources/models/farm_models/structures/Textures/Texture Map.png" id="1_tvqag"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_beijm"]
+resource_name = "Texture Map"
+cull_mode = 2
+albedo_texture = ExtResource("1_tvqag")
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pdcsy"]
+_surfaces = [{
+"aabb": AABB(-0.25931627, 0, -0.25931633, 0.51863253, 0.14984189, 0.51863265),
+"format": 34896613377,
+"index_count": 54,
+"index_data": PackedByteArray("AwAGAAgAAwAIAAkABgAKAAgABgAHAAoABQAKAAcABAAIAAoABAAJAAgABQALAAoACwAEAAoAAwAJAAEAAQAJAAQAAwABAAAADAAEAAsABQAMAAsADAABAAQAAAABAAwABQACAAwAAAAMAAIA"),
+"lods": [0.07934992, PackedByteArray("AAABAAIAAwABAAAAAgABAAQAAQADAAQAAgAEAAUABAADAAYABQAEAAcABAAGAAcA")],
+"name": "Texture Map",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 13,
+"vertex_data": PackedByteArray("/78AAAAAAACWqzzT0CgAAP8/AAAAAAAA//8AAP9/AACLdP///38AAAAAAAD/fwAA/78AAP//AAD/PwAA//8AAJarv54u1wAALtfLxf9/AABoVOePLtcAANAoW7//fwAAaFTgq9AoAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1kkdh"]
+resource_name = "Env_Dirt_Mound_01_Env_Dirt_Mound_01"
+_surfaces = [{
+"aabb": AABB(-0.25931627, 0, -0.25931633, 0.51863253, 0.14984189, 0.51863265),
+"attribute_data": PackedByteArray("mTt5GJk7IiiYO3kYmTt5GJg7dCuXO3kYmTt5GJg7eRiZOz4kmTsjJ5g7JCOXO6kmmDs4JQ=="),
+"format": 34896613399,
+"index_count": 54,
+"index_data": PackedByteArray("AwAGAAgAAwAIAAkABgAKAAgABgAHAAoABQAKAAcABAAIAAoABAAJAAgABQALAAoACwAEAAoAAwAJAAEAAQAJAAQAAwABAAAADAAEAAsABQAMAAsADAABAAQAAAABAAwABQACAAwAAAAMAAIA"),
+"lods": [0.07934992, PackedByteArray("AAABAAIAAwABAAAAAgABAAQAAQADAAQAAgAEAAUABAADAAYABQAEAAcABAAGAAcA")],
+"material": SubResource("StandardMaterial3D_beijm"),
+"name": "Texture Map",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 13,
+"vertex_data": PackedByteArray("/78AAAAAweWWqzzT0Chi2v8/AAAAAM3i//8AAP9/5OWLdP///3+EvgAAAAD/f+/j/78AAP//p1n/PwAA//8qWJarv54u17RULtfLxf9/10BoVOePLtcgVNAoW7//fy/ZaFTgq9AojtzU3iaIXNzFi332B12yvNSKRfcaZxL1eT3j1NlDTMQBqt7bO0yNxW42lMgQppPxsj5Z8klX")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pdcsy")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4hyb6"]
+data = PackedVector3Array(0.2593, 0, 0, 0.12969999, 0, 0.2593, 0.0883, 0.0929, 0.1766, 0.2593, 0, 0, 0.0883, 0.0929, 0.1766, 0.1766, 0.1158, 0, 0.12969999, 0, 0.2593, -0.0883, 0.084199995, 0.1766, 0.0883, 0.0929, 0.1766, 0.12969999, 0, 0.2593, -0.12969999, 0, 0.2593, -0.0883, 0.084199995, 0.1766, -0.2593, 0, 0, -0.0883, 0.084199995, 0.1766, -0.12969999, 0, 0.2593, -0.0232, 0.1498, 0, 0.0883, 0.0929, 0.1766, -0.0883, 0.084199995, 0.1766, -0.0232, 0.1498, 0, 0.1766, 0.1158, 0, 0.0883, 0.0929, 0.1766, -0.2593, 0, 0, -0.1766, 0.111999996, 0, -0.0883, 0.084199995, 0.1766, -0.1766, 0.111999996, 0, -0.0232, 0.1498, 0, -0.0883, 0.084199995, 0.1766, 0.2593, 0, 0, 0.1766, 0.1158, 0, 0.0883, 0.1236, -0.1766, 0.0883, 0.1236, -0.1766, 0.1766, 0.1158, 0, -0.0232, 0.1498, 0, 0.2593, 0, 0, 0.0883, 0.1236, -0.1766, 0.12969999, 0, -0.2593, -0.0883, 0.1006, -0.1766, -0.0232, 0.1498, 0, -0.1766, 0.111999996, 0, -0.2593, 0, 0, -0.0883, 0.1006, -0.1766, -0.1766, 0.111999996, 0, -0.0883, 0.1006, -0.1766, 0.0883, 0.1236, -0.1766, -0.0232, 0.1498, 0, 0.12969999, 0, -0.2593, 0.0883, 0.1236, -0.1766, -0.0883, 0.1006, -0.1766, -0.2593, 0, 0, -0.12969999, 0, -0.2593, -0.0883, 0.1006, -0.1766, 0.12969999, 0, -0.2593, -0.0883, 0.1006, -0.1766, -0.12969999, 0, -0.2593)
+
+[node name="Env_Dirt_Mound_01" type="MeshInstance3D" unique_id=2140302882]
+mesh = SubResource("ArrayMesh_1kkdh")
+
+[node name="Env_Dirt_Mound_01_col" type="StaticBody3D" parent="." unique_id=52386258]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env_Dirt_Mound_01_col" unique_id=855413734]
+shape = SubResource("ConcavePolygonShape3D_4hyb6")

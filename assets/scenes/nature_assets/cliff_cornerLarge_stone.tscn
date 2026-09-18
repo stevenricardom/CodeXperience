@@ -1,0 +1,50 @@
+[gd_scene format=4 uid="uid://dh3hvu1p68g3h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fjomr"]
+resource_name = "stone"
+albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0i7cg"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.08150001, 0.4185, 1, 0.4185),
+"format": 34896613377,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAQAAAAIAAwABAAAAAQACAAMAAQADAAAAAgABAAMAAAAEAAMABAAAAAMABAADAAUABAAFAAAAAwAEAAUABQAEAAAABgADAAIAAwAGAAIABQAGAAMABgAFAAMABwACAAYABwAAAAUAAgAHAAYABwACAAAAAgAHAAAAAAAHAAUABgAFAAcABQAGAAcA"),
+"name": "stone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/78AAP8/AAD//wAA//8AAP///////wAAAAAAAP//AAAAAAAAAAAAAAAA//8AAAAAAAD/////AAD/v////z8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bfuu4"]
+resource_name = "cliff_cornerLarge_stone_Mesh cliff_cornerLarge_stone"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.08150001, 0.4185, 1, 0.4185),
+"attribute_data": PackedByteArray("3GFVgyoNVYMqDQAA3GEAACoNVYPcYVWDKg0AANxhAAAAAADFAAAJjllQx5siawDFAAAJjgAAAMVZUMebImsAxaWvx5v//wmO//8AxdyUAMX//wmOpa/Hm///AMXclADF1PIAANTyVYMinlWDIp4AANTyVYPU8gAAIp5VgyKeAAAiawAAImtVgwAAVYMAAAAAImtVgyJrAAAAAFWDAAAAANyUAAD//wAA//9Vg9yUVYP//wAA3JQAAP//VYPclFWD"),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABwAGAAUACAAJAAoACgALAAgADAANAA4ADwAOAA0AEAARABIAEgATABAAFAAVABYAFwAWABUAGAAZABoAGgAbABgAHAAdAB4AHwAeAB0AIAAhACIAIgAjACAAJAAlACYAJwAmACUAKAApACoAKgArACgALAAtAC4ALwAuAC0A"),
+"material": SubResource("StandardMaterial3D_fjomr"),
+"name": "stone",
+"primitive": 3,
+"uv_scale": Vector4(39.37008, 76.74016, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("/78AAP8/G83//wAA//8bzf///////xvN/7////8/G83//wAA//8AAP+/AAD/PwAA////////AAD/v////z8AAAAA//////+/AAD//wAA/7//v////z//v/////////+/AAD//wAA/z8AAP//////P/+/////P/8//////////z//vwAA/z///wAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAAAA/78AAP8/AAAAAAAA//8AAP//AAD//wAAAAD//wAA4/IAAAAAAADj8v+/AAD/P+Py/7////8/4/IAAAAAAAAAAAAA//8AAAAA/78AAP8/AAD/v////z8AAP///////wCA//8AAP//AIAAAAAA//8AgAAA/////wCA//8AAP//AAD///////8AAAAAAAD//wAAAAD/////AAAAAP//AAD/vwAA//////+/AAAAAP///78AAAAAAAD/vwAA/////wAAAAD//wAAAAAAAAAA//8AAAAAAAAAAAAA/38AAP9/AAD/fwAA/38AAGJK/39iSv9/Ykr/f2JK/3////9/////f////3////9/AAD/fwAA/38AAP9/AAD/f/9//z//f/8//3//P/9//z//f/+//3//v/9//7//f/+//38AAP9/AAD/fwAA/38AACBu/38gbv9/IG7/fyBu/3//f////3////9/////f///////f////3////9/////f/9/////f////3////9/////v/9//7//f/+//3//v/9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_0i7cg")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_irvjs"]
+data = PackedVector3Array(-0.18609999, 0, 0.18609999, -0.0815, 0, 0.5, -0.0815, 1, 0.5, -0.0815, 1, 0.5, -0.18609999, 1, 0.18609999, -0.18609999, 0, 0.18609999, -0.0815, 0, 0.5, -0.18609999, 0, 0.18609999, -0.0815, 1, 0.5, -0.18609999, 1, 0.18609999, -0.0815, 1, 0.5, -0.18609999, 0, 0.18609999, -0.5, 1, 0.5, -0.5, 1, 0.0815, -0.18609999, 1, 0.18609999, -0.18609999, 1, 0.18609999, -0.0815, 1, 0.5, -0.5, 1, 0.5, -0.5, 1, 0.0815, -0.5, 1, 0.5, -0.18609999, 1, 0.18609999, -0.0815, 1, 0.5, -0.18609999, 1, 0.18609999, -0.5, 1, 0.5, -0.18609999, 0, 0.18609999, -0.5, 0, 0.0815, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.0815, 0, 0.5, -0.18609999, 0, 0.18609999, -0.5, 0, 0.0815, -0.18609999, 0, 0.18609999, -0.5, 0, 0.5, -0.0815, 0, 0.5, -0.5, 0, 0.5, -0.18609999, 0, 0.18609999, -0.5, 1, 0.0815, -0.5, 0, 0.0815, -0.18609999, 0, 0.18609999, -0.18609999, 0, 0.18609999, -0.18609999, 1, 0.18609999, -0.5, 1, 0.0815, -0.5, 0, 0.0815, -0.5, 1, 0.0815, -0.18609999, 0, 0.18609999, -0.18609999, 1, 0.18609999, -0.18609999, 0, 0.18609999, -0.5, 1, 0.0815, -0.0815, 1, 0.5, -0.0815, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 1, 0.5, -0.0815, 1, 0.5, -0.0815, 0, 0.5, -0.0815, 1, 0.5, -0.5, 0, 0.5, -0.5, 1, 0.5, -0.5, 0, 0.5, -0.0815, 1, 0.5, -0.5, 1, 0.0815, -0.5, 1, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.0815, -0.5, 1, 0.0815, -0.5, 1, 0.5, -0.5, 1, 0.0815, -0.5, 0, 0.5, -0.5, 0, 0.0815, -0.5, 0, 0.5, -0.5, 1, 0.0815)
+
+[node name="cliff_cornerLarge_stone" type="MeshInstance3D" unique_id=456651661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_bfuu4")
+
+[node name="cliff_cornerLarge_stone_col" type="StaticBody3D" parent="." unique_id=35760]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cliff_cornerLarge_stone_col" unique_id=794939578]
+shape = SubResource("ConcavePolygonShape3D_irvjs")

@@ -1,0 +1,77 @@
+[gd_scene format=4 uid="uid://dfgc0y8polba4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_conmh"]
+resource_name = "grass"
+albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1s3er"]
+resource_name = "dirt"
+albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2h4qa"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0.4, 0.23149998, 0.26850003, 0.099999994, 0.26850003),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAwACAAQABAAFAAMAAAADAAUABQAGAAAA"),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("p6D/////AAAAAP////8AAAAA//9XXwAAfXj//4GHAAAAAAAAAAAAAP+/AAD/PwAA//8AAP//AAA=")
+}, {
+"aabb": AABB(-0.5, -2.0013795e-16, 0.081499994, 0.4185, 0.5, 0.4185),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAgAEAAAAAQAFAAMABQABAAAAAwAFAAYAAAAGAAUABgAAAAQABgAHAAMABAAHAAYA"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/vwAA/z8AAE1N//+xsgAAEmf/////AAAAAP//7JgAAP//AAD//wAAAAAAAP//AAAAAP////8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2fpbm"]
+resource_name = "cliff_halfCorner_rock_Mesh cliff_halfCorner_rock"
+_surfaces = [{
+"aabb": AABB(-0.5, 0.4, 0.23149998, 0.26850003, 0.099999994, 0.26850003),
+"attribute_data": PackedByteArray("Iit95QAAfeUAAPHEWSAUzX28AACX3gAAr+agGliwoBqmT6AaTxmgGmchAACBQwAA"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgA"),
+"material": SubResource("StandardMaterial3D_conmh"),
+"name": "grass",
+"primitive": 3,
+"uv_scale": Vector4(39.37008, 52.173653, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("p6D//////78AAP//////vwAA//9XX/+/fXj//4GH/799eP//gYfT8wAA//9XX9PzAAAAAAAA0/P/vwAA/z/T8/+/AAD/PzbR//8AAP//NtGnoP////820X14//+BhzbR////f////3////9/////f4qoqQWKqKkFiqipBYqoqQUYtNIVGLTSFRi00hUYtNIV")
+}, {
+"aabb": AABB(-0.5, -2.0013795e-16, 0.081499994, 0.4185, 0.5, 0.4185),
+"attribute_data": PackedByteArray("1PKhcCKeoXB9vAAAl94AANzUZx///2cf//8qhdyUKoXcYaFwKg2hcGchAACBQwAAIitnHyJrKoUAACqFAABnH///wZX//+7q3JTu6qWvDKs="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAA"),
+"material": SubResource("StandardMaterial3D_1s3er"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(39.37008, 49.519516, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAAAAAAANfP/vwAA/z81801N//+xsjXzAAD//+yYNfMAAP//7Jj/vwAA//////+/AAAAAP///78AAAAAAAD/v/+/AAD/P4jO//8AAP//iM4SZ/////+Izk1N//+xsojOEmf/////AID//wAA//8AgAAAAAD//wCAAAD/////AIAAAAAAAAD//wAAAAD///////8AAP//////vwAA/z///4uatAOLmrQDi5q0A4uatAP/f////3////9/////f///vaP4Dr2j+A69o/gOvaP4Dv9/////f////3////9/////f/8//3//P/9//z//f/8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_2h4qa")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_v8p8d"]
+data = PackedVector3Array(-0.3315, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.3315, -0.5, 0.5, 0.3315, -0.37359998, 0.5, 0.37359998, -0.3315, 0.5, 0.5, -0.37359998, 0.5, 0.37359998, -0.5, 0.5, 0.3315, -0.5, 0.39999998, 0.2315, -0.5, 0.39999998, 0.2315, -0.2986, 0.39999998, 0.2986, -0.37359998, 0.5, 0.37359998, -0.2986, 0.39999998, 0.2986, -0.2315, 0.39999998, 0.5, -0.3315, 0.5, 0.5, -0.3315, 0.5, 0.5, -0.37359998, 0.5, 0.37359998, -0.2986, 0.39999998, 0.2986, -0.5, 0, 0.0815, -0.18609999, 0, 0.18609999, -0.37359998, 0.5, 0.37359998, -0.37359998, 0.5, 0.37359998, -0.5, 0.5, 0.3315, -0.5, 0, 0.0815, -0.5, 0.5, 0.3315, -0.5, 0.5, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.0815, -0.5, 0.5, 0.3315, -0.18609999, 0, 0.18609999, -0.0815, 0, 0.5, -0.3315, 0.5, 0.5, -0.3315, 0.5, 0.5, -0.37359998, 0.5, 0.37359998, -0.18609999, 0, 0.18609999, -0.3315, 0.5, 0.5, -0.0815, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0.5, 0.5, -0.3315, 0.5, 0.5, -0.5, 0, 0.0815, -0.5, 0, 0.5, -0.0815, 0, 0.5, -0.0815, 0, 0.5, -0.18609999, 0, 0.18609999, -0.5, 0, 0.0815)
+
+[node name="cliff_halfCorner_rock" type="MeshInstance3D" unique_id=323088598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_2fpbm")
+
+[node name="cliff_halfCorner_rock_col" type="StaticBody3D" parent="." unique_id=96599488]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cliff_halfCorner_rock_col" unique_id=1583866649]
+shape = SubResource("ConcavePolygonShape3D_v8p8d")

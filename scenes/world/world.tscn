@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b1ce4yeiyjlxu"]
 
-[ext_resource type="MeshLibrary" uid="uid://c6oyqldnxbto3" path="res://assets/tiles/assets_nature_tiles.tres" id="1_dphjl"]
-[ext_resource type="MeshLibrary" uid="uid://ddhgck4kvgdtx" path="res://assets/tiles/assets_farm_tiles.tres" id="2_1fp7r"]
+[ext_resource type="MeshLibrary" uid="uid://c6oyqldnxbto3" path="res://assets/meshlibrary/preset_result_tiles/tiles_meshlibrary/assets_nature_tiles.tres" id="1_dphjl"]
+[ext_resource type="MeshLibrary" uid="uid://ddhgck4kvgdtx" path="res://assets/meshlibrary/preset_result_tiles/tiles_meshlibrary/assets_farm_tiles.tres" id="2_1fp7r"]
 [ext_resource type="PackedScene" uid="uid://eqg2hn2up722" path="res://scenes/player/playerXR_Desktop/PlayerXR_Desktop.tscn" id="3_1fp7r"]
 
 [node name="World" type="Node3D" unique_id=456698886]

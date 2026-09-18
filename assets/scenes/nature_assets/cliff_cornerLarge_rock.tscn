@@ -1,0 +1,50 @@
+[gd_scene format=4 uid="uid://bchcj0uw3o6pj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28c8i"]
+resource_name = "dirt"
+albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_e40ii"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.08150001, 0.4185, 1, 0.4185),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAwABAAAAAgAEAAAAAwAFAAIABAACAAUAAAAGAAMABQAHAAQAAAAEAAcABwAFAAMABwAGAAAAAwAGAAcA"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/78AAP8/AAD//wAA//8AAP///////wAAAAAAAP//AAD/v////z8AAAAA/////wAAAAAAAAAAAAAAAP//AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_k8o3k"]
+resource_name = "cliff_cornerLarge_rock_Mesh cliff_cornerLarge_rock"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, 0.08150001, 0.4185, 1, 0.4185),
+"attribute_data": PackedByteArray("3GFVgyoNVYMqDQAA3GEAAAAAAMUAAAmOWVDHmyJrAMWlr8eb//8Jjv//AMXclADF1PIAANTyVYMinlWDIp4AACJrAAAia1WDAABVgwAAAADclAAA//8AAP//VYPclFWD"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_28c8i"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(39.37008, 76.74016, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/78AAP8/G83//wAA//8bzf///////xvN/7////8/G80AAP//////vwAA//8AAP+//7////8//7//////////v/+/AAD/P///AAAAAAAA//8AAAAA////////AAD/////AAD//wAA4/IAAAAAAADj8v+/AAD/P+Py/7////8/4/L///////8AgP//AAD//wCAAAAAAP//AIAAAP////8AgAAA//8AAP+/AAD//////78AAAAA////vwAAAAAAAP+//38AAP9/AAD/fwAA/38AAP///3////9/////f////3//f/8//3//P/9//z//f/8//38AAP9/AAD/fwAA/38AAP9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_e40ii")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_skft1"]
+data = PackedVector3Array(-0.18609999, 0, 0.18609999, -0.0815, 0, 0.5, -0.0815, 1, 0.5, -0.0815, 1, 0.5, -0.18609999, 1, 0.18609999, -0.18609999, 0, 0.18609999, -0.5, 1, 0.5, -0.5, 1, 0.0815, -0.18609999, 1, 0.18609999, -0.18609999, 1, 0.18609999, -0.0815, 1, 0.5, -0.5, 1, 0.5, -0.18609999, 0, 0.18609999, -0.5, 0, 0.0815, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.0815, 0, 0.5, -0.18609999, 0, 0.18609999, -0.5, 1, 0.0815, -0.5, 0, 0.0815, -0.18609999, 0, 0.18609999, -0.18609999, 0, 0.18609999, -0.18609999, 1, 0.18609999, -0.5, 1, 0.0815, -0.0815, 1, 0.5, -0.0815, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 1, 0.5, -0.0815, 1, 0.5, -0.5, 1, 0.0815, -0.5, 1, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.0815, -0.5, 1, 0.0815)
+
+[node name="cliff_cornerLarge_rock" type="MeshInstance3D" unique_id=2040816511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_k8o3k")
+
+[node name="cliff_cornerLarge_rock_col" type="StaticBody3D" parent="." unique_id=872052702]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cliff_cornerLarge_rock_col" unique_id=251852185]
+shape = SubResource("ConcavePolygonShape3D_skft1")

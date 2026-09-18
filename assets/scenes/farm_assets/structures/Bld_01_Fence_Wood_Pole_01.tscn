@@ -1,0 +1,52 @@
+[gd_scene format=4 uid="uid://d4ap2dx7ericl"]
+
+[ext_resource type="Texture2D" uid="uid://csbjfx4e2vgu" path="res://resources/models/farm_models/structures/Textures/Texture Map.png" id="1_27pu3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_87fid"]
+resource_name = "Texture Map"
+cull_mode = 2
+albedo_texture = ExtResource("1_27pu3")
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0pkab"]
+_surfaces = [{
+"aabb": AABB(-0.05762744, 5.3148597e-12, -0.057626504, 0.115255475, 1.1800334, 0.11525537),
+"format": 34359742465,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAwACAAEABAADAAEABAABAAAAAwAFAAIABgAEAAAABQAHAAIABQAGAAcAAAACAAcABgAAAAcA"),
+"name": "Texture Map",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("YAtsPVYLlz9ADGw9wApsvVYLlz9ADGw9wApsvVYLlz/FCWy9wApsvQAAuyxADGw9YAtsPQAAuyxADGw9wApsvQAAuyzFCWy9YAtsPQAAuyzFCWy9YAtsPVYLlz/FCWy9")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_goous"]
+resource_name = "Bld_01_Fence_Wood_Pole_01_Bld_01_Fence_Wood_Pole_01"
+_surfaces = [{
+"aabb": AABB(-0.05762744, 5.3148597e-12, -0.057626504, 0.115255475, 1.1800334, 0.11525537),
+"attribute_data": PackedByteArray("zVYaPzjdtT3CVho/ON21PcJWGj843bU9zVYaPzjdtT3CVho/1F0/Ps1WGj/UXT8+zVYaPzjdtT3CVho/ON21Pc1WGj/UXT8+wlYaP9RdPz7CVho/ON21Pc1WGj843bU9zVYaP9RdPz7NVho/1F0/Ps1WGj843bU9zVYaPzjdtT3CVho/1F0/PsJWGj/UXT8+wlYaPzjdtT3CVho/ON21PQ=="),
+"format": 34359742487,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMA"),
+"material": SubResource("StandardMaterial3D_87fid"),
+"name": "Texture Map",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("YAtsPVYLlz9ADGw9wApsvVYLlz9ADGw9wApsvVYLlz/FCWy9YAtsPVYLlz/FCWy9wApsvQAAuyzFCWy9YAtsPQAAuyzFCWy9YAtsPVYLlz/FCWy9wApsvVYLlz/FCWy9YAtsPQAAuyxADGw9wApsvQAAuyxADGw9wApsvVYLlz9ADGw9YAtsPVYLlz9ADGw9YAtsPQAAuyzFCWy9YAtsPQAAuyxADGw9YAtsPVYLlz9ADGw9YAtsPVYLlz/FCWy9wApsvQAAuyxADGw9wApsvQAAuyzFCWy9wApsvVYLlz/FCWy9wApsvVYLlz9ADGw9/3///////7//f///////v/9///////+//3///////7//////////P/////////8//////////z//////////P/9//3////+//3//f////7//f/9/////v/9//3////+/////f////7////9/////v////3////+/////f////78AAP9/////vwAA/3////+/AAD/f////78AAP9/////vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_0pkab")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_cu74t"]
+data = PackedVector3Array(0.0576, 1.18, 0.0576, -0.0576, 1.18, 0.0576, -0.0576, 1.18, -0.0576, 0.0576, 1.18, 0.0576, -0.0576, 1.18, -0.0576, 0.0576, 1.18, -0.0576, -0.0576, 0, -0.0576, 0.0576, 0, -0.0576, 0.0576, 1.18, -0.0576, -0.0576, 0, -0.0576, 0.0576, 1.18, -0.0576, -0.0576, 1.18, -0.0576, 0.0576, 0, 0.0576, -0.0576, 0, 0.0576, -0.0576, 1.18, 0.0576, 0.0576, 0, 0.0576, -0.0576, 1.18, 0.0576, 0.0576, 1.18, 0.0576, 0.0576, 0, -0.0576, 0.0576, 0, 0.0576, 0.0576, 1.18, 0.0576, 0.0576, 0, -0.0576, 0.0576, 1.18, 0.0576, 0.0576, 1.18, -0.0576, -0.0576, 0, 0.0576, -0.0576, 0, -0.0576, -0.0576, 1.18, -0.0576, -0.0576, 0, 0.0576, -0.0576, 1.18, -0.0576, -0.0576, 1.18, 0.0576)
+
+[node name="Bld_01_Fence_Wood_Pole_01" type="MeshInstance3D" unique_id=2105298624]
+mesh = SubResource("ArrayMesh_goous")
+
+[node name="Bld_01_Fence_Wood_Pole_01_col" type="StaticBody3D" parent="." unique_id=1251583669]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bld_01_Fence_Wood_Pole_01_col" unique_id=374028075]
+shape = SubResource("ConcavePolygonShape3D_cu74t")

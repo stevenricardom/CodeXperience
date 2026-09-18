@@ -1,0 +1,50 @@
+[gd_scene format=4 uid="uid://bwkpplju24pkf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_al5h8"]
+resource_name = "dirt"
+albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tjqpa"]
+_surfaces = [{
+"aabb": AABB(-0.5, -1.7706456e-16, 0.3315, 1, 1, 0.1685),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAACAAEABQADAAIAAAADAAUAAgAEAAUAAQAAAAYABgAAAAUABgAHAAEABAABAAcACAAHAAYABAAHAAgACQAGAAUABgAJAAgACAAJAAoACwAJAAUACwAKAAkACgAMAAgADAAKAAsACAAMAA0ABAAIAA0ACwANAAwABQAEAA4ADgAEAA0ACwAFAA8ADgAPAAUADwAQAAsAEAAPAA4ADQALABAADgARABAAEAARAA0ADQARAA4A"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("VNX//xFoAABU1QAAEWgAAP//AAAAAAAA/////wAAAAD//wAA//8AAP///////wAAqqr//wAAAACqqgAAAAAAAP9/AAARaAAA/3///xFoAABUVf//AAAAAKoq//8RaAAAVFUAAAAAAACqKgAAEWgAAAAAAAD//wAAAAD/////AAAAAP//AAAAAAAAAAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_21o3i"]
+resource_name = "cliff_rock_Mesh cliff_rock"
+_surfaces = [{
+"aabb": AABB(-0.5, -1.7706456e-16, 0.3315, 1, 1, 0.1685),
+"attribute_data": PackedByteArray("/1cAAP9XVYPeKVWD3ikAANn1AADZ9VWDuMdVg7jHAAAzhwAAM4dVgxJZVYMSWQAA//8AAP//VYMAAFWDAAAAAFTV3rf//9+u//8AxQAAAMX/f963qqrfrlRV366qKt63AADfruymVYPLeFWDy3gAAOymAAAg1gAAINZVg/+nVYP/pwAAIitVgwAAVYMAAAAAIisAAAAAAMUAAN+uqiret///AMX/f963VFXfrqqq365U1d63///frtzUAAD//wAA//9Vg9zUVYNGOAAARjhVgyUKVYMlCgAA"),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAEwAUABAAFAAVABAAEwAWABQAEwAXABYAEwAYABcAGQAaABsAGwAcABkAHQAeAB8AHwAgAB0AIQAiACMAIwAkACEAJQAmACcAJwAoACUAJwApACgAJwAqACkAKQArACgAKwAsACgALAAtACgALgAvADAAMAAxAC4AMgAzADQANAA1ADIA"),
+"material": SubResource("StandardMaterial3D_al5h8"),
+"name": "dirt",
+"primitive": 3,
+"uv_scale": Vector4(39.37008, 76.74016, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("VNX//xFoG/BU1QAAEWgb8P//AAAAABvw/////wAAG/CqKv//EWgb8KoqAAARaBvwVFUAAAAAG/BUVf//AAAb8FRV//8AABvwVFUAAAAAG/D/fwAAEWgb8P9///8RaBvw////////AID//wAA//8AgAAAAAD//wCAAAD/////AICqKgAAEWj//wAAAAAAAP//AAAAAP///////wAA//////9/AAARaP//VFUAAAAA//+qqgAAAAD//1TVAAARaP////8AAAAA////fwAAEWgb8KqqAAAAABvwqqr//wAAG/D/f///EWgb8AAA//8AABvwAAAAAAAAG/CqKgAAEWgb8Koq//8RaBvw//8AAAAA/7///wAA////v/////////+//////wAA/78AAP//////vwAA//8AAP+/qir//xFo/7//////////v/9///8RaP+/VFX//wAA/7+qqv//AAD/v1TV//8RaP+//////wAA/78AAP//AAD/vwAA//////+/AAAAAP///78AAAAAAAD/v6qq//8AABvwqqoAAAAAG/BU1QAAEWgb8FTV//8RaBvw/3////9/////f////3////9/////f////3////9/////fwAA/38AAP9/AAD/fwAA/3////9/////f////3////9//z//f/8//3//P/9//z//f/8//3//P/9//z//f/8//3//P/9/////f////3////9/////fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP///3////9/////f////3////9/////f////3////9/////f/9/////f////3////9/////fwAA/38AAP9/AAD/fwAA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tjqpa")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ectue"]
+data = PackedVector3Array(0.3333, 1, 0.39999998, 0.3333, 0, 0.39999998, 0.5, 0, 0.3315, 0.5, 0, 0.3315, 0.5, 1, 0.3315, 0.3333, 1, 0.39999998, -0.3333, 1, 0.39999998, -0.3333, 0, 0.39999998, -0.16669999, 0, 0.3315, -0.16669999, 0, 0.3315, -0.16669999, 1, 0.3315, -0.3333, 1, 0.39999998, -0.16669999, 1, 0.3315, -0.16669999, 0, 0.3315, 0, 0, 0.39999998, 0, 0, 0.39999998, 0, 1, 0.39999998, -0.16669999, 1, 0.3315, 0.5, 1, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 1, 0.5, 0.5, 1, 0.5, -0.3333, 0, 0.39999998, -0.5, 0, 0.3315, -0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, -0.3333, 0, 0.39999998, 0.5, 0, 0.5, 0, 0, 0.39999998, -0.3333, 0, 0.39999998, 0, 0, 0.39999998, -0.16669999, 0, 0.3315, -0.3333, 0, 0.39999998, 0.5, 0, 0.5, 0.16669999, 0, 0.3315, 0, 0, 0.39999998, 0.5, 0, 0.5, 0.3333, 0, 0.39999998, 0.16669999, 0, 0.3315, 0.5, 0, 0.5, 0.5, 0, 0.3315, 0.3333, 0, 0.39999998, 0, 0, 0.39999998, 0.16669999, 0, 0.3315, 0.16669999, 1, 0.3315, 0.16669999, 1, 0.3315, 0, 1, 0.39999998, 0, 0, 0.39999998, -0.5, 1, 0.3315, -0.5, 0, 0.3315, -0.3333, 0, 0.39999998, -0.3333, 0, 0.39999998, -0.3333, 1, 0.39999998, -0.5, 1, 0.3315, 0.5, 0, 0.3315, 0.5, 0, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.3315, 0.5, 0, 0.3315, -0.5, 1, 0.5, -0.5, 1, 0.3315, -0.3333, 1, 0.39999998, -0.3333, 1, 0.39999998, 0.5, 1, 0.5, -0.5, 1, 0.5, -0.3333, 1, 0.39999998, 0, 1, 0.39999998, 0.5, 1, 0.5, -0.3333, 1, 0.39999998, -0.16669999, 1, 0.3315, 0, 1, 0.39999998, 0, 1, 0.39999998, 0.16669999, 1, 0.3315, 0.5, 1, 0.5, 0.16669999, 1, 0.3315, 0.3333, 1, 0.39999998, 0.5, 1, 0.5, 0.3333, 1, 0.39999998, 0.5, 1, 0.3315, 0.5, 1, 0.5, -0.5, 1, 0.3315, -0.5, 1, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.3315, -0.5, 1, 0.3315, 0.16669999, 1, 0.3315, 0.16669999, 0, 0.3315, 0.3333, 0, 0.39999998, 0.3333, 0, 0.39999998, 0.3333, 1, 0.39999998, 0.16669999, 1, 0.3315)
+
+[node name="cliff_rock" type="MeshInstance3D" unique_id=1598332912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("ArrayMesh_21o3i")
+
+[node name="cliff_rock_col" type="StaticBody3D" parent="." unique_id=291190350]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cliff_rock_col" unique_id=1786687159]
+shape = SubResource("ConcavePolygonShape3D_ectue")

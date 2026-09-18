@@ -1,0 +1,18 @@
+[gd_resource type="Environment" format=3 uid="uid://dmdim3no8vdtl"]
+
+[ext_resource type="Texture2D" uid="uid://bwtl3b103yyur" path="res://resources/skybox/sky_74_2k.png" id="1_hvlwh"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ig7tw"]
+panorama = ExtResource("1_hvlwh")
+
+[sub_resource type="Sky" id="Sky_ig7tw"]
+sky_material = SubResource("PanoramaSkyMaterial_ig7tw")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_ig7tw")
+reflected_light_source = 2
+ssao_enabled = true
+ssao_radius = 4.59
+ssao_intensity = 6.3
+glow_intensity = 6.51
