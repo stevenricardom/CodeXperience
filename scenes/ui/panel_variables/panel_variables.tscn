@@ -1,0 +1,265 @@
+[gd_scene format=3 uid="uid://d000hwyxhvd17"]
+
+[ext_resource type="Script" uid="uid://dsklmfmf5qsmp" path="res://scenes/ui/panel_variables/panel_variables.gd" id="1_script"]
+
+[node name="PanelVariables" type="Control" unique_id=1366404364]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="." unique_id=271544511]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.08, 0.1, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1526064345]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer" unique_id=1702872077]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer" unique_id=59350173]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="TitleVars" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2106659983]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.53, 0.91, 0.53, 1)
+theme_override_font_sizes/font_size = 24
+text = "Creacion de Variables"
+
+[node name="LblName" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=655102773]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "Nombre:"
+
+[node name="RowName" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1422615975]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowName" unique_id=1291766869]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowName" unique_id=56959802]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "pasos"
+horizontal_alignment = 1
+
+[node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowName" unique_id=1101729314]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="LblType" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=746397973]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "Tipo:"
+
+[node name="RowType" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1492076527]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowType" unique_id=1433443581]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowType" unique_id=1746476234]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "Número"
+horizontal_alignment = 1
+
+[node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowType" unique_id=2145375146]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="LblValue" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1664835375]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "Valor:"
+
+[node name="RowValue" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=361384322]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowValue" unique_id=1774108292]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "−"
+
+[node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowValue" unique_id=548166570]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "0"
+horizontal_alignment = 1
+
+[node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowValue" unique_id=713508370]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "+"
+
+[node name="BtnCreate" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1198416806]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.53, 0.91, 0.53, 1)
+theme_override_font_sizes/font_size = 18
+text = "Crear Variable"
+
+[node name="HSeparator1" type="HSeparator" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1097810738]
+layout_mode = 2
+
+[node name="TitleCreated" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2066179109]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.53, 0.91, 0.53, 1)
+theme_override_font_sizes/font_size = 20
+text = "Variables creadas"
+
+[node name="CreatedVars" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=912949067]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Empty" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/CreatedVars" unique_id=1590860212]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 14
+text = "(vacío - Primero crea una variable)"
+horizontal_alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1226446862]
+layout_mode = 2
+
+[node name="TitleCond" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=454015765]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6, 0.4, 1)
+theme_override_font_sizes/font_size = 20
+text = "Operadores de Comparacion"
+
+[node name="CondPreview" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=146553404]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6, 0.4, 1)
+theme_override_font_sizes/font_size = 22
+text = "Debes crear una variable primero"
+horizontal_alignment = 1
+
+[node name="LblCondVar" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=802542639]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "Variable:"
+
+[node name="RowCondVar" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=432144029]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVar" unique_id=2119070590]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVar" unique_id=1689207174]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "---"
+horizontal_alignment = 1
+
+[node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVar" unique_id=498810789]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="LblCondOp" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=242352578]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "Comparar:"
+
+[node name="RowCondOp" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=129681715]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondOp" unique_id=479439821]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondOp" unique_id=706562514]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "<"
+horizontal_alignment = 1
+
+[node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondOp" unique_id=508416818]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="LblCondVal" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=668149804]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "Con valor:"
+
+[node name="RowCondVal" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1920630823]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVal" unique_id=840419002]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "−"
+
+[node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVal" unique_id=144004506]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "5"
+horizontal_alignment = 1
+
+[node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVal" unique_id=748365956]
+custom_minimum_size = Vector2(50, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "+"

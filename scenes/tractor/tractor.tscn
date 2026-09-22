@@ -54,4 +54,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11816406, 4.4155884, -0.434
 shape = SubResource("BoxShape3D_rt2ik")
 
 [node name="Tractor by Poly by Google - 5TGoA5N14c6" type="MeshInstance3D" parent="." unique_id=960385336]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_f50kc")

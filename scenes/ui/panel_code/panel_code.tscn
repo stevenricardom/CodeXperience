@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://cf84nuu3n7e7u"]
+
+[ext_resource type="Script" uid="uid://by10jfcavx6n3" path="res://scenes/ui/panel_code/panel_code.gd" id="1_script"]
+
+[node name="PanelCode" type="Control" unique_id=1630437090]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="." unique_id=572199575]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.08, 0.1, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1227879396]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1432131305]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=22200231]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Bloques de Código"
+horizontal_alignment = 1
+
+[node name="Toolbar" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1788995804]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BtnExecute" type="Button" parent="MarginContainer/VBoxContainer/Toolbar" unique_id=401646209]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Ejecutar"
+
+[node name="BtnDeleteBlock" type="Button" parent="MarginContainer/VBoxContainer/Toolbar"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.8, 0.2, 1)
+theme_override_font_sizes/font_size = 20
+text = "Borrar bloque"
+
+[node name="BtnClear" type="Button" parent="MarginContainer/VBoxContainer/Toolbar" unique_id=1375269023]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 20
+text = "Limpiar todo"
+
+[node name="CanvasPlaceholder" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LabelTerminal" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1440833461]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Terminal:"
+
+[node name="Terminal" type="RichTextLabel" parent="MarginContainer/VBoxContainer" unique_id=874833447]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[color=gray]Esperando bloques...[/color]"

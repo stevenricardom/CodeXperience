@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dy5vpjfsbml5w"]
 
-[ext_resource type="PackedScene" uid="uid://b1ce4yeiyjlxu" path="res://scenes/world/world.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://b1ce4yeiyjlxu" path="res://scenes/world/world1.0.tscn" id="1_0xm2m"]
 [ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/meshlibrary/camera_config_meshlibrary/config_camera_world.tres" id="2_h2yge"]
 [ext_resource type="MeshLibrary" path="res://assets/tiles/platforms_tiles_meshlibrary.tres" id="3_h2yge"]
 

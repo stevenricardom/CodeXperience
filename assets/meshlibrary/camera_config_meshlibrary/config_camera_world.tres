@@ -11,6 +11,8 @@ sky_material = SubResource("PanoramaSkyMaterial_ig7tw")
 [resource]
 background_mode = 2
 sky = SubResource("Sky_ig7tw")
+ambient_light_source = 3
+ambient_light_energy = 1.23
 reflected_light_source = 2
 ssao_enabled = true
 ssao_radius = 4.59

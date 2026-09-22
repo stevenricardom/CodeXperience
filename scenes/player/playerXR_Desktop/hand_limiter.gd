@@ -25,12 +25,16 @@ extends XRController3D
 ## Rotación extra encima de la de la cámara (grados)
 @export var rotation_offset_deg: Vector3 = Vector3(0.0, 0.0, 0.0)
 
+## Velocidad a la que la rotación regresa al reposo tras soltar Shift
+@export var rotation_return_speed: float = 5.0
+
 @onready var camera: XRCamera3D = $"../XRCamera3D"
 
 var _is_left_hand: bool = false
 var _rot_offset: Basis
 var _prev_camera_basis: Basis
 var _rest: Vector3   # rest_local con X ya ajustada al lado correcto
+var _is_rotating: bool = false   # true mientras Shift + tecla de mano está presionado
 
 func _ready() -> void:
 	_is_left_hand = (tracker == &"left_hand")
@@ -98,7 +102,29 @@ func _process(_delta: float) -> void:
 	global_position = camera.to_global(local_pos)
 
 	# ── 5. ROTACIÓN ─────────────────────────────────────────────────────────
-	global_basis = camera.global_basis * _rot_offset
+	# Cuando Shift + tecla de mano están presionados, el XR Simulator rota la
+	# mano vía rotate_device(). NO debemos sobrescribir la rotación en ese caso.
+	var shift_held: bool = Input.is_key_pressed(KEY_SHIFT)
+	var rest_basis: Basis = camera.global_basis * _rot_offset
+
+	if key_held and shift_held:
+		# Modo rotación activa: dejamos que el XR Simulator controle la rotación.
+		# Solo aplicamos el delta de cámara para que la mano siga la cámara.
+		global_basis = cam_delta * global_basis
+		_is_rotating = true
+	elif _is_rotating:
+		# Acaba de soltar Shift o la tecla: interpolar de vuelta al reposo
+		var current_quat: Quaternion = Quaternion(global_basis.orthonormalized())
+		var rest_quat: Quaternion = Quaternion(rest_basis.orthonormalized())
+		var blended: Quaternion = current_quat.slerp(rest_quat, rotation_return_speed * _delta)
+		global_basis = Basis(blended)
+		# Cuando está suficientemente cerca del reposo, dejamos de interpolar
+		if current_quat.dot(rest_quat) > 0.999:
+			global_basis = rest_basis
+			_is_rotating = false
+	else:
+		# Estado normal: rotación fija siguiendo la cámara + offset
+		global_basis = rest_basis
 
 	# ── 6. GUARDAR BASIS PARA EL PRÓXIMO FRAME ──────────────────────────────
 	_prev_camera_basis = camera.global_basis

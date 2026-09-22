@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CodeXperience"
-run/main_scene="uid://b1ce4yeiyjlxu"
+run/main_scene="uid://drh1l76nv8rer"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=60
 config/icon="res://icon.svg"
@@ -29,7 +29,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/asset_placer/plugin.cfg", "res://addons/godot-asset-placer-1.6.0/addons/asset_placer/plugin.cfg", "res://addons/godot-asset-placer-1.7.0-alpha1/addons/asset_placer/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg")
+enabled=PackedStringArray("res://addons/asset_placer/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg")
 
 [layer_names]
 

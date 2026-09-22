@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://de1vsd0matypd"]
+
+[ext_resource type="PackedScene" uid="uid://fc4rbnvyrr47" path="res://assets/scenes/nature_assets/cliff_block_stone.tscn" id="1_arfe3"]
+[ext_resource type="PackedScene" uid="uid://bg6lnvcsfn2d3" path="res://tests/TestPickeable.tscn" id="1_c6qsb"]
+[ext_resource type="PackedScene" uid="uid://eqg2hn2up722" path="res://scenes/player/playerXR_Desktop/PlayerXR_Desktop.tscn" id="2_vsgvl"]
+
+[node name="Test" type="Node3D" unique_id=244175241]
+
+[node name="TestPickeable" parent="." unique_id=959245213 instance=ExtResource("1_c6qsb")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 1.6888924, 0)
+
+[node name="Platform" type="Node3D" parent="." unique_id=2132849126]
+
+[node name="cliff_block_stone" parent="Platform" unique_id=421102408 instance=ExtResource("1_arfe3")]
+transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.05, 0)
+metadata/asset_placer_res_id = "uid://fc4rbnvyrr47"
+
+[node name="PlayerXR_Desktop" parent="." unique_id=1114172364 instance=ExtResource("2_vsgvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.155161, -1.4433736)
