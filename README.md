@@ -4,7 +4,7 @@ CodeXperience es un **juego educativo e interactivo** diseñado para enseñar l�
 
 El juego cuenta con un sistema de **Generación de Niveles Adaptativos** potenciado por Inteligencia Artificial, que ajusta la dificultad de los retos basándose en el código y las estructuras (como bucles `for` o condicionales `if`) que el jugador utiliza para resolverlos.
 
-🌍 **Juega ahora en Itch.io:** *(Inserta aquí tu enlace de Itch.io)*
+🌍 **Juega ahora en Itch.io:** *[(Demo)](https://stevenricardom.itch.io/codexperience)*
 
 ---
 
@@ -43,5 +43,3 @@ El juego cuenta con un sistema de **Generación de Niveles Adaptativos** potenci
 * **Framework XR:** Utiliza `godot-xr-tools` para el manejo avanzado de manos, interacciones y el sistema de simulador híbrido para escritorio.
 * **Plataforma de Exportación principal:** HTML5 (WebAssembly) con compresión VRAM `S3TC/BPTC` para escritorio y `ETC2/ASTC` para móviles/VR.
 
----
-*Desarrollado con ❤️ para transformar la educación a través de la inmersión interactiva.*
