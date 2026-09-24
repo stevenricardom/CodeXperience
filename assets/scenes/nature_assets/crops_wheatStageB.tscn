@@ -3,11 +3,11 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4p1ac"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g7kc5"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0hcet"]
 _surfaces = [{
@@ -76,3 +76,4 @@ mesh = SubResource("ArrayMesh_lt01e")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="crops_wheatStageB_col" unique_id=1949400771]
 shape = SubResource("ConcavePolygonShape3D_qk47h")
+

@@ -333,7 +333,7 @@ func _setup_for_openxr() -> bool:
 			return false
 
 	# Connect the OpenXR events
-	if xr_interface is OpenXRInterface:
+	if xr_interface.get_class() == "OpenXRInterface":
 		xr_interface.session_begun.connect(_on_openxr_session_begun)
 		xr_interface.session_visible.connect(_on_openxr_visible_state)
 		xr_interface.session_focussed.connect(_on_openxr_focused_state)
@@ -361,7 +361,7 @@ func _setup_for_webxr() -> bool:
 	print("WebXR: Configuring interface")
 
 	# Connect the WebXR events
-	if xr_interface is WebXRInterface:
+	if xr_interface.get_class() == "WebXRInterface":
 		xr_interface.session_supported.connect(_on_webxr_session_supported)
 		xr_interface.session_started.connect(_on_webxr_session_started)
 		xr_interface.session_ended.connect(_on_webxr_session_ended)

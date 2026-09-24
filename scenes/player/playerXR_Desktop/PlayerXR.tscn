@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://cq2sdmqpu4u3o"]
+
+[ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/meshlibrary/camera_config_meshlibrary/config_camera_world.tres" id="1_ny76s"]
+[ext_resource type="Script" uid="uid://c42m42no6tqpn" path="res://scenes/player/playerXR_Desktop/hand_limiter.gd" id="2_h6xyi"]
+[ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_ny76s"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="3_uy65k"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="4_q5p1p"]
+[ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="5_lqugt"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="6_uyx3m"]
+[ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="7_11jrp"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_th5th"]
+exposure_multiplier = 2.0
+
+[node name="PlayerXR" type="XROrigin3D" unique_id=1114172364]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=813102283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5809784, 0)
+environment = ExtResource("1_ny76s")
+attributes = SubResource("CameraAttributesPractical_th5th")
+
+[node name="RightHand" type="XRController3D" parent="." unique_id=339993953]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11678755, 1.5183346, -0.21599197)
+tracker = &"right_hand"
+script = ExtResource("2_h6xyi")
+rest_local = Vector3(0.12, -0.15, -0.22)
+
+[node name="XRToolsMovementDirect" type="Node3D" parent="RightHand" unique_id=496516477 groups=["movement_providers"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11678755, -1.5183346, 0.21599197)
+script = ExtResource("3_ny76s")
+metadata/_custom_type_script = "uid://dc4hg8kq5ia5y"
+
+[node name="RightHand" parent="RightHand" unique_id=335709563 instance=ExtResource("3_uy65k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007300824, 0.00035625696, 0)
+
+[node name="FunctionPointer" parent="RightHand" unique_id=1804052717 instance=ExtResource("5_lqugt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02, 0.05, -0.1)
+show_laser = 0
+show_target = true
+collision_mask = 5242896
+
+[node name="LeftHand" type="XRController3D" parent="." unique_id=1664995147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10802849, 1.5184232, -0.22431614)
+tracker = &"left_hand"
+script = ExtResource("2_h6xyi")
+rest_local = Vector3(0.12, -0.15, -0.22)
+
+[node name="FunctionPickup" parent="LeftHand" unique_id=962495096 instance=ExtResource("4_q5p1p")]
+
+[node name="LeftHand" parent="LeftHand" unique_id=295491913 instance=ExtResource("6_uyx3m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002142191, -0.000852406, 0)
+
+[node name="FunctionPointer" parent="LeftHand" unique_id=2113967010 instance=ExtResource("5_lqugt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02, 0.05, -0.1)
+show_laser = 0
+show_target = true
+collision_mask = 5242896
+suppress_mask = 4194320
+
+[node name="PlayerBody" type="CharacterBody3D" parent="." unique_id=544158746 groups=["player_body"]]
+process_priority = -100
+process_physics_priority = -100
+collision_layer = 524290
+collision_mask = 129
+script = ExtResource("7_11jrp")
+body_forward_mix = 0.0

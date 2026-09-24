@@ -2,12 +2,12 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o15vo"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4fo2"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_neqxi"]
 _surfaces = [{
@@ -68,3 +68,4 @@ shadow_mesh = SubResource("ArrayMesh_neqxi")
 [node name="mushroom_redGroup" type="MeshInstance3D" unique_id=1896766391]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
 mesh = SubResource("ArrayMesh_j3r34")
+

@@ -3,7 +3,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tkdu2"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gtrdp"]
 _surfaces = [{
@@ -48,3 +48,4 @@ mesh = SubResource("ArrayMesh_tvs2v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="fence_planks_col" unique_id=832930015]
 shape = SubResource("ConcavePolygonShape3D_ktn8f")
+

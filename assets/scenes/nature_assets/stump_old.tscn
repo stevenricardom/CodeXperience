@@ -3,7 +3,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mp2a"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jvk76"]
 _surfaces = [{
@@ -48,3 +48,4 @@ mesh = SubResource("ArrayMesh_r5pcm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="stump_old_col" unique_id=292622200]
 shape = SubResource("ConcavePolygonShape3D_7xma2")
+

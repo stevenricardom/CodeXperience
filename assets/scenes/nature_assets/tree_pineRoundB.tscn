@@ -3,16 +3,16 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f8yyq"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_413t8"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhl4d"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0cfjn"]
 _surfaces = [{
@@ -105,3 +105,4 @@ mesh = SubResource("ArrayMesh_13gir")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree_pineRoundB_col" unique_id=706433951]
 shape = SubResource("ConcavePolygonShape3D_heg17")
+

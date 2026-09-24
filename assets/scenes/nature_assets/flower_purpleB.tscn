@@ -3,12 +3,12 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7djm8"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uwtfx"]
 resource_name = "colorPurple"
 albedo_color = Color(0.8115152, 0.759381, 1, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_b8kvx"]
 _surfaces = [{
@@ -75,3 +75,4 @@ mesh = SubResource("ArrayMesh_i0hst")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="flower_purpleB_col" unique_id=1645189208]
 shape = SubResource("ConcavePolygonShape3D_mr3qy")
+

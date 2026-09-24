@@ -3,7 +3,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q8w6s"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s77r5"]
 _surfaces = [{
@@ -50,3 +50,4 @@ mesh = SubResource("ArrayMesh_g7utc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="plant_flatTall_col" unique_id=1327286302]
 shape = SubResource("ConcavePolygonShape3D_bqji0")
+

@@ -3,12 +3,10 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njr26"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3je7x"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_wfl71"]
 _surfaces = [{
@@ -82,12 +80,10 @@ data = PackedVector3Array(0.32389998, 0.9533, 0.13, 0.34239998, 0.76479995, 0.16
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cefcp"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kfesv"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_wn51i"]
 _surfaces = [{
@@ -161,12 +157,10 @@ data = PackedVector3Array(0.32389998, 0.9533, 0.13, 0.34239998, 0.76479995, 0.16
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k7ooo"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81x3d"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_thcv3"]
 _surfaces = [{
@@ -240,11 +234,9 @@ data = PackedVector3Array(0.1028, 1.4439, -0.0594, 0, 1.5194, 0, 0, 1.4439, -0.1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8m684"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lumh2"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yf6kl"]
 _surfaces = [{
@@ -318,7 +310,6 @@ data = PackedVector3Array(0.30949998, 0.1705, 0.0311, 0.30949998, 0.1705, 0.2573
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5qllx"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6cf37"]
 _surfaces = [{
@@ -370,12 +361,10 @@ data = PackedVector3Array(0.053299997, 0.2598, 0.2862, 0.077199996, 0.1443, 0.41
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_huegb"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_td3lq"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nq7un"]
 _surfaces = [{
@@ -451,12 +440,10 @@ data = PackedVector3Array(0.29999998, 0.2768, 0.0866, 0.167, 0.19999999, 0.0866,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odrjm"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cgh6y"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_10bsr"]
 _surfaces = [{
@@ -530,16 +517,13 @@ data = PackedVector3Array(-0.1305, 0.094299994, 0.1305, -0.1305, 0.094299994, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3o5l"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c17r"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_870j6"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d6w1g"]
 _surfaces = [{
@@ -637,12 +621,10 @@ data = PackedVector3Array(0.1072, 0.3398, -0.3144, -0.1072, 0.3398, -0.3144, 0.1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wyfk"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gg1oc"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_u0epk"]
 _surfaces = [{
@@ -716,16 +698,13 @@ data = PackedVector3Array(-0.11, 0.65, 0.06, -0.11, 0.25, 0.06, -0.08, 0.25, 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rfqjh"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v8t1u"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aie2s"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_p3yk0"]
 _surfaces = [{
@@ -823,12 +802,10 @@ data = PackedVector3Array(0.14999999, 0.16, 0.14999999, -0.14999999, 0.16, 0.149
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kdyjg"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fpmg4"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d2gni"]
 _surfaces = [{
@@ -902,16 +879,13 @@ data = PackedVector3Array(0.14999999, 0.049999997, -0.19999999, 0.19999999, 0.04
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1oix"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dl65o"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3jfr1"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w6xec"]
 _surfaces = [{
@@ -1007,16 +981,13 @@ data = PackedVector3Array(-0.0175, 0.2032, -0.0175, -0.0175, 0, -0.0175, 0.0175,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iu551"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8c64"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sxyxi"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0k0ox"]
 _surfaces = [{
@@ -1112,12 +1083,10 @@ data = PackedVector3Array(-0.0127, 0.62, 0.13599999, -0.111899994, 0.62, 0.06749
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xrgj"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5ame"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tfu7g"]
 _surfaces = [{
@@ -1191,16 +1160,13 @@ data = PackedVector3Array(0.1028, 1.4439, -0.0594, 0, 1.5194, 0, 0, 1.4439, -0.1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gnpfc"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7s37"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ecma"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5542e"]
 _surfaces = [{
@@ -1296,16 +1262,13 @@ data = PackedVector3Array(0.065, 0.8118, 0.0955, 0.093399994, 0.6206, 0.1158, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qqvb"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_it28y"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uugss"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vmi7t"]
 _surfaces = [{
@@ -1403,16 +1366,13 @@ data = PackedVector3Array(0.0149, 0.3319, 0.0532, 0.0177, 0.20199999, 0.057, 0.2
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dw86q"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wdwft"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4fegx"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_higgi"]
 _surfaces = [{
@@ -1510,16 +1470,13 @@ data = PackedVector3Array(0.15709999, 0.534, 0.0105, 0.15709999, 0.534, 0.1013, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elg0w"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ehn2x"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jj58p"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_p7hlj"]
 _surfaces = [{
@@ -1617,16 +1574,13 @@ data = PackedVector3Array(0, 0.267, -0.19209999, 0, 0, -0.2562, 0.2218, 0, -0.12
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sff7l"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odqby"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rb8ia"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2pwt2"]
 _surfaces = [{
@@ -1722,16 +1676,13 @@ data = PackedVector3Array(0, 0.38239998, 0.16589999, 0, 0, 0.2634, -0.22809999, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2ry6"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6rgvy"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_usfuc"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pvay0"]
 _surfaces = [{
@@ -1827,16 +1778,13 @@ data = PackedVector3Array(-0.0413, 0.7721, 0.1196, -0.0995, 0.7721, 0.085999995,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elx6l"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gh7tt"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qmgu2"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_op3l7"]
 _surfaces = [{
@@ -1932,16 +1880,13 @@ data = PackedVector3Array(0.068399996, 0.6458, -0.131, 0.114, 0, -0.2183, 0.2280
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t0n"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5c4l"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5i8"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_youoc"]
 _surfaces = [{
@@ -2039,16 +1984,13 @@ data = PackedVector3Array(0.20549999, 0.4526, -0.0499, 0.1917, 0.32119998, -0.07
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0p6r8"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4qkdx"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wlvkd"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3asld"]
 _surfaces = [{
@@ -2146,12 +2088,10 @@ data = PackedVector3Array(0.0753, 0.15079999, -0.1531, 0.0381, 0.0918, -0.1794, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hqrbm"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8qy2"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_p0dnd"]
 _surfaces = [{
@@ -2227,12 +2167,10 @@ data = PackedVector3Array(0.078899994, 0.1955, 0.018, 0.087299995, 0.16, 0.024, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vmp6x"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vm2fk"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_v4w6b"]
 _surfaces = [{
@@ -2308,12 +2246,10 @@ data = PackedVector3Array(0.1087, 0.53819996, -0.18689999, 0.1087, 0.45279998, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k7i37"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_73sis"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6lng4"]
 _surfaces = [{
@@ -2387,12 +2323,10 @@ data = PackedVector3Array(-0.22559999, 0.065, 0.0245, -0.2439, 0, 0.0265, -0.102
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_py2u8"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yc3e0"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_b6kfo"]
 _surfaces = [{
@@ -2466,12 +2400,10 @@ data = PackedVector3Array(0, 0.2778, 0.106599994, -0.0923, 0.2778, 0.053299997, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w1qyj"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gnnjq"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_oarj6"]
 _surfaces = [{
@@ -2545,12 +2477,10 @@ data = PackedVector3Array(0, 0.40739998, -0.1409, 0, 0.2739, -0.23089999, 0.1633
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fwhjg"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gmgyi"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0v80r"]
 _surfaces = [{
@@ -2624,12 +2554,10 @@ data = PackedVector3Array(0, 0.0902, -0.3428, 0, 0, -0.3085, 0.2672, 0, -0.1542,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_viqwq"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdnc3"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jnq51"]
 _surfaces = [{
@@ -2703,12 +2631,10 @@ data = PackedVector3Array(0.1906, 0, -0.1328, 0.23519999, 0, 0.0007, 0.20699999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eqk54"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vov2p"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_j1c06"]
 _surfaces = [{
@@ -2782,12 +2708,10 @@ data = PackedVector3Array(0.0312, 0.064899996, 0.167, -0.17819999, 0.064899996, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sbhal"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0qmx"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_dmqu8"]
 _surfaces = [{
@@ -2861,12 +2785,10 @@ data = PackedVector3Array(0.1363, 0, -0.2148, 0.2479, 0, 0.0475, 0.2181, 0.06489
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7xpme"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_beybg"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6ufsn"]
 _surfaces = [{
@@ -2940,12 +2862,10 @@ data = PackedVector3Array(0.0707, 0.115499996, 0.122499995, 0.0884, 0, 0.1531, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lpb5i"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdib4"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_43jb7"]
 _surfaces = [{
@@ -3019,12 +2939,10 @@ data = PackedVector3Array(0.07, 0.1768, -0.0191, 0.029399998, 0.1768, 0.05109999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6o7lf"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gyo6l"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3s2vi"]
 _surfaces = [{
@@ -3098,12 +3016,10 @@ data = PackedVector3Array(-0.1248, 0.23089999, 0.0198, -0.1362, 0.23089999, 0, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64l5g"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0patk"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_p8wae"]
 _surfaces = [{
@@ -3179,12 +3095,10 @@ data = PackedVector3Array(0.1087, 0.53819996, -0.18689999, 0.1087, 0.45279998, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ou48g"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25opi"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fhwaf"]
 _surfaces = [{
@@ -3258,12 +3172,10 @@ data = PackedVector3Array(0.1804, 0, 0.0365, 0.077199996, 0, 0.1804, 0.043899998
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p18od"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_85ivm"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_x6qon"]
 _surfaces = [{
@@ -3337,12 +3249,10 @@ data = PackedVector3Array(0.0034999999, 0.1768, 0.0849, -0.0849, 0.1768, -0.0321
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fd8vb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g51v3"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pqhc4"]
 _surfaces = [{
@@ -3416,16 +3326,13 @@ data = PackedVector3Array(-0.0106999995, 0.19119999, 0.0495, -0.0648, 0.19119999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7b65p"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kufg8"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fipic"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rsy60"]
 _surfaces = [{
@@ -3521,12 +3428,10 @@ data = PackedVector3Array(0.084, 0, -0.3575, 0.4382, 0, -0.043399997, 0.5477, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sjjsm"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21yfp"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0s635"]
 _surfaces = [{
@@ -3600,16 +3505,13 @@ data = PackedVector3Array(-0.324, 0.1732, 0.4599, -0.5477, 0.1732, 0.20989999, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vm1rt"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wgxg"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f30jx"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ytgdc"]
 _surfaces = [{
@@ -3705,12 +3607,10 @@ data = PackedVector3Array(0.5344, 0.31219998, -0.15609999, 0.36679998, 0.5683, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l2hpd"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5e7j1"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_uac6q"]
 _surfaces = [{
@@ -3784,16 +3684,13 @@ data = PackedVector3Array(-0.2022, 0.1046, -0.5078, -0.1617, 0, -0.40629998, 0.2
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_47hus"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6yssr"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4226a"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gdn4w"]
 _surfaces = [{
@@ -3889,12 +3786,10 @@ data = PackedVector3Array(0.30949998, 0.1705, 0.0311, 0.30949998, 0.1705, 0.2573
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jxela"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v584b"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k83em"]
 _surfaces = [{
@@ -3968,16 +3863,13 @@ data = PackedVector3Array(0.053299997, 0.2598, 0.2862, 0.077199996, 0.1443, 0.41
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ow4yn"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ovlwx"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wfu3g"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_t8gba"]
 _surfaces = [{
@@ -4073,12 +3965,10 @@ data = PackedVector3Array(-0.129, 0.168, 0, -0.099999994, 0, 0, -0.049999997, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qxda0"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ji6o2"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jqcs2"]
 _surfaces = [{
@@ -4154,12 +4044,10 @@ data = PackedVector3Array(0.1087, 0.53819996, -0.18689999, 0.1087, 0.45279998, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hu8nk"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f6q3m"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gbhbr"]
 _surfaces = [{
@@ -4233,12 +4121,10 @@ data = PackedVector3Array(-0.111999996, 0.099999994, -0.19399999, -0.099999994, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lyx42"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p2qi7"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0xgbn"]
 _surfaces = [{
@@ -4314,12 +4200,10 @@ data = PackedVector3Array(0.35959998, 0, -0.1804, 0.3392, 0.0412, -0.1753, 0.354
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7g73c"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ku7fo"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_btx10"]
 _surfaces = [{
@@ -4395,7 +4279,6 @@ data = PackedVector3Array(0.35959998, 0, -0.1804, 0.3392, 0.0412, -0.1753, 0.354
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vvtvy"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_m6ujo"]
 _surfaces = [{
@@ -4447,7 +4330,6 @@ data = PackedVector3Array(0.35959998, 0, -0.1804, 0.3392, 0.0412, -0.1753, 0.354
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q8w6s"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s77r5"]
 _surfaces = [{
@@ -4501,7 +4383,6 @@ data = PackedVector3Array(0, 0.1796, 0, 0.0659, 0, 0, 0, 0, 0.0659, 0.1358, 0.09
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vmoq4"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4kecb"]
 _surfaces = [{
@@ -4555,7 +4436,6 @@ data = PackedVector3Array(0, 0.0523, 0, -0.0928, 0, 0, 0, 0, -0.0928, 0, 0.1557,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0tgbn"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6xi7j"]
 _surfaces = [{
@@ -4609,7 +4489,6 @@ data = PackedVector3Array(0.014699999, 0.1442, 0.15359999, -0.0444, 0.096499994,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhnma"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_mscv6"]
 _surfaces = [{
@@ -4663,7 +4542,6 @@ data = PackedVector3Array(0, 0.20729999, -0.1682, 0, 0, 0, 0.0777, 0.090799995, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy1hh"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fd22g"]
 _surfaces = [{
@@ -4717,7 +4595,6 @@ data = PackedVector3Array(-0.1674, 0.16929999, 0.072, -0.251, 0.0876, 0.036, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qrddv"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qs4pq"]
 _surfaces = [{
@@ -4769,12 +4646,10 @@ data = PackedVector3Array(-0.0624, 0, -0.036, 0, 0, -0.072, 0, 0.062, -0.1081, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fhrte"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i6bu7"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4up8i"]
 _surfaces = [{
@@ -4848,7 +4723,6 @@ data = PackedVector3Array(0, 1.0335, -0.2774, -0.2402, 1.0335, -0.1387, -0.2402,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_idpeu"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_71dme"]
 _surfaces = [{
@@ -4900,7 +4774,6 @@ data = PackedVector3Array(0.063999996, 0.2364, -0.13669999, -0.0641, 0.2364, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vo4te"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_m7cdr"]
 _surfaces = [{
@@ -4952,16 +4825,13 @@ data = PackedVector3Array(0.072, 0.1564, -0.1401, -0.072, 0.1564, -0.1401, 0, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gc1df"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2wps"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bcrxk"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rr1bw"]
 _surfaces = [{
@@ -5057,12 +4927,10 @@ data = PackedVector3Array(0.5, 0, -0.25, 0.5, 0, 0.25, 0.5, 0.049999997, 0.25, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k4x1c"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5rlam"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_150em"]
 _surfaces = [{
@@ -5136,12 +5004,10 @@ data = PackedVector3Array(-0.2532, 0.024999999, -0.2067, -0.2532, 0, -0.2067, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tk7jn"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_acpdu"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vjms1"]
 _surfaces = [{
@@ -5215,16 +5081,13 @@ data = PackedVector3Array(-0.4066, 0.049999997, 0.25, -0.4066, 0, 0.25, -0.5, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ruwyd"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0xgx"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ul173"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sx1x8"]
 _surfaces = [{
@@ -5323,17 +5186,14 @@ data = PackedVector3Array(0.3419, 0, 0.097899996, 0.3419, 0, 0.1892, 0.4209, 0, 
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_20ufl"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lef7s"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ddcn1"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_f67k3"]
 _surfaces = [{
@@ -5435,12 +5295,10 @@ data = PackedVector3Array(-0.37399998, 0, -0.304, -0.47039998, 0, -0.2483, -0.47
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w0whn"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3uoi3"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_q6uvw"]
 _surfaces = [{
@@ -5518,16 +5376,13 @@ data = PackedVector3Array(0.113299996, 0.049999997, 0.4037, 0.0534, 0.024999999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixju3"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4fxec"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xj7q"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5riks"]
 _surfaces = [{
@@ -5625,11 +5480,9 @@ data = PackedVector3Array(0.3419, 0, 0.097899996, 0.3419, 0, 0.1891, 0.4209, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jjgkf"]
 resource_name = "colorTan"
 albedo_color = Color(1, 0.8446831, 0.6910111, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5epwq"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_68vki"]
 _surfaces = [{
@@ -5703,12 +5556,10 @@ data = PackedVector3Array(0.0154, 0.2505, 0.0121, 0.0624, 0.1962, 0.0392, 0.0005
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hkbpi"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_120cc"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yjuiy"]
 _surfaces = [{
@@ -5781,12 +5632,10 @@ data = PackedVector3Array(0, 1.0335, -0.2774, -0.2402, 1.0335, -0.1387, -0.2402,
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38vhm"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3isxb"]
 resource_name = "colorTan"
 albedo_color = Color(1, 0.8446831, 0.6910111, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w2u36"]
 _surfaces = [{
@@ -5861,12 +5710,10 @@ data = PackedVector3Array(0.0178, 0.0436, 0.0374, 0.0178, 0.0436, 0.0945, 0.0401
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4a8t"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_77m0w"]
 resource_name = "colorTan"
 albedo_color = Color(1, 0.8446831, 0.6910111, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ugvej"]
 _surfaces = [{
@@ -5940,11 +5787,9 @@ data = PackedVector3Array(-0.0709, 0.063099995, -0.036399998, -0.0709, 0.0630999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4rki4"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38adf"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1qlul"]
 _surfaces = [{
@@ -6017,12 +5862,10 @@ data = PackedVector3Array(0.0154, 0.2505, 0.0121, 0.0624, 0.1962, 0.0392, 0.0005
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o15vo"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4fo2"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_neqxi"]
 _surfaces = [{
@@ -6097,12 +5940,10 @@ data = PackedVector3Array(0.0178, 0.0436, 0.0374, 0.0178, 0.0436, 0.0945, 0.0401
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j78e5"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cruhm"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pmh1j"]
 _surfaces = [{
@@ -6176,17 +6017,14 @@ data = PackedVector3Array(-0.0349, 0.0984, 0.0349, -0.047, 0, 0.047, -0.047, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3rl8p"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kmbu1"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e55n1"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_dmohm"]
 _surfaces = [{
@@ -6282,12 +6120,10 @@ data = PackedVector3Array(-0.18679999, 0.2827, -0.1986, -0.2093, 0.3038, -0.1915
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0srvw"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1xhsw"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xkc3r"]
 _surfaces = [{
@@ -6361,12 +6197,10 @@ data = PackedVector3Array(-0.19999999, 0.0866, -0.33499998, -0.19999999, 0.0866,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ur46q"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmb2x"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_delhq"]
 _surfaces = [{
@@ -6440,12 +6274,10 @@ data = PackedVector3Array(0.23979999, 0.4155, 0.045199998, 0.1977, 0.41669998, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gr20f"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rrq3b"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7qyv7"]
 _surfaces = [{
@@ -6519,12 +6351,10 @@ data = PackedVector3Array(-0.1092, 0.13059999, -0.1915, -0.086799994, 0.1095, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fot6o"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5nhw3"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2etbp"]
 _surfaces = [{
@@ -6598,12 +6428,10 @@ data = PackedVector3Array(0, 0.02, -0.099999994, 0, 0, -0.099999994, 0.0866, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dcri1"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_401s7"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d72wy"]
 _surfaces = [{
@@ -6677,17 +6505,14 @@ data = PackedVector3Array(0.1951, 0.85679996, 0.114, 0.0083, 0.8491, 0.2228, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tob0k"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jnxyc"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smrdf"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fjdq5"]
 _surfaces = [{
@@ -6785,7 +6610,6 @@ data = PackedVector3Array(0.124699995, 0.02, 0.072, 0.124699995, 0, 0.072, 0, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jx2m"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2g1kv"]
 _surfaces = [{
@@ -6837,22 +6661,18 @@ data = PackedVector3Array(-0.0799, 0.3872, 0.48499998, -0.0799, 0.3872, 0.5, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ap1ne"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7r5mq"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n56qk"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yt2di"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7h8a2"]
 _surfaces = [{
@@ -6970,22 +6790,18 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, -0.5, -0.3924, 0, -0.0762, -0.5
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8dggm"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4prub"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q1ir5"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qxin8"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_p3v1b"]
 _surfaces = [{
@@ -7103,22 +6919,18 @@ data = PackedVector3Array(-0.341, 0, 0.125, -0.341, 0, -0.125, -0.27899998, -0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xqsc3"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvq72"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fkkst"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qw7sk"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tkjyw"]
 _surfaces = [{
@@ -7240,22 +7052,18 @@ data = PackedVector3Array(-0.5, 0, -0.27899998, -0.5, 0, -0.37899998, -0.375, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m1qi5"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5p1dv"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hgfhm"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n414r"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7gf1k"]
 _surfaces = [{
@@ -7373,22 +7181,18 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, 0.37899998, -0.37899998, 0, 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_032ap"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sohrb"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2orq"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6m054"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7n3je"]
 _surfaces = [{
@@ -7506,27 +7310,22 @@ data = PackedVector3Array(-0.5, 0, -0.27899998, -0.5, 0, -0.37899998, -0.375, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vy42f"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwdt2"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_352gv"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nivg4"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18ke7"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_8641f"]
 _surfaces = [{
@@ -7666,7 +7465,6 @@ data = PackedVector3Array(-0.341, 0, 0.125, -0.341, 0, -0.125, -0.27899998, -0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_78myb"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5s0u5"]
 _surfaces = [{
@@ -7718,22 +7516,18 @@ data = PackedVector3Array(-0.217, -0.049999997, 0.5, -0.5, -0.049999997, 0.5, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fakiy"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_285ci"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2wvg"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7cm23"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sb20u"]
 _surfaces = [{
@@ -7851,12 +7645,10 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, -0.5, -0.44099998, 0, 0.125, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1th8c"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ah00"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d4e77"]
 _surfaces = [{
@@ -7930,22 +7722,18 @@ data = PackedVector3Array(0.1951, 0.85679996, 0.114, 0.0083, 0.8491, 0.2228, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_icexc"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e61yi"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1eylo"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i48wy"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gc4kw"]
 _surfaces = [{
@@ -8063,22 +7851,18 @@ data = PackedVector3Array(-0.27899998, 0, 0.375, -0.341, 0, 0.125, -0.27899998, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_87f3y"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pnlhq"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n287x"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcoag"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_uvmtt"]
 _surfaces = [{
@@ -8196,22 +7980,18 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, 0.37899998, -0.37899998, 0, 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tmrlb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2rp00"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_om1ay"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ymqdi"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bdvhj"]
 _surfaces = [{
@@ -8329,22 +8109,18 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, 0.37899998, -0.37899998, 0, 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pvdla"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x1rfn"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmau4"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afcue"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3t6ef"]
 _surfaces = [{
@@ -8462,22 +8238,18 @@ data = PackedVector3Array(-0.1926, -0.049999997, 0.3144, -0.2525, 0, 0.29839998,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omqie"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yx8xx"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nvvx3"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lck3"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_52u1f"]
 _surfaces = [{
@@ -8595,22 +8367,18 @@ data = PackedVector3Array(-0.1926, -0.049999997, 0.3144, -0.2525, 0, 0.29839998,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ifi7"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6quwf"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_awmsu"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f0exs"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0s4yr"]
 _surfaces = [{
@@ -8728,17 +8496,14 @@ data = PackedVector3Array(-0.1926, -0.049999997, 0.3144, -0.2525, 0, 0.29839998,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ojra"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f8q0b"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7my4w"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ti4va"]
 _surfaces = [{
@@ -8834,17 +8599,14 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, -0.5, -0.3412, 0, 0.0274, -0.5,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjhpw"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1h5h"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bkyhe"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kxqkj"]
 _surfaces = [{
@@ -8940,17 +8702,14 @@ data = PackedVector3Array(-0.341, 0, 0.125, -0.341, 0, -0.125, -0.27899998, -0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4vahy"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hmrye"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dktjp"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_8k6ai"]
 _surfaces = [{
@@ -9050,17 +8809,14 @@ data = PackedVector3Array(-0.5, 0, -0.27899998, -0.5, 0, -0.37899998, -0.375, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq6vc"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lu65k"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qd5kj"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5h11b"]
 _surfaces = [{
@@ -9158,12 +8914,10 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, 0.37899998, -0.43949997, 0, 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2x7yv"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eb1fw"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ekbt0"]
 _surfaces = [{
@@ -9237,17 +8991,14 @@ data = PackedVector3Array(0.0997, 1.4264, -0.14739999, -0.1122, 1.4264, -0.14739
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21bu5"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7arkp"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shn3y"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_660oe"]
 _surfaces = [{
@@ -9345,17 +9096,14 @@ data = PackedVector3Array(-0.5, 0, -0.27899998, -0.5, 0, -0.37899998, -0.375, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_imo46"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3y5s8"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iy4tq"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_56kyr"]
 _surfaces = [{
@@ -9453,7 +9201,6 @@ data = PackedVector3Array(-0.341, 0, 0.125, -0.341, 0, -0.125, -0.27899998, -0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mwu6o"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ugn2x"]
 _surfaces = [{
@@ -9505,17 +9252,14 @@ data = PackedVector3Array(-0.217, -0.049999997, 0.5, -0.5, -0.049999997, 0.5, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngscl"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq5ln"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7v7e"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nrqj7"]
 _surfaces = [{
@@ -9611,17 +9355,14 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, -0.5, -0.44099998, 0, 0.125, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0g1u"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j8w43"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m7rsf"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2w74a"]
 _surfaces = [{
@@ -9717,17 +9458,14 @@ data = PackedVector3Array(-0.27899998, 0, 0.375, -0.341, 0, 0.125, -0.27899998, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ik48"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1wfu"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afex5"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sng0e"]
 _surfaces = [{
@@ -9825,17 +9563,14 @@ data = PackedVector3Array(-0.5, 0, 0.37899998, -0.5, 0, 0.27899998, -0.375, 0, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ox4va"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c2bap"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwgk5"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hiomb"]
 _surfaces = [{
@@ -9931,17 +9666,14 @@ data = PackedVector3Array(-0.5, 0, 0.5, -0.5, 0, 0.37899998, -0.43949997, 0, 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_khmn6"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7s7g0"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_epf2l"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jxvju"]
 _surfaces = [{
@@ -10037,17 +9769,14 @@ data = PackedVector3Array(0.217, -0.049999997, 0.5, -0.217, -0.049999997, 0.5, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlow6"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sopoq"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l5u0r"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_y5lu5"]
 _surfaces = [{
@@ -10145,17 +9874,14 @@ data = PackedVector3Array(0.37899998, 0, 0.5, 0.27899998, 0, 0.5, 0.34899998, 0,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_asn63"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1sip7"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rwpw"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_anv07"]
 _surfaces = [{
@@ -10251,12 +9977,10 @@ data = PackedVector3Array(0.37899998, 0, 0.5, 0.27899998, 0, 0.5, 0.3491, 0, 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rbvy0"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2djh6"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s3kcx"]
 _surfaces = [{
@@ -10330,12 +10054,10 @@ data = PackedVector3Array(0.32389998, 0.9533, 0.13, 0.34239998, 0.76479995, 0.16
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_denvo"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elqfi"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_24srw"]
 _surfaces = [{
@@ -10409,7 +10131,6 @@ data = PackedVector3Array(0.0997, 1.4264, -0.14739999, -0.1122, 1.4264, -0.14739
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m5t6p"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hxrfn"]
 _surfaces = [{
@@ -10461,7 +10182,6 @@ data = PackedVector3Array(0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, -0.5, 0, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pjwmh"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_u8ps2"]
 _surfaces = [{
@@ -10515,7 +10235,6 @@ data = PackedVector3Array(-0.0071, 0.067499995, -0.1437, -0.0162, 0, -0.1489, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rp1g5"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a06xk"]
 _surfaces = [{
@@ -10569,7 +10288,6 @@ data = PackedVector3Array(0.081, 0.043199997, 0.023899999, 0.0233, 0.043199997, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0jym3"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lc138"]
 _surfaces = [{
@@ -10623,7 +10341,6 @@ data = PackedVector3Array(0.064399995, 0.0778, 0.113299996, 0.064399995, 0.0778,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04hrb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_siyjp"]
 _surfaces = [{
@@ -10677,16 +10394,13 @@ data = PackedVector3Array(0.1281, 0.032899998, -0.0942, 0.1281, 0, -0.102299996,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbc7w"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ptlm"]
 resource_name = "colorYellow"
 albedo_color = Color(0.9982742, 0.85111415, 0.5642772, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i80sa"]
 resource_name = "colorWhite"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kynby"]
 _surfaces = [{
@@ -10782,12 +10496,10 @@ data = PackedVector3Array(0.0546, 0.0324, 0.0313, 0.0523, 0.055299997, 0.0905, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vdjcx"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u02op"]
 resource_name = "colorYellow"
 albedo_color = Color(0.9982742, 0.85111415, 0.5642772, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yshdy"]
 _surfaces = [{
@@ -10861,12 +10573,10 @@ data = PackedVector3Array(0.009099999, 0, -0.0158, -0.018299999, 0, -0.0316, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ce6n"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a76se"]
 resource_name = "colorYellow"
 albedo_color = Color(0.9982742, 0.85111415, 0.5642772, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rhxnj"]
 _surfaces = [{
@@ -10940,16 +10650,13 @@ data = PackedVector3Array(0.009099999, 0, -0.0158, -0.018299999, 0, -0.0316, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kqcpe"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xq3sn"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbelg"]
 resource_name = "colorWhite"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6ww65"]
 _surfaces = [{
@@ -11045,12 +10752,10 @@ data = PackedVector3Array(0.0546, 0.0324, 0.0313, 0.0523, 0.055299997, 0.0905, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pl5wl"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w76m7"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hnht2"]
 _surfaces = [{
@@ -11124,12 +10829,10 @@ data = PackedVector3Array(0.009099999, 0, -0.0158, -0.018299999, 0, -0.0316, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8dpe"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jdnq3"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_410ax"]
 _surfaces = [{
@@ -11203,12 +10906,10 @@ data = PackedVector3Array(0.0464, 0.099999994, 0.0464, -0.0464, 0.099999994, 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dka4x"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_igu5v"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_e4av0"]
 _surfaces = [{
@@ -11282,16 +10983,13 @@ data = PackedVector3Array(0.009099999, 0, -0.0158, -0.018299999, 0, -0.0316, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o2yjs"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhuyx"]
 resource_name = "colorPurple"
 albedo_color = Color(0.8115152, 0.759381, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xg05i"]
 resource_name = "colorWhite"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1myxt"]
 _surfaces = [{
@@ -11387,12 +11085,10 @@ data = PackedVector3Array(0.0546, 0.0324, 0.0313, 0.0523, 0.055299997, 0.0905, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7djm8"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uwtfx"]
 resource_name = "colorPurple"
 albedo_color = Color(0.8115152, 0.759381, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_b8kvx"]
 _surfaces = [{
@@ -11466,12 +11162,10 @@ data = PackedVector3Array(0.009099999, 0, -0.0158, -0.018299999, 0, -0.0316, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7gof4"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rbtkm"]
 resource_name = "colorPurple"
 albedo_color = Color(0.8115152, 0.759381, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bg5y7"]
 _surfaces = [{
@@ -11545,7 +11239,6 @@ data = PackedVector3Array(0.009099999, 0, -0.0158, -0.018299999, 0, -0.0316, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yxlsq"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d0tju"]
 _surfaces = [{
@@ -11597,7 +11290,6 @@ data = PackedVector3Array(-0.5, 0, -0.5, -0.42999998, 0, -0.5, -0.42999998, 0.15
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v0jsa"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vwqxv"]
 _surfaces = [{
@@ -11649,16 +11341,13 @@ data = PackedVector3Array(0.42999998, 0.305, -0.5, 0.42999998, 0.305, -0.4299999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8gpy"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efbfs"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ditgx"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nrd6m"]
 _surfaces = [{
@@ -11754,12 +11443,10 @@ data = PackedVector3Array(-0.035, 0.124199994, -0.0167, -0.44829997, 0.124199994
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3qt0x"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4mn0"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4o50l"]
 _surfaces = [{
@@ -11833,12 +11520,10 @@ data = PackedVector3Array(0.5, 0.345, 0.5, 0.42999998, 0.345, 0.5, 0.42999998, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v85ly"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d4bys"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lqpkr"]
 _surfaces = [{
@@ -11912,12 +11597,10 @@ data = PackedVector3Array(0.5, 0, -0.5, 0.42999998, 0, -0.5, 0.42999998, 0, -0.4
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13u04"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26efs"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xak8v"]
 _surfaces = [{
@@ -11991,12 +11674,10 @@ data = PackedVector3Array(0.42999998, 0.2208, -0.478, -0.42999998, 0.2208, -0.47
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_854kl"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bxydm"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_havoo"]
 _surfaces = [{
@@ -12070,7 +11751,6 @@ data = PackedVector3Array(0.0464, 0, -0.0464, -0.0464, 0, -0.0464, -0.0464, 0, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tkqa7"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_541u6"]
 _surfaces = [{
@@ -12122,7 +11802,6 @@ data = PackedVector3Array(-0.5, 0.2208, -0.5, -0.5, 0.124199994, -0.5, -0.4231, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tkdu2"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gtrdp"]
 _surfaces = [{
@@ -12174,12 +11853,10 @@ data = PackedVector3Array(0.5, 0.2208, -0.5259, 0.5, 0.2208, -0.5, 0.5, 0.2829, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8kwuw"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_he1dl"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_j0eml"]
 _surfaces = [{
@@ -12253,12 +11930,10 @@ data = PackedVector3Array(0.5, 0, -0.5, 0.42999998, 0, -0.5, 0.42999998, 0, -0.4
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32n62"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_50lb2"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ifglg"]
 _surfaces = [{
@@ -12332,16 +12007,13 @@ data = PackedVector3Array(0.452, 0.2829, -0.42999998, 0.452, 0.2829, 0.42999998,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qlvhp"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wkitm"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4gv1"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pho7w"]
 _surfaces = [{
@@ -12437,12 +12109,10 @@ data = PackedVector3Array(-0.2017, 0.124199994, -0.422, -0.2017, 0.062099997, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32cgk"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q32mx"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gg5c5"]
 _surfaces = [{
@@ -12516,12 +12186,10 @@ data = PackedVector3Array(-0.0925, 0.124199994, -0.3849, -0.0925, 0.062099997, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e64n3"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qqtmm"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d6thd"]
 _surfaces = [{
@@ -12597,12 +12265,10 @@ data = PackedVector3Array(-0.0111, 0.3444, 0.0111, -0.073199995, 0.436, 0.0221, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qyihp"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ovn3"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tllm7"]
 _surfaces = [{
@@ -12676,17 +12342,14 @@ data = PackedVector3Array(0.1995, 0.1995, 0, 0.2206, 0.1995, 0.0698, 0.133, 0.26
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4d4ow"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w5wvc"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ou78"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k028o"]
 _surfaces = [{
@@ -12784,12 +12447,10 @@ data = PackedVector3Array(-0.20879999, 0.087, 0, -0.18079999, 0.087, 0.0484, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dr18j"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_novv8"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ovblt"]
 _surfaces = [{
@@ -12865,12 +12526,10 @@ data = PackedVector3Array(0.1716, 0.4161, 0.0111, 0.1206, 0.42, 0.0332, 0.1206, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfsgp"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ur5s5"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xgga5"]
 _surfaces = [{
@@ -12944,11 +12603,9 @@ data = PackedVector3Array(-0.15349999, 0.3315, -0.15349999, -0.15349999, 0.3315,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4p1ac"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g7kc5"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0hcet"]
 _surfaces = [{
@@ -13024,7 +12681,6 @@ data = PackedVector3Array(0.1388, 0.43469998, -0.0525, 0.1337, 0, -0.049, 0.139,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phvbm"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_eselb"]
 _surfaces = [{
@@ -13078,7 +12734,6 @@ data = PackedVector3Array(0.1388, 0.2347, -0.0525, 0.1337, 0, -0.049, 0.139, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vt74k"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_plaif"]
 _surfaces = [{
@@ -13130,7 +12785,6 @@ data = PackedVector3Array(0.0411, 0.3953, -0.0557, -0.0411, 0.3953, -0.0557, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32vkg"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xfus2"]
 _surfaces = [{
@@ -13182,12 +12836,10 @@ data = PackedVector3Array(0.0411, 0.1953, -0.0557, -0.0411, 0.1953, -0.0557, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8pteh"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i2jey"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_i1v4k"]
 _surfaces = [{
@@ -13263,12 +12915,10 @@ data = PackedVector3Array(0.049999997, 0.099999994, 0.0866, 0.066, 0.049999997, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ipsy8"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ptmy3"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fo80j"]
 _surfaces = [{
@@ -13342,12 +12992,10 @@ data = PackedVector3Array(0.375, 0.049999997, -0.217, 0.125, 0.049999997, -0.155
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vlro7"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0mfqd"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_n5u04"]
 _surfaces = [{
@@ -13421,12 +13069,10 @@ data = PackedVector3Array(0.217, 0.049999997, 0.5, 0.1209, 0.049999997, 0.1415, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_51ojn"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k24qb"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_b53jj"]
 _surfaces = [{
@@ -13500,12 +13146,10 @@ data = PackedVector3Array(0.125, 0.049999997, -0.155, -0.125, 0.049999997, -0.15
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eu4ks"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cdy7j"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5ytv4"]
 _surfaces = [{
@@ -13579,12 +13223,10 @@ data = PackedVector3Array(0.375, 0, 0.4353, 0.125, 0, 0.5, 0.125, 0.049999997, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5301c"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m2bl8"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0lk5g"]
 _surfaces = [{
@@ -13660,12 +13302,10 @@ data = PackedVector3Array(-0.5, 0.049999997, 0.3707, -0.5, 0, 0.4353, -0.5, 0, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axh3x"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uu1bx"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_57dy7"]
 _surfaces = [{
@@ -13739,12 +13379,10 @@ data = PackedVector3Array(0.0625, 1.1230999, 0, -0.167, 0.5563, -0.132, 0.132, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_86g7r"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rcw38"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_o3amf"]
 _surfaces = [{
@@ -13818,7 +13456,6 @@ data = PackedVector3Array(-0.375, 0.049999997, 0.1266, -0.5, 0.049999997, 0.1266
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7dxm"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nqj1g"]
 _surfaces = [{
@@ -13870,7 +13507,6 @@ data = PackedVector3Array(-0.0435, 0.8588, 0.0321, -0.0863, 0.905, 0.043199997, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7yct"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qlenf"]
 _surfaces = [{
@@ -13922,7 +13558,6 @@ data = PackedVector3Array(-0.0435, 0.8588, 0.0321, -0.0863, 0.905, 0.043199997, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e1eye"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fsauu"]
 _surfaces = [{
@@ -13974,7 +13609,6 @@ data = PackedVector3Array(0.024999999, 0.5, -0.024999999, 0.024999999, 0.5, 0.02
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_68jg2"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1761v"]
 _surfaces = [{
@@ -14026,7 +13660,6 @@ data = PackedVector3Array(0.037499998, 0, -0.037499998, 0.037499998, 0, 0.037499
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7ssa"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_de0uy"]
 _surfaces = [{
@@ -14078,7 +13711,6 @@ data = PackedVector3Array(-0.0888, 0, 0.1052, -0.108799994, 0, 0.1398, -0.108799
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yipjv"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vd4ag"]
 _surfaces = [{
@@ -14132,12 +13764,10 @@ data = PackedVector3Array(-0.0888, 0, 0.1052, -0.108799994, 0, 0.1398, -0.108799
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwryg"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mp2g3"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k2p0x"]
 _surfaces = [{
@@ -14211,16 +13841,13 @@ data = PackedVector3Array(0.5, 1, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hodks"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hf17"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4dfov"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fr6xk"]
 _surfaces = [{
@@ -14316,31 +13943,25 @@ data = PackedVector3Array(0.5, 1, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4p64x"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57l1f"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rbxrr"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r23al"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hkb6d"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyu07"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ey45k"]
 _surfaces = [{
@@ -14502,12 +14123,10 @@ data = PackedVector3Array(-0.217, 0.95, 0.5, -0.23349999, 0.95, 0.43289998, 0.23
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nw71s"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r8ueu"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4ahs4"]
 _surfaces = [{
@@ -14581,26 +14200,21 @@ data = PackedVector3Array(0.096499994, 0.50049996, -0.1528, -0.115399994, 0.5004
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a3sww"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kprjh"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vlit"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6fali"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2xgfb"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w0avc"]
 _surfaces = [{
@@ -14740,12 +14354,10 @@ data = PackedVector3Array(-0.217, 0.95, 0.5, -0.23349999, 0.95, 0.43289998, 0.23
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oadij"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bm5vf"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rk06h"]
 _surfaces = [{
@@ -14819,12 +14431,10 @@ data = PackedVector3Array(-0.3333, 1, 0.39999998, -0.3333, 0.9, 0.29999998, -0.2
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhnto"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_np3ll"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0w6ou"]
 _surfaces = [{
@@ -14898,12 +14508,10 @@ data = PackedVector3Array(-0.3333, 1, 0.39999998, -0.3333, 0.9, 0.29999998, -0.2
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ry6xx"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1mqfm"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bx0bi"]
 _surfaces = [{
@@ -14977,12 +14585,10 @@ data = PackedVector3Array(0.7685, 0.9, 0.5, 0.6685, 1, 0.5, 0.6191, 1, 0.3807999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_61i1x"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sk0rb"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g1dtu"]
 _surfaces = [{
@@ -15056,7 +14662,6 @@ data = PackedVector3Array(0.7685, 0.9, 0.5, 0.6685, 1, 0.5, 0.6191, 1, 0.3807999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60jim"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xw4r7"]
 _surfaces = [{
@@ -15108,12 +14713,10 @@ data = PackedVector3Array(0.3333, 1, 0.39999998, 0.3333, 0, 0.39999998, 0.5, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a7mux"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_42r0f"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ttk4a"]
 _surfaces = [{
@@ -15187,12 +14790,10 @@ data = PackedVector3Array(-0.3333, 0.19999999, -0.2315, -0.16669999, 0.19999999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g62pd"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ffht"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ntb43"]
 _surfaces = [{
@@ -15266,12 +14867,10 @@ data = PackedVector3Array(-0.3333, 0.19999999, -0.2315, -0.16669999, 0.19999999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lax1d"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_av386"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4f0mf"]
 _surfaces = [{
@@ -15347,12 +14946,10 @@ data = PackedVector3Array(0, 0, -0.4315, 0.16669999, 0, -0.5, 0.16669999, 0.1999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_unbse"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mgewa"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_25jid"]
 _surfaces = [{
@@ -15428,12 +15025,10 @@ data = PackedVector3Array(0, 0, -0.4315, 0.16669999, 0, -0.5, 0.16669999, 0.1999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ltgkn"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wpgn7"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_u235i"]
 _surfaces = [{
@@ -15507,12 +15102,10 @@ data = PackedVector3Array(0.25, 0.19999999, 0.14999999, 0.14999999, 0.19999999, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lus3w"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h7ipq"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_j1u8t"]
 _surfaces = [{
@@ -15588,12 +15181,10 @@ data = PackedVector3Array(0.3333, 0.39999998, -0.0315, 0.5, 0.39999998, -0.09999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qgr7c"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vaplv"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yv4dd"]
 _surfaces = [{
@@ -15669,7 +15260,6 @@ data = PackedVector3Array(0.3333, 0.39999998, -0.0315, 0.5, 0.39999998, -0.09999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_al5h8"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tjqpa"]
 _surfaces = [{
@@ -15721,7 +15311,6 @@ data = PackedVector3Array(0.3333, 1, 0.39999998, 0.3333, 0, 0.39999998, 0.5, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vrjjo"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_aqmp4"]
 _surfaces = [{
@@ -15773,7 +15362,6 @@ data = PackedVector3Array(0.3333, 1, 0.14999999, 0.3333, 0, 0.14999999, 0.5, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_01ch1"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_md51n"]
 _surfaces = [{
@@ -15825,12 +15413,10 @@ data = PackedVector3Array(0.3333, 1, 0.14999999, 0.3333, 0, 0.14999999, 0.5, 0, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bppld"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cvwii"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_aly5d"]
 _surfaces = [{
@@ -15904,12 +15490,10 @@ data = PackedVector3Array(-0.16669999, 0.5, 0.3315, -0.16669999, 0, 0.0815, 0, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gsysk"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qo4v7"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w2clk"]
 _surfaces = [{
@@ -15983,12 +15567,10 @@ data = PackedVector3Array(-0.16669999, 0.5, 0.3315, -0.16669999, 0, 0.0815, 0, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_783vd"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g01me"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nvt4s"]
 _surfaces = [{
@@ -16062,12 +15644,10 @@ data = PackedVector3Array(-0.3315, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.3315, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_conmh"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1s3er"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2h4qa"]
 _surfaces = [{
@@ -16141,16 +15721,13 @@ data = PackedVector3Array(-0.3315, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.3315, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6kvxf"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjb8l"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8pli7"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nt13i"]
 _surfaces = [{
@@ -16246,12 +15823,10 @@ data = PackedVector3Array(-0.0815, 0, -0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_42qkb"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2y0j"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_beut5"]
 _surfaces = [{
@@ -16325,16 +15900,13 @@ data = PackedVector3Array(0, 1.2544999, 0.0056999996, 0, 0.9866, -0.0773, 0.0523
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_up538"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8d1n"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_huijd"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_r217p"]
 _surfaces = [{
@@ -16430,7 +16002,6 @@ data = PackedVector3Array(-0.0815, 0, -0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_od60w"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g02dm"]
 _surfaces = [{
@@ -16482,7 +16053,6 @@ data = PackedVector3Array(-0.3809, 0, -0.6191, -0.5, 0, -0.6685, -0.5, 0, -0.5, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0iuqj"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hisxb"]
 _surfaces = [{
@@ -16534,7 +16104,6 @@ data = PackedVector3Array(-0.3809, 0, -0.6191, -0.5, 0, -0.6685, -0.5, 0, -0.5, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhb0x"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_50fij"]
 _surfaces = [{
@@ -16586,7 +16155,6 @@ data = PackedVector3Array(-0.37359998, 0, 0.37359998, -0.3315, 0, 0.5, -0.3315, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_73n5s"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0pjq0"]
 _surfaces = [{
@@ -16638,12 +16206,10 @@ data = PackedVector3Array(-0.37359998, 0, 0.37359998, -0.3315, 0, 0.5, -0.3315, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ymd5"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2045m"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_66pef"]
 _surfaces = [{
@@ -16717,12 +16283,10 @@ data = PackedVector3Array(-0.37359998, 0, 0.37359998, -0.3315, 0, 0.5, -0.3315, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iu6yb"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n2upg"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7dqqq"]
 _surfaces = [{
@@ -16796,7 +16360,6 @@ data = PackedVector3Array(-0.37359998, 0, 0.37359998, -0.3315, 0, 0.5, -0.3315, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fjomr"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0i7cg"]
 _surfaces = [{
@@ -16848,7 +16411,6 @@ data = PackedVector3Array(-0.18609999, 0, 0.18609999, -0.0815, 0, 0.5, -0.0815, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28c8i"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_e40ii"]
 _surfaces = [{
@@ -16900,7 +16462,6 @@ data = PackedVector3Array(-0.18609999, 0, 0.18609999, -0.0815, 0, 0.5, -0.0815, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8iaek"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ifl61"]
 _surfaces = [{
@@ -16952,12 +16513,10 @@ data = PackedVector3Array(-0.39999998, 0, 0, -0.3315, 0, 0.16669999, -0.3315, 1,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r54ju"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5skfg"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g1212"]
 _surfaces = [{
@@ -17031,7 +16590,6 @@ data = PackedVector3Array(0.266, 0.25239998, 0, 0.18879999, 0.40109998, 0, 0.133
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ijf1"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xvkva"]
 _surfaces = [{
@@ -17083,12 +16641,10 @@ data = PackedVector3Array(-0.39999998, 0, 0, -0.3315, 0, 0.16669999, -0.3315, 1,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mslp4"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b461c"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_expcm"]
 _surfaces = [{
@@ -17162,12 +16718,10 @@ data = PackedVector3Array(0.16669999, 1, 0.3315, 0.16669999, 0, 0.3315, 0.3333, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbw1y"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0pby"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3etbe"]
 _surfaces = [{
@@ -17241,7 +16795,6 @@ data = PackedVector3Array(0.16669999, 1, 0.3315, 0.16669999, 0, 0.3315, 0.3333, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h7ltp"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qdvok"]
 _surfaces = [{
@@ -17293,7 +16846,6 @@ data = PackedVector3Array(-0.0815, 0, -0.16669999, -0.14999999, 0, 0, -0.1499999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krab2"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0xy2m"]
 _surfaces = [{
@@ -17345,7 +16897,6 @@ data = PackedVector3Array(-0.0815, 0, -0.16669999, -0.14999999, 0, 0, -0.1499999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ummf2"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_grgrv"]
 _surfaces = [{
@@ -17397,7 +16948,6 @@ data = PackedVector3Array(0.5, 0, 0.3315, 0.5, 0, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.5,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8v0ln"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_uylyb"]
 _surfaces = [{
@@ -17449,12 +16999,10 @@ data = PackedVector3Array(0.5, 0, 0.3315, 0.5, 0, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.5,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7usgb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63ycl"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_m7r40"]
 _surfaces = [{
@@ -17528,12 +17076,10 @@ data = PackedVector3Array(0.5, 1, 0.5, -0.5, 1, 0.5, -0.5, 1, -0.5, -0.5, 1, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d04ji"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kxlc6"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2nfrd"]
 _surfaces = [{
@@ -17607,12 +17153,10 @@ data = PackedVector3Array(0.5, 1, 0.5, -0.5, 1, 0.5, -0.5, 1, -0.5, -0.5, 1, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_txkfo"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4folb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_63iiq"]
 _surfaces = [{
@@ -17686,12 +17230,10 @@ data = PackedVector3Array(0.5, 0, 0.16669999, 0.4315, 0, 0.3333, 0.4315, 0.8333,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3f3fb"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3p0v7"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fllt7"]
 _surfaces = [{
@@ -17765,12 +17307,10 @@ data = PackedVector3Array(0.197, 0.3703, -0.103, 0.197, 0.37739998, 0.124299996,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jxafd"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xor8i"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5b6xp"]
 _surfaces = [{
@@ -17844,12 +17384,10 @@ data = PackedVector3Array(0.5, 0, 0.16669999, 0.4315, 0, 0.3333, 0.4315, 0.8333,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c66a4"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hmrcp"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_x4x70"]
 _surfaces = [{
@@ -17923,12 +17461,10 @@ data = PackedVector3Array(0.3315, 1, -0.5, 0.3315, 0, -0.5, 0.5, 0, -0.5, 0.5, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aufsl"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rva8p"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_r0nhe"]
 _surfaces = [{
@@ -18002,12 +17538,10 @@ data = PackedVector3Array(0.3315, 1, -0.5, 0.3315, 0, -0.5, 0.5, 0, -0.5, 0.5, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjr0i"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qodr5"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tyr1q"]
 _surfaces = [{
@@ -18081,12 +17615,10 @@ data = PackedVector3Array(0.0815, 0, -0.5, 0.5, 0, -0.5, 0.5, 0.5, -0.5, 0.5, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_immae"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1qclb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gnabo"]
 _surfaces = [{
@@ -18160,12 +17692,10 @@ data = PackedVector3Array(0.0815, 0, -0.5, 0.5, 0, -0.5, 0.5, 0.5, -0.5, 0.5, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yovwu"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54kl7"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_iamg7"]
 _surfaces = [{
@@ -18239,12 +17769,10 @@ data = PackedVector3Array(0.5, 0.25, 0.5, -0.5, 0.25, 0.5, -0.5, 0.25, -0.5, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqbwm"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_co5pl"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_uhrlc"]
 _surfaces = [{
@@ -18318,12 +17846,10 @@ data = PackedVector3Array(0.5, 0.25, 0.5, -0.5, 0.25, 0.5, -0.5, 0.25, -0.5, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vnxmi"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uifge"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ylk33"]
 _surfaces = [{
@@ -18397,12 +17923,10 @@ data = PackedVector3Array(0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xxsar"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j03iv"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_exf02"]
 _surfaces = [{
@@ -18476,12 +18000,10 @@ data = PackedVector3Array(0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_djyro"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyjab"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0f6wr"]
 _surfaces = [{
@@ -18555,12 +18077,10 @@ data = PackedVector3Array(0.5, 1, 0.5, -0.5, 1, 0.5, -0.5, 1, -0.5, -0.5, 1, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1sjxb"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lxkk8"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tk8m2"]
 _surfaces = [{
@@ -18634,12 +18154,10 @@ data = PackedVector3Array(0, 0.66389996, 0.2307, 0, 0.3374, 0.1399, -0.12109999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hwusp"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_33ffc"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ie7ny"]
 _surfaces = [{
@@ -18713,12 +18231,10 @@ data = PackedVector3Array(-0.1506, 0.4134, -0.086899996, -0.2402, 0.19999999, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pneob"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftjyl"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_y4gdu"]
 _surfaces = [{
@@ -18792,12 +18308,10 @@ data = PackedVector3Array(0.5, 1, 0.5, -0.5, 1, 0.5, -0.5, 1, -0.5, -0.5, 1, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8lyyv"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x2ur8"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7uue2"]
 _surfaces = [{
@@ -18871,12 +18385,10 @@ data = PackedVector3Array(0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2bjju"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_62k54"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1fek7"]
 _surfaces = [{
@@ -18950,7 +18462,6 @@ data = PackedVector3Array(0.15869999, 0.798, -0.049999997, 0.0462, 0.798, 0.3999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ve12c"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ngi6k"]
 _surfaces = [{
@@ -19002,12 +18513,10 @@ data = PackedVector3Array(0.0157, 0.0255, 0.061199997, -0.0157, 0.0255, 0.061199
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ryn2"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_481pp"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_dnubc"]
 _surfaces = [{
@@ -19081,7 +18590,6 @@ data = PackedVector3Array(0.0451, 0.18249999, -0.48569998, 0, 0, -0.47149998, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ujfoo"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jkqd2"]
 _surfaces = [{
@@ -19133,7 +18641,6 @@ data = PackedVector3Array(0.1883, 0, 0.1674, 0.1898, 0, 0.1727, 0.1366, 0.063099
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_saln7"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fv24k"]
 _surfaces = [{
@@ -19185,12 +18692,10 @@ data = PackedVector3Array(0.145, 0.03, -0.099, 0.145, 0, -0.099, 0.081, 0, -0.03
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iibgf"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yajim"]
 resource_name = "woodDark"
 albedo_color = Color(0.8904402, 0.6853807, 0.5785821, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2u1pf"]
 _surfaces = [{
@@ -19264,7 +18769,6 @@ data = PackedVector3Array(0.1459, 0, 0.0814, 0.0814, 0, 0.1459, 0.0814, 0.0376, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_henbu"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_8f1lu"]
 _surfaces = [{
@@ -19316,7 +18820,6 @@ data = PackedVector3Array(0.1566, 0, 0.077599995, 0.20539999, 0, 0.1264, 0.20539
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_epvyr"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1x3v4"]
 _surfaces = [{
@@ -19368,16 +18871,13 @@ data = PackedVector3Array(-0.0278, 0.75, -0.0481, -0.055499997, 0.7, -0.09609999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f8yyq"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_413t8"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhl4d"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0cfjn"]
 _surfaces = [{
@@ -19477,7 +18977,6 @@ data = PackedVector3Array(0.0561, 0.0491, 0.0667, 0.042999998, 0.1716, 0.0536, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iupup"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ydcs4"]
 _surfaces = [{
@@ -19529,22 +19028,18 @@ data = PackedVector3Array(0.040999997, 0, 0.070999995, 0.049599998, 0.49199998, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oi6nr"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ld66a"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uck61"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45e1t"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w318o"]
 _surfaces = [{
@@ -19664,22 +19159,18 @@ data = PackedVector3Array(0.38, 0.35, 0.28, 0.38, 0.35, 0.42, 0.39999998, 0.35, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q6q8j"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lm4vx"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7npfm"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4hcw3"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_c1rdf"]
 _surfaces = [{
@@ -19799,17 +19290,14 @@ data = PackedVector3Array(0.38, 0.39999998, 0.38, 0.38, 0.39999998, 0.52, 0.3999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ce6a5"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ot8ew"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4pwop"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_im40j"]
 _surfaces = [{
@@ -19909,17 +19397,14 @@ data = PackedVector3Array(0.39999998, 0.14999999, 0.35, -0.39999998, 0.14999999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xc2hx"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8hlj"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_suajx"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sdryo"]
 _surfaces = [{
@@ -20019,12 +19504,10 @@ data = PackedVector3Array(0.39999998, 0.14999999, 0.45, -0.39999998, 0.14999999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ujj5t"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tu3lh"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1xgnl"]
 _surfaces = [{
@@ -20100,12 +19583,10 @@ data = PackedVector3Array(0.5, 0.099999994, -0.29999998, 0.5, 0.049999997, -0.29
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ejwh8"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s40o8"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rg23i"]
 _surfaces = [{
@@ -20181,12 +19662,10 @@ data = PackedVector3Array(0.5, 0.099999994, -0.39999998, 0.5, 0.049999997, -0.39
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jnydr"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtuql"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g2by1"]
 _surfaces = [{
@@ -20262,12 +19741,10 @@ data = PackedVector3Array(0.39999998, 0.14999999, 0.35, 0.39999998, 0, 0.35, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7v1nn"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pltpw"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_odw7s"]
 _surfaces = [{
@@ -20343,22 +19820,18 @@ data = PackedVector3Array(0.39999998, 0.14999999, 0.45, 0.39999998, 0, 0.45, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oye7g"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xu8v1"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j25if"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6gbk3"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rfj75"]
 _surfaces = [{
@@ -20478,12 +19951,10 @@ data = PackedVector3Array(-0.5, 0.39999998, 0.39999998, -0.5, 0.39999998, 0.5, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_flbbp"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_me2qy"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qu5sg"]
 _surfaces = [{
@@ -20561,17 +20032,14 @@ data = PackedVector3Array(-0.0323, 0.649, -0.0323, -0.0336, 0.566, -0.0336, 0.03
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ygue"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1udka"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phpt3"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_t4v7q"]
 _surfaces = [{
@@ -20671,12 +20139,10 @@ data = PackedVector3Array(-0.39999998, 0.29999998, 0.5, -0.39999998, 0.29999998,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tqofo"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqx3b"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1xjrb"]
 _surfaces = [{
@@ -20752,12 +20218,10 @@ data = PackedVector3Array(0.5, 0.35, -0.39999998, -0.39999998, 0.35, -0.39999998
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sjxxj"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vh0jq"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_315ri"]
 _surfaces = [{
@@ -20833,22 +20297,18 @@ data = PackedVector3Array(-0.5, 0.35, 0.39999998, -0.5, 0.35, 0.5, -0.5, 0, 0.5,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wby7b"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gfmh5"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wn0ij"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vkqkk"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_igovd"]
 _surfaces = [{
@@ -20966,17 +20426,14 @@ data = PackedVector3Array(0.5, 0.14999999, 0.45, 0.5, 0.25, 0.45, 0.5, 0.1999999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ut7lg"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_31fyt"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8vqmn"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ipdp8"]
 _surfaces = [{
@@ -21072,12 +20529,10 @@ data = PackedVector3Array(-0.5, 0.14999999, -0.45, 0.5, 0.14999999, -0.45, 0.5, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bj8hm"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kfk6"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ulrcv"]
 _surfaces = [{
@@ -21151,12 +20606,10 @@ data = PackedVector3Array(0.5, 0.35, -0.39999998, 0.5, 0.275, -0.39999998, -0.5,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2a66w"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gft0b"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fqlow"]
 _surfaces = [{
@@ -21230,16 +20683,13 @@ data = PackedVector3Array(0.5, 0.29999998, -0.39999998, 0.5, 0.19999999, -0.3999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cifon"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2hhrx"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ac5tp"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qur71"]
 _surfaces = [{
@@ -21335,17 +20785,14 @@ data = PackedVector3Array(-0.1601, 0.0276, -0.3288, -0.1601, 0, -0.3288, -0.1121
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2rjbl"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kkxtf"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvw77"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qg6dw"]
 _surfaces = [{
@@ -21443,7 +20890,6 @@ data = PackedVector3Array(-0.102, 0.2737, 0.19319999, -0.1121, 0.2368, 0.1871, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jmqwt"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ybsau"]
 _surfaces = [{
@@ -21495,7 +20941,6 @@ data = PackedVector3Array(0.1296, 0.4226, -0.0937, 0.1296, 0.4089, 0.0734, 0.092
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rs1er"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_x4lvs"]
 _surfaces = [{
@@ -21547,12 +20992,10 @@ data = PackedVector3Array(-0.0841, 0.6105, -0.0486, -0.1451, 0.3802, -0.08379999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s5nvc"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuj58"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hsuuf"]
 _surfaces = [{
@@ -21626,12 +21069,10 @@ data = PackedVector3Array(-0.0824, 0.4633, -0.0131, -0.0824, 0.4633, 0.0101, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w3jq3"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4k3vp"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6vy0w"]
 _surfaces = [{
@@ -21705,12 +21146,10 @@ data = PackedVector3Array(0, 1.5458, 0, -0.0523, 1.2752, -0.0523, 0, 1.2752, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q3wfd"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7nshp"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_se2qg"]
 _surfaces = [{
@@ -21784,12 +21223,10 @@ data = PackedVector3Array(0.5172, 1.1618999, -0.0559, 0.5172, 1.1618999, 0.0414,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6np3x"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy27h"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jwikq"]
 _surfaces = [{
@@ -21863,7 +21300,6 @@ data = PackedVector3Array(0.081, 1.0562, -0.129, -0.081099994, 1.0562, -0.129, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hx5b"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5vnwe"]
 _surfaces = [{
@@ -21915,12 +21351,10 @@ data = PackedVector3Array(0.0729, 0, -0.0729, -0.0729, 0, -0.0729, -0.0729, 0, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dqmar"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cscpv"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_he73f"]
 _surfaces = [{
@@ -21994,7 +21428,6 @@ data = PackedVector3Array(0, 0.66389996, 0.2307, 0, 0.3374, 0.1399, -0.12109999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_glia7"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sdu8t"]
 _surfaces = [{
@@ -22046,12 +21479,10 @@ data = PackedVector3Array(-0.084699996, 0.050699998, -0.084699996, -0.084699996,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ps3jr"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2oha"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_530bw"]
 _surfaces = [{
@@ -22127,12 +21558,10 @@ data = PackedVector3Array(0.081, 1.2795, 0.40579998, 0.058399998, 1.1345, 0.5064
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7be2p"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jyyve"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_uhsxs"]
 _surfaces = [{
@@ -22208,12 +21637,10 @@ data = PackedVector3Array(-0.053799998, 0.060399998, -0.053799998, -0.031, 0, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k7g1f"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wq5fm"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lm2fs"]
 _surfaces = [{
@@ -22287,12 +21714,10 @@ data = PackedVector3Array(0, 1.1126, 0.3143, -0.2722, 1.1126, 0.1572, -0.1361, 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yltsm"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a8562"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pk5wm"]
 _surfaces = [{
@@ -22366,12 +21791,10 @@ data = PackedVector3Array(0, 1.1126, 0.3143, -0.2722, 1.1126, 0.1572, -0.1361, 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhqvi"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_edq84"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k5ekh"]
 _surfaces = [{
@@ -22445,12 +21868,10 @@ data = PackedVector3Array(0, 1.1126, 0.3143, -0.2722, 1.1126, 0.1572, -0.1361, 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ndkn"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qd4ku"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_8mx71"]
 _surfaces = [{
@@ -22524,12 +21945,10 @@ data = PackedVector3Array(-0.1453, 0.9429, 0.25169998, -0.18879999, 0.3979, 0.32
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qgvgj"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t5ly1"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_n7swt"]
 _surfaces = [{
@@ -22603,12 +22022,10 @@ data = PackedVector3Array(-0.1453, 0.9429, 0.25169998, -0.18879999, 0.3979, 0.32
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oxqtk"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3fge8"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_mky65"]
 _surfaces = [{
@@ -22682,16 +22099,13 @@ data = PackedVector3Array(-0.1453, 0.9429, 0.25169998, -0.18879999, 0.3979, 0.32
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vhwe0"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ln8e7"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pnqbb"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fqqon"]
 _surfaces = [{
@@ -22787,12 +22201,10 @@ data = PackedVector3Array(0.060399998, 0.61899996, -0.2254, -0.060399998, 0.6189
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gkb1m"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1a3mp"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_i4k1o"]
 _surfaces = [{
@@ -22866,16 +22278,13 @@ data = PackedVector3Array(0, 0.66389996, 0.2307, 0, 0.3374, 0.1399, -0.12109999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqp0w"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xlycf"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57fe8"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_egxhe"]
 _surfaces = [{
@@ -22971,16 +22380,13 @@ data = PackedVector3Array(0.060399998, 0.61899996, -0.2254, -0.060399998, 0.6189
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_heju3"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ataxb"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xnog6"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_j3c5h"]
 _surfaces = [{
@@ -23076,12 +22482,10 @@ data = PackedVector3Array(0.060399998, 0.61899996, -0.2254, -0.060399998, 0.6189
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mpj08"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cwmvq"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a6fr3"]
 _surfaces = [{
@@ -23155,12 +22559,10 @@ data = PackedVector3Array(-0.021699999, 0.5466, -0.13669999, -0.029399998, 0.536
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xmln"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqajk"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g1yll"]
 _surfaces = [{
@@ -23234,12 +22636,10 @@ data = PackedVector3Array(-0.021699999, 0.5467, -0.13669999, -0.029399998, 0.536
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nw0w1"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwoc6"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k21rm"]
 _surfaces = [{
@@ -23313,12 +22713,10 @@ data = PackedVector3Array(-0.021699999, 0.5467, -0.13669999, -0.029399998, 0.536
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eh7ox"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q4bi"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_336al"]
 _surfaces = [{
@@ -23392,12 +22790,10 @@ data = PackedVector3Array(-0.0488, 0.0918, -0.0488, -0.074999996, 0, -0.07499999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aoxsp"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_onsht"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_87nvu"]
 _surfaces = [{
@@ -23471,12 +22867,10 @@ data = PackedVector3Array(-0.0488, 0.0918, -0.0488, -0.074999996, 0, -0.07499999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4p8gc"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rtigx"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1hoq0"]
 _surfaces = [{
@@ -23550,12 +22944,10 @@ data = PackedVector3Array(-0.0488, 0.0918, -0.0488, -0.074999996, 0, -0.07499999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wrq5y"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jg87r"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2irv2"]
 _surfaces = [{
@@ -23629,12 +23021,10 @@ data = PackedVector3Array(-0.044999998, 0.585, -0.044999998, -0.044999998, 0.585
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dqxbl"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w6lru"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bmru0"]
 _surfaces = [{
@@ -23708,12 +23098,10 @@ data = PackedVector3Array(-0.044999998, 0.585, -0.044999998, -0.044999998, 0.585
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpb58"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5xy1"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_guj83"]
 _surfaces = [{
@@ -23787,12 +23175,10 @@ data = PackedVector3Array(-0.0257, 0.28579998, -0.0257, -0.0405, 0, -0.0405, 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cd2rj"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n2p6o"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5wahm"]
 _surfaces = [{
@@ -23866,17 +23252,14 @@ data = PackedVector3Array(-0.044999998, 0.585, -0.044999998, -0.044999998, 0.585
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25gri"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_snhqc"]
 resource_name = "colorRedDark"
 albedo_color = Color(0.8843835, 0.49753287, 0.5183006, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2c6u"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0kf1b"]
 _surfaces = [{
@@ -23976,21 +23359,17 @@ data = PackedVector3Array(-0.1692, 0.26639998, -0.0416, -0.1572, 0.2843, 0.0898,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7c2rh"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5363"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lxsrg"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ylq4i"]
 resource_name = "colorRedDark"
 albedo_color = Color(0.8843835, 0.49753287, 0.5183006, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sffdh"]
 _surfaces = [{
@@ -24112,12 +23491,10 @@ data = PackedVector3Array(0.2738, 0.110999994, 0.3182, 0.2738, 0, 0.3182, -0.273
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3k8qs"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pla6d"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yw56x"]
 _surfaces = [{
@@ -24193,17 +23570,14 @@ data = PackedVector3Array(0.1369, 0, -0.3482, 0, 0.4441, -0.3182, 0.1369, 0, -0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jp7id"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwiun"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4chgx"]
 resource_name = "colorRedDark"
 albedo_color = Color(0.8843835, 0.49753287, 0.5183006, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ltkra"]
 _surfaces = [{
@@ -24301,12 +23675,10 @@ data = PackedVector3Array(0.2738, 0, -0.3182, 0.2738, 0, 0.3182, 0.2738, 0.11099
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bqnn"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qj35s"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ymxjp"]
 _surfaces = [{
@@ -24380,12 +23752,10 @@ data = PackedVector3Array(0.099999994, 0.099999994, 0.12, 0.0872, 0, 0.17099999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1kvl"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ug1ai"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5d7r5"]
 _surfaces = [{
@@ -24459,12 +23829,10 @@ data = PackedVector3Array(-0.102, 0.19999999, 0.102, -0.12, 0.099999994, 0.12, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_onjsg"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wnrse"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pgxfc"]
 _surfaces = [{
@@ -24538,12 +23906,10 @@ data = PackedVector3Array(-0.0844, 0.29999998, -0.0844, -0.1125, 0.099999994, -0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rxp4x"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_itius"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_53eeo"]
 _surfaces = [{
@@ -24617,12 +23983,10 @@ data = PackedVector3Array(0, 0.0735, 0.1373, -0.11889999, 0.0735, 0.0686, -0.055
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xnqcu"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqwab"]
 resource_name = "woodInner"
 albedo_color = Color(0.98256004, 0.92759997, 0.87210315, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vrat1"]
 _surfaces = [{
@@ -24696,12 +24060,10 @@ data = PackedVector3Array(-0.11889999, 0.0735, 0.0686, -0.16059999, 0, 0.0927, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_586pc"]
 resource_name = "woodBarkDark"
 albedo_color = Color(0.9063318, 0.71026444, 0.6410877, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_68tp7"]
 resource_name = "leafsDark"
 albedo_color = Color(0.44750372, 0.8272109, 0.836007, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ghp57"]
 _surfaces = [{
@@ -24775,7 +24137,6 @@ data = PackedVector3Array(-0.0257, 0.2857, -0.0257, -0.0405, 0, -0.0405, 0.0405,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lj02s"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rtvd6"]
 _surfaces = [{
@@ -24827,7 +24188,6 @@ data = PackedVector3Array(0.084699996, 0.6665, -0.048899997, 0.084699996, 0.4865
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mp2a"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jvk76"]
 _surfaces = [{
@@ -24878,12 +24238,10 @@ data = PackedVector3Array(0.084699996, 0.2665, -0.048899997, 0.084699996, 0.1865
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_edf42"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_svftf"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gw551"]
 _surfaces = [{
@@ -24957,11 +24315,9 @@ data = PackedVector3Array(-0.22219999, 0, -0.15349999, -0.24399999, 0, 0.1157, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_akgn6"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i8jlv"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ip4hk"]
 _surfaces = [{
@@ -25035,11 +24391,9 @@ data = PackedVector3Array(-0.1152, 0.8118, 0.0104, -0.1437, 0.6206, 0.0037999998
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j3brg"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1t06"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s8xsk"]
 _surfaces = [{
@@ -25113,11 +24467,9 @@ data = PackedVector3Array(-0.22999999, 0.20199999, -0.1328, -0.2875, 0, -0.166, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d8wpo"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0gjrv"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_70rtn"]
 _surfaces = [{
@@ -25191,11 +24543,9 @@ data = PackedVector3Array(0, 0.38239998, 0.211, 0, 0, 0.2453, -0.21249999, 0, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_alw07"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fhijj"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_drknc"]
 _surfaces = [{
@@ -25269,11 +24619,9 @@ data = PackedVector3Array(0.0276, 0.5737, -0.036599997, 0.0359, 0.267, -0.0663, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5l7s"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lvjv4"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1cde2"]
 _surfaces = [{
@@ -25347,11 +24695,9 @@ data = PackedVector3Array(0, 0.38239998, -0.16589999, 0, 0, -0.2634, 0.22809999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fsegu"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2lqgr"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_j5wkb"]
 _surfaces = [{
@@ -25425,11 +24771,9 @@ data = PackedVector3Array(-0.0413, 0.7721, 0.1196, -0.0995, 0.7721, 0.085999995,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ydujf"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7i03b"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_h0qf4"]
 _surfaces = [{
@@ -25503,12 +24847,10 @@ data = PackedVector3Array(-0.1369, 0.6458, 0.066599995, -0.22809999, 0, 0.110999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ttv2s"]
 resource_name = "woodBark"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ybrnq"]
 resource_name = "leafsGreen"
 albedo_color = Color(0.4376298, 0.90041584, 0.8381871, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_e7akl"]
 _surfaces = [{
@@ -25582,11 +24924,9 @@ data = PackedVector3Array(-0.0257, 0.28579998, -0.0257, -0.0405, 0, -0.0405, 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5yb2"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ivlfr"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ac47r"]
 _surfaces = [{
@@ -25660,11 +25000,9 @@ data = PackedVector3Array(-0.23359999, 0.24839999, -0.1068, -0.3601, 0, -0.0836,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6t8uu"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5wu7"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_butfb"]
 _surfaces = [{
@@ -25738,7 +25076,6 @@ data = PackedVector3Array(0.2145, 0.3229, 0.0508, 0.219, 0.15079999, 0.0435, 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3oqyi"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3wsq1"]
 _surfaces = [{
@@ -25790,7 +25127,6 @@ data = PackedVector3Array(0.078899994, 0.1955, 0.018, 0.087299995, 0.16, 0.024, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uafmx"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_j1hsh"]
 _surfaces = [{
@@ -25842,7 +25178,6 @@ data = PackedVector3Array(-0.22559999, 0.065, 0.0245, -0.2439, 0, 0.0265, -0.102
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7udv"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kf0lg"]
 _surfaces = [{
@@ -25894,7 +25229,6 @@ data = PackedVector3Array(0, 0.2778, 0.106599994, -0.0923, 0.2778, 0.053299997, 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hm2ux"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yd2cr"]
 _surfaces = [{
@@ -25946,7 +25280,6 @@ data = PackedVector3Array(0, 0.40739998, -0.1409, 0, 0.2739, -0.23089999, 0.1633
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yk6de"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5k1jh"]
 _surfaces = [{
@@ -25998,7 +25331,6 @@ data = PackedVector3Array(0, 0.0902, -0.3428, 0, 0, -0.3085, 0.2672, 0, -0.1542,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_87pj6"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g5e2v"]
 _surfaces = [{
@@ -26050,7 +25382,6 @@ data = PackedVector3Array(0.1906, 0, -0.1328, 0.23519999, 0, 0.0007, 0.20699999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b7eyg"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1xh3x"]
 _surfaces = [{
@@ -26102,7 +25433,6 @@ data = PackedVector3Array(-0.115399994, 0.064899996, -0.167, -0.17819999, 0.0648
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ddrn2"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s6n7o"]
 _surfaces = [{
@@ -26154,12 +25484,10 @@ data = PackedVector3Array(0.1363, 0, -0.2148, 0.2479, 0, 0.0475, 0.2181, 0.06489
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sxeac"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g45x8"]
 resource_name = "woodBirch"
 albedo_color = Color(1, 0.9772474, 0.9408054, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7sv04"]
 _surfaces = [{
@@ -26233,7 +25561,6 @@ data = PackedVector3Array(0.1028, 1.4439, -0.0594, 0, 1.5194, 0, 0, 1.4439, -0.1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1fci"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bmu4v"]
 _surfaces = [{
@@ -26285,7 +25612,6 @@ data = PackedVector3Array(0.0707, 0.115499996, 0.122499995, 0.0884, 0, 0.1531, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ei82"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tnmk1"]
 _surfaces = [{
@@ -26337,7 +25663,6 @@ data = PackedVector3Array(0.07, 0.1768, -0.0191, 0.029399998, 0.1768, 0.05109999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f78pk"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_wxu7b"]
 _surfaces = [{
@@ -26389,7 +25714,6 @@ data = PackedVector3Array(-0.1248, 0.23089999, 0.0198, -0.1362, 0.23089999, 0, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tgc38"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d2jox"]
 _surfaces = [{
@@ -26441,7 +25765,6 @@ data = PackedVector3Array(0.1804, 0, 0.0365, 0.077199996, 0, 0.1804, 0.043899998
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sv8g3"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ixepr"]
 _surfaces = [{
@@ -26493,7 +25816,6 @@ data = PackedVector3Array(0.0034999999, 0.1768, 0.0849, -0.0849, 0.1768, -0.0319
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6xud0"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3fbun"]
 _surfaces = [{
@@ -26545,11 +25867,9 @@ data = PackedVector3Array(-0.0106999995, 0.19119999, 0.0495, -0.0648, 0.19119999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ekdlt"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ps3a"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_u4mef"]
 _surfaces = [{
@@ -26623,7 +25943,6 @@ data = PackedVector3Array(0.084, 0, -0.3575, 0.4382, 0, -0.043399997, 0.5477, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g04wr"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k4l10"]
 _surfaces = [{
@@ -26675,11 +25994,9 @@ data = PackedVector3Array(-0.324, 0.1732, 0.4599, -0.5477, 0.1732, 0.20989999, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s74ae"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88wmj"]
 resource_name = "_defaultMat"
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ff0y4"]
 _surfaces = [{
@@ -26753,7 +26070,6 @@ data = PackedVector3Array(0.5344, 0.31219998, -0.15609999, 0.36679998, 0.5683, -
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jmf5o"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d8q6a"]
 _surfaces = [{

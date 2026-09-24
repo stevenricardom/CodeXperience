@@ -83,12 +83,12 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7usgb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63ycl"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_m7r40"]
 _surfaces = [{
@@ -147,7 +147,7 @@ shadow_mesh = SubResource("ArrayMesh_m7r40")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04hrb"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_siyjp"]
 _surfaces = [{
@@ -186,7 +186,7 @@ shadow_mesh = SubResource("ArrayMesh_siyjp")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pjwmh"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_u8ps2"]
 _surfaces = [{
@@ -225,7 +225,7 @@ shadow_mesh = SubResource("ArrayMesh_u8ps2")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0jym3"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lc138"]
 _surfaces = [{
@@ -264,7 +264,7 @@ shadow_mesh = SubResource("ArrayMesh_lc138")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rp1g5"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a06xk"]
 _surfaces = [{
@@ -302,12 +302,12 @@ shadow_mesh = SubResource("ArrayMesh_a06xk")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o15vo"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4fo2"]
 resource_name = "colorRed"
 albedo_color = Color(0.9445336, 0.57504845, 0.59585094, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_neqxi"]
 _surfaces = [{
@@ -367,12 +367,12 @@ shadow_mesh = SubResource("ArrayMesh_neqxi")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38vhm"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3isxb"]
 resource_name = "colorTan"
 albedo_color = Color(1, 0.8446831, 0.6910111, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w2u36"]
 _surfaces = [{
@@ -11629,3 +11629,4 @@ metadata/asset_placer_res_id = "uid://ggphrk66wf1y"
 [node name="Prop_Water_Pump_01" parent="Rocks" unique_id=1733136925 instance=ExtResource("64_3hct7")]
 transform = Transform3D(-0.62691224, 0, -0.37896383, 0, 0.73254955, 0, 0.3789639, 0, -0.62691224, -21, 0.9500046, 17)
 metadata/asset_placer_res_id = "uid://c0uyu14heaxch"
+

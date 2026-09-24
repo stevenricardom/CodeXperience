@@ -2,12 +2,12 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4a8t"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_77m0w"]
 resource_name = "colorTan"
 albedo_color = Color(1, 0.8446831, 0.6910111, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ugvej"]
 _surfaces = [{
@@ -66,3 +66,4 @@ shadow_mesh = SubResource("ArrayMesh_ugvej")
 [node name="mushroom_tan" type="MeshInstance3D" unique_id=1456003171]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
 mesh = SubResource("ArrayMesh_eyvf3")
+

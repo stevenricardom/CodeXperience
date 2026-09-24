@@ -3,12 +3,12 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_51ojn"]
 resource_name = "dirtDark"
 albedo_color = Color(0.8595907, 0.67103565, 0.556948, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k24qb"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_b53jj"]
 _surfaces = [{
@@ -75,3 +75,4 @@ mesh = SubResource("ArrayMesh_7i3oa")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="crops_dirtRow_col" unique_id=2034431419]
 shape = SubResource("ConcavePolygonShape3D_003l3")
+

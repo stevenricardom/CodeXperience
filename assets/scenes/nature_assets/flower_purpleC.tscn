@@ -3,16 +3,16 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o2yjs"]
 resource_name = "grass"
 albedo_color = Color(0.45234028, 0.92950165, 0.8658767, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhuyx"]
 resource_name = "colorPurple"
 albedo_color = Color(0.8115152, 0.759381, 1, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xg05i"]
 resource_name = "colorWhite"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1myxt"]
 _surfaces = [{
@@ -93,3 +93,4 @@ shadow_mesh = SubResource("ArrayMesh_1myxt")
 [node name="flower_purpleC" type="MeshInstance3D" unique_id=1149658811]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
 mesh = SubResource("ArrayMesh_ojq00")
+

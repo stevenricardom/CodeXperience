@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://csbjfx4e2vgu"
 path.s3tc="res://.godot/imported/Texture Map.png-90c37b1a663dbd6413863580d147dd4f.s3tc.ctex"
+path.etc2="res://.godot/imported/Texture Map.png-90c37b1a663dbd6413863580d147dd4f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://resources/models/farm_models/structures/Textures/Texture Map.png"
-dest_files=["res://.godot/imported/Texture Map.png-90c37b1a663dbd6413863580d147dd4f.s3tc.ctex"]
+dest_files=["res://.godot/imported/Texture Map.png-90c37b1a663dbd6413863580d147dd4f.s3tc.ctex", "res://.godot/imported/Texture Map.png-90c37b1a663dbd6413863580d147dd4f.etc2.ctex"]
 
 [params]
 

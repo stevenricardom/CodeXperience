@@ -3,16 +3,16 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hodks"]
 resource_name = "dirt"
 albedo_color = Color(0.9482425, 0.7443257, 0.6190008, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hf17"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4dfov"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fr6xk"]
 _surfaces = [{
@@ -101,3 +101,4 @@ mesh = SubResource("ArrayMesh_nmrqy")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="cliff_waterfall_rock_col" unique_id=711304348]
 shape = SubResource("ConcavePolygonShape3D_ip82g")
+

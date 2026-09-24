@@ -65,7 +65,7 @@ func _search_first_xr_nodes(node: Node):
 		_on_node_added(child)
 
 func _ready():
-	if not enabled or not OS.has_feature("editor"):
+	if not enabled:
 		enabled = false
 		return
 	
@@ -94,7 +94,7 @@ func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event):
-	if not enabled or not OS.has_feature("editor"):
+	if not enabled:
 		return
 	if not left_tracker or not right_tracker or not camera:
 		return

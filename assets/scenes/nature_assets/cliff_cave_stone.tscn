@@ -3,7 +3,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ummf2"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_grgrv"]
 _surfaces = [{
@@ -48,3 +48,4 @@ mesh = SubResource("ArrayMesh_q5h7i")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="cliff_cave_stone_col" unique_id=665713840]
 shape = SubResource("ConcavePolygonShape3D_gh22v")
+

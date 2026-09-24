@@ -3,12 +3,12 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ryn2"]
 resource_name = "leafsFall"
 albedo_color = Color(1, 0.7812596, 0.54190874, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_481pp"]
 resource_name = "wood"
 albedo_color = Color(1, 0.7716358, 0.6532799, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_dnubc"]
 _surfaces = [{
@@ -75,3 +75,4 @@ mesh = SubResource("ArrayMesh_nbqq7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="canoe_col" unique_id=840641584]
 shape = SubResource("ConcavePolygonShape3D_scgsh")
+

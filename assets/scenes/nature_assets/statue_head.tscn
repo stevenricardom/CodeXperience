@@ -3,16 +3,16 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3o5l"]
 resource_name = "stone"
 albedo_color = Color(0.8658767, 0.9482425, 0.9592555, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c17r"]
 resource_name = "stoneDark"
 albedo_color = Color(0.80005556, 0.8595907, 0.87003416, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_870j6"]
 resource_name = "_defaultMat"
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_d6w1g"]
 _surfaces = [{
@@ -103,3 +103,4 @@ mesh = SubResource("ArrayMesh_so08a")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="statue_head_col" unique_id=1936946432]
 shape = SubResource("ConcavePolygonShape3D_7lc0p")
+

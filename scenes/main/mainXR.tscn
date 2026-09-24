@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://bptsum2tyykj7"]
+
+[ext_resource type="Script" uid="uid://722vx1nrk4r1" path="res://scenes/main/main.gd" id="1_m563l"]
+[ext_resource type="PackedScene" uid="uid://whyv3opf7s0p" path="res://scenes/tractor/tractor.tscn" id="2_0abc2"]
+[ext_resource type="PackedScene" uid="uid://cq2sdmqpu4u3o" path="res://scenes/player/playerXR_Desktop/PlayerXR.tscn" id="2_m563l"]
+[ext_resource type="Script" uid="uid://epahxhpiun3i" path="res://scenes/tractor/tractor.gd" id="3_ecf15"]
+[ext_resource type="PackedScene" uid="uid://5yq6t3homsao" path="res://scenes/world/world3.0.tscn" id="5_4faar"]
+[ext_resource type="MeshLibrary" uid="uid://c6oyqldnxbto3" path="res://assets/meshlibrary/preset_result_tiles/tiles_meshlibrary/assets_nature_tiles.tres" id="6_6ci7f"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="7_ne8bc"]
+[ext_resource type="PackedScene" uid="uid://cf84nuu3n7e7u" path="res://scenes/ui/panel_code/panel_code.tscn" id="8_xvjao"]
+[ext_resource type="Script" uid="uid://eavk7267igp7" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.gd" id="9_6xm6y"]
+[ext_resource type="PackedScene" uid="uid://bi7lwtbo7xb4y" path="res://scenes/ui/panel_camera/panel_camera.tscn" id="10_tu5uw"]
+[ext_resource type="Script" uid="uid://cpl5yiyf1ypft" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d_body.gd" id="11_n4cus"]
+[ext_resource type="PackedScene" uid="uid://bpv7topb1u5g7" path="res://scenes/ui/panel_actions/panel_actions.tscn" id="12_qd742"]
+[ext_resource type="PackedScene" uid="uid://d000hwyxhvd17" path="res://scenes/ui/panel_variables/panel_variables.tscn" id="13_0ofn5"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_0jr6o"]
+resource_local_to_scene = true
+size = Vector2(4.5, 3)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_m563l"]
+viewport_path = NodePath("ProgrammingConsole/panel_camera/Viewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0abc2"]
+transparency = 1
+cull_mode = 2
+albedo_texture = SubResource("ViewportTexture_m563l")
+texture_filter = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6g21x"]
+resource_local_to_scene = true
+size = Vector3(4.5, 3, 0.02)
+
+[node name="Main" type="Node3D" unique_id=2075806923 node_paths=PackedStringArray("viewport_actions", "viewport_code", "viewport_variables")]
+script = ExtResource("1_m563l")
+viewport_actions = NodePath("ProgrammingConsole/panel_actions")
+viewport_code = NodePath("ProgrammingConsole/panel_code")
+viewport_variables = NodePath("ProgrammingConsole/panel_variables")
+ai_meta_nombre = "crop_pumpkin3"
+ai_obstaculo_nombre = "statue_block3"
+
+[node name="Actors" type="Node3D" parent="." unique_id=1931373312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0141058, 0)
+
+[node name="PlayerXR" parent="Actors" unique_id=1114172364 instance=ExtResource("2_m563l")]
+
+[node name="Tractor" parent="Actors" unique_id=106757968 node_paths=PackedStringArray("grid_map") instance=ExtResource("2_0abc2")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.8715148, 0, 39.438015)
+collision_layer = 129
+input_ray_pickable = false
+script = ExtResource("3_ecf15")
+grid_map = NodePath("../../Environment/Casillas")
+
+[node name="Environment" type="Node3D" parent="." unique_id=877751687]
+
+[node name="World" parent="Environment" unique_id=686852159 instance=ExtResource("5_4faar")]
+
+[node name="Casillas" type="GridMap" parent="Environment" unique_id=304558928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh_library = ExtResource("6_6ci7f")
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65535, 18, 308, 65535, 17, 308, 65535, 16, 308, 65535, 15, 308, 65535, 14, 308, 65535, 13, 308, 65535, 12, 308, 65535, 11, 308, 0, 11, 308, 1, 11, 308, 3, 11, 308, 2, 11, 308, 4, 11, 308, 5, 11, 308, 6, 11, 308, 6, 12, 308, 6, 13, 308, 6, 14, 308, 6, 15, 308, 6, 16, 308, 6, 17, 308, 6, 18, 308, 5, 18, 308, 3, 17, 308, 4, 18, 308, 4, 17, 308, 5, 17, 308, 5, 15, 308, 4, 16, 308, 5, 16, 308, 4, 15, 308, 3, 13, 308, 4, 13, 308, 4, 12, 308, 5, 12, 308, 5, 13, 308, 5, 14, 308, 4, 14, 308, 3, 16, 308, 3, 15, 308, 3, 14, 308, 3, 12, 308, 2, 12, 308, 2, 13, 308, 2, 15, 308, 2, 14, 308, 2, 16, 308, 2, 17, 308, 2, 18, 308, 3, 18, 308, 1, 18, 308, 0, 18, 308, 1, 17, 308, 0, 17, 308, 1, 16, 308, 0, 16, 308, 1, 15, 308, 0, 15, 308, 1, 14, 308, 0, 14, 308, 0, 13, 308, 1, 12, 308, 0, 12, 308, 1, 13, 308)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="ProgrammingConsole" type="Node3D" parent="." unique_id=1132983887]
+
+[node name="panel_code" parent="ProgrammingConsole" unique_id=1279858705 instance=ExtResource("7_ne8bc")]
+transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1.0000001, 6.7637033, 2.7671905, 17.059216)
+screen_size = Vector2(4.5, 3)
+collision_layer = 5242896
+scene = ExtResource("8_xvjao")
+viewport_size = Vector2(1920, 1080)
+scene_properties_keys = PackedStringArray("panel_code.gd")
+
+[node name="panel_camera" type="Node3D" parent="ProgrammingConsole" unique_id=1793234196]
+transform = Transform3D(-1.0000001, -2.316192e-16, -8.74228e-08, 2.6288998e-08, 0.9537153, -0.30071104, 8.3376456e-08, -0.30071104, -0.95371544, 6.746478, 5.763479, 16.597887)
+script = ExtResource("9_6xm6y")
+screen_size = Vector2(4.5, 3)
+collision_layer = 5242896
+scene = ExtResource("10_tu5uw")
+viewport_size = Vector2(1920, 1080)
+input_keyboard = false
+transparent = 1
+alpha_scissor_threshold = 0.25
+unshaded = false
+filter = true
+scene_properties_keys = PackedStringArray("panel_camera.gd")
+
+[node name="Viewport" type="SubViewport" parent="ProgrammingConsole/panel_camera" unique_id=1590005199]
+disable_3d = true
+transparent_bg = true
+gui_embed_subwindows = true
+size = Vector2i(1920, 1080)
+render_target_update_mode = 1
+
+[node name="Screen" type="MeshInstance3D" parent="ProgrammingConsole/panel_camera" unique_id=621071539]
+transform = Transform3D(1, -6.7071504e-09, 2.5767122e-10, 6.707147e-09, 0.9970526, -0.076720774, 2.576641e-10, 0.076720774, 0.9970526, 0, -0.047688007, 0.14193153)
+mesh = SubResource("QuadMesh_0jr6o")
+surface_material_override/0 = SubResource("StandardMaterial3D_0abc2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ProgrammingConsole/panel_camera" unique_id=1633450836]
+collision_layer = 5242896
+collision_mask = 0
+script = ExtResource("11_n4cus")
+screen_size = Vector2(4.5, 3)
+viewport_size = Vector2(1920, 1080)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ProgrammingConsole/panel_camera/StaticBody3D" unique_id=545594515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.01)
+shape = SubResource("BoxShape3D_6g21x")
+
+[node name="panel_actions" parent="ProgrammingConsole" unique_id=639825041 instance=ExtResource("7_ne8bc")]
+transform = Transform3D(-0.20791174, 0, -0.97814757, 0, 1, 0, 0.97814757, 0, -0.20791174, 9.498, 2.818, 14.782)
+screen_size = Vector2(4.5, 3)
+collision_layer = 5242896
+scene = ExtResource("12_qd742")
+viewport_size = Vector2(1920, 1080)
+scene_properties_keys = PackedStringArray("panel_actions.gd")
+
+[node name="panel_variables" parent="ProgrammingConsole" unique_id=415920694 instance=ExtResource("7_ne8bc")]
+transform = Transform3D(-0.20791174, 0, 0.97814757, 0, 1, 0, -0.97814757, 0, -0.20791174, 3.9628284, 2.8183904, 14.89315)
+screen_size = Vector2(4.5, 3)
+collision_layer = 5242896
+scene = ExtResource("13_0ofn5")
+viewport_size = Vector2(1920, 1080)
+scene_properties_keys = PackedStringArray("panel_variables.gd")

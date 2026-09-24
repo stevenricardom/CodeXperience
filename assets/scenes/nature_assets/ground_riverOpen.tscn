@@ -3,7 +3,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_78myb"]
 resource_name = "water"
 albedo_color = Color(0.8489776, 0.9807934, 1, 1)
-metallic = 1.0
+metallic = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5s0u5"]
 _surfaces = [{
@@ -48,3 +48,4 @@ mesh = SubResource("ArrayMesh_g0d5l")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ground_riverOpen_col" unique_id=1064688727]
 shape = SubResource("ConcavePolygonShape3D_q38x4")
+
