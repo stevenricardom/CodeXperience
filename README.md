@@ -22,7 +22,7 @@ El juego cuenta con un sistema de **Generación de Niveles Adaptativos** potenci
 ## 🎮 Controles
 
 ### Modo Escritorio (Web / PC)
-* **W, A, S, D:** Moverse por la granja.
+* **W y D:** Moverse por la granja.
 * **Ratón (Mouse):** Mirar alrededor. *(Nota: En la versión Web, haz un clic en la pantalla al cargar la granja para capturar el ratón).*
 * **Clic Izquierdo:** Interactuar con los paneles de programación 3D, arrastrar bloques y ejecutar el código.
 * **Tecla ESC:** Liberar el cursor del ratón.
