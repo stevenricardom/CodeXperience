@@ -10,7 +10,6 @@
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="7_5ui7x"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_th5th"]
-exposure_multiplier = 1.0
 
 [node name="PlayerXR_Desktop" type="XROrigin3D" unique_id=1114172364]
 
@@ -32,6 +31,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007300824, 0.00035625696, 
 
 [node name="FunctionPointer" parent="RightHand" unique_id=1804052717 instance=ExtResource("5_5ui7x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02, 0.05, -0.1)
+show_laser = 0
 show_target = true
 collision_mask = 5242896
 
@@ -48,6 +48,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002142191, -0.000852406, 0
 
 [node name="FunctionPointer" parent="LeftHand" unique_id=2113967010 instance=ExtResource("5_5ui7x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02, 0.05, -0.1)
+show_laser = 0
 show_target = true
 collision_mask = 5242896
 suppress_mask = 4194320

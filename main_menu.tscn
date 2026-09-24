@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://bidntnaeal757"]
+
+[ext_resource type="Script" uid="uid://b3jn7rs0n323l" path="res://scenes/ui/main_menu/main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control" unique_id=2039835142]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1265500216]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.121569, 0.121569, 0.121569, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=16712664]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -100.0
+offset_right = 200.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=666659020]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Bienvenido a CodeXperience"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=28111034]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Selecciona tu modo de juego:"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1416548369]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BtnVR" type="Button" parent="VBoxContainer" unique_id=547059317]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Jugar con Visor XR (Realidad Virtual)"
+
+[node name="BtnDesktop" type="Button" parent="VBoxContainer" unique_id=1387937357]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Jugar desde Computador (Escritorio)"

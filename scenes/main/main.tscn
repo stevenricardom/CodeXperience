@@ -3,15 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://whyv3opf7s0p" path="res://scenes/tractor/tractor.tscn" id="1_h325i"]
 [ext_resource type="Script" uid="uid://722vx1nrk4r1" path="res://scenes/main/main.gd" id="1_main_ctrl"]
 [ext_resource type="Script" uid="uid://epahxhpiun3i" path="res://scenes/tractor/tractor.gd" id="2_5deua"]
-[ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/meshlibrary/camera_config_meshlibrary/config_camera_world.tres" id="4_r4lks"]
-[ext_resource type="Script" uid="uid://c42m42no6tqpn" path="res://scenes/player/playerXR_Desktop/hand_limiter.gd" id="5_pg34l"]
+[ext_resource type="PackedScene" uid="uid://eqg2hn2up722" path="res://scenes/player/playerXR_Desktop/PlayerXR_Desktop.tscn" id="4_th5th"]
 [ext_resource type="PackedScene" uid="uid://5yq6t3homsao" path="res://scenes/world/world3.0.tscn" id="5_th5th"]
-[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="6_m4h2d"]
-[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="7_p8abn"]
-[ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="8_s17dp"]
-[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="9_37hlw"]
-[ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="10_6llfj"]
-[ext_resource type="Script" uid="uid://ciqexxqb7lxs4" path="res://addons/godot-xr-tools/desktop-support/movement_desktop_direct.gd" id="11_0bhws"]
 [ext_resource type="MeshLibrary" uid="uid://c6oyqldnxbto3" path="res://assets/meshlibrary/preset_result_tiles/tiles_meshlibrary/assets_nature_tiles.tres" id="83_5biqi"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="83_ia3vs"]
 [ext_resource type="PackedScene" uid="uid://cf84nuu3n7e7u" path="res://scenes/ui/panel_code/panel_code.tscn" id="85_1p6ov"]
@@ -21,19 +14,17 @@
 [ext_resource type="PackedScene" uid="uid://d000hwyxhvd17" path="res://scenes/ui/panel_variables/panel_variables.tscn" id="88_2conb"]
 [ext_resource type="Script" uid="uid://cpl5yiyf1ypft" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d_body.gd" id="89_yv2hd"]
 
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_th5th"]
-
 [sub_resource type="QuadMesh" id="QuadMesh_0jr6o"]
 resource_local_to_scene = true
 size = Vector2(4.5, 3)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_r4lks"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_7smn1"]
 viewport_path = NodePath("ProgrammingConsole/panel_camera/Viewport")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pg34l"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_raeie"]
 transparency = 1
 cull_mode = 2
-albedo_texture = SubResource("ViewportTexture_r4lks")
+albedo_texture = SubResource("ViewportTexture_7smn1")
 texture_filter = 1
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6g21x"]
@@ -58,57 +49,7 @@ input_ray_pickable = false
 script = ExtResource("2_5deua")
 grid_map = NodePath("../../Environment/Casillas")
 
-[node name="PlayerXR_Desktop" type="XROrigin3D" parent="Actors" unique_id=1114172364]
-
-[node name="XRCamera3D" type="XRCamera3D" parent="Actors/PlayerXR_Desktop" unique_id=813102283]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5809784, 0)
-environment = ExtResource("4_r4lks")
-attributes = SubResource("CameraAttributesPractical_th5th")
-
-[node name="RightHand" type="XRController3D" parent="Actors/PlayerXR_Desktop" unique_id=339993953]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11678755, 1.5183346, -0.21599197)
-tracker = &"right_hand"
-script = ExtResource("5_pg34l")
-rest_local = Vector3(0.12, -0.15, -0.22)
-
-[node name="RightHand" parent="Actors/PlayerXR_Desktop/RightHand" unique_id=335709563 instance=ExtResource("6_m4h2d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007300824, 0.00035625696, 0)
-
-[node name="FunctionPickup" parent="Actors/PlayerXR_Desktop/RightHand" unique_id=324515893 instance=ExtResource("7_p8abn")]
-
-[node name="FunctionPointer" parent="Actors/PlayerXR_Desktop/RightHand" unique_id=1804052717 instance=ExtResource("8_s17dp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02, 0.05, -0.1)
-show_target = true
-collision_mask = 5242896
-
-[node name="LeftHand" type="XRController3D" parent="Actors/PlayerXR_Desktop" unique_id=1664995147]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10802849, 1.5184232, -0.22431614)
-tracker = &"left_hand"
-script = ExtResource("5_pg34l")
-rest_local = Vector3(0.12, -0.15, -0.22)
-
-[node name="FunctionPickup" parent="Actors/PlayerXR_Desktop/LeftHand" unique_id=962495096 instance=ExtResource("7_p8abn")]
-
-[node name="LeftHand" parent="Actors/PlayerXR_Desktop/LeftHand" unique_id=295491913 instance=ExtResource("9_37hlw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002142191, -0.000852406, 0)
-
-[node name="FunctionPointer" parent="Actors/PlayerXR_Desktop/LeftHand" unique_id=2113967010 instance=ExtResource("8_s17dp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02, 0.05, -0.1)
-show_target = true
-collision_mask = 5242896
-suppress_mask = 4194320
-
-[node name="PlayerBody" type="CharacterBody3D" parent="Actors/PlayerXR_Desktop" unique_id=544158746 groups=["player_body"]]
-process_priority = -100
-process_physics_priority = -100
-collision_layer = 524290
-collision_mask = 129
-script = ExtResource("10_6llfj")
-body_forward_mix = 0.0
-
-[node name="XRToolsDesktopMovementDirect" type="Node3D" parent="Actors/PlayerXR_Desktop" unique_id=1246046616 groups=["movement_providers"]]
-script = ExtResource("11_0bhws")
-metadata/_custom_type_script = "uid://ciqexxqb7lxs4"
+[node name="PlayerXR_Desktop" parent="Actors" unique_id=1114172364 instance=ExtResource("4_th5th")]
 
 [node name="Environment" type="Node3D" parent="." unique_id=877751687]
 
@@ -161,7 +102,7 @@ render_target_update_mode = 1
 [node name="Screen" type="MeshInstance3D" parent="ProgrammingConsole/panel_camera" unique_id=621071539]
 transform = Transform3D(1, -6.7071504e-09, 2.5767122e-10, 6.707147e-09, 0.9970526, -0.076720774, 2.576641e-10, 0.076720774, 0.9970526, 0, -0.047688007, 0.14193153)
 mesh = SubResource("QuadMesh_0jr6o")
-surface_material_override/0 = SubResource("StandardMaterial3D_pg34l")
+surface_material_override/0 = SubResource("StandardMaterial3D_raeie")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ProgrammingConsole/panel_camera" unique_id=1633450836]
 collision_layer = 5242896
