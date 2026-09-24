@@ -1,67 +1,46 @@
-# 🚜 Serious Game 3D: Automatización Agrícola e Introducción a la Programación
+# CodeXperience 🚜💻
 
-[![Godot Engine](https://img.shields.io/badge/Godot_Engine-v4.x-blue?logo=godotengine&logoColor=white)](https://godotengine.org)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20XR-lightgrey)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](#)
+CodeXperience es un **juego educativo e interactivo** diseñado para enseñar lógica de programación a través de un entorno inmersivo. El jugador asume el rol de un programador en una granja virtual, donde debe guiar a un tractor hacia su meta superando obstáculos mediante la creación de algoritmos con bloques de código.
 
-Un **Serious Game 3D interactivo y adaptativo** diseñado para enseñar y evaluar la lógica algorítmica y la resolución de problemas en estudiantes. El juego combina mecánicas de gestión de granjas, automatización de tractores mediante programación e interacciones inmersivas híbridas (PC de escritorio y Realidad Virtual/XR).
+El juego cuenta con un sistema de **Generación de Niveles Adaptativos** potenciado por Inteligencia Artificial, que ajusta la dificultad de los retos basándose en el código y las estructuras (como bucles `for` o condicionales `if`) que el jugador utiliza para resolverlos.
 
----
-
-## 🌟 Características Principales
-
-* **🎮 Bucle de Jugabilidad Agrícola:** El jugador encarna a un granjero que opera y programa tractores automatizados para cultivar, cosechar y comercializar productos en un entorno 3D.
-* **⌨️ Consola de Programación Integrada (XR/PC):** Entorno interactivo proyectado en espacios 3D (*Interfaces 2D en SubViewports 3D*) con editor de código (`CodeEdit`), autocompletado, resaltado de sintaxis y botones de inserción rápida de comandos diseñados para VR/XR.
-* **🧩 Desafíos Algorítmicos con Restricciones de Hardware:** Los tractores avanzados imponen limitaciones físicas o lógicas (por ejemplo, prohibir bucles `for` o condicionales `if`), obligando al usuario a optimizar algoritmos bajo reglas específicas.
-* **🤖 Componente de IA y Evaluación Adaptativa:**
-  * **NPC Interactivos:** Un granjero vecino visita la parcela periódicamente para solicitar apoyo técnico y algorítmico.
-  * **Dificultad Dinámica por JSON:** La IA procesa las métricas de rendimiento del estudiante (errores, tiempo de resolución, líneas de código) y genera proceduralmente nuevos retos adaptados a sus necesidades.
-* **🥽 Soporte Híbrido (Desktop & OpenXR):**
-  * **Modo Realidad Virtual:** Control total en visores XR usando **Godot XR Tools** (`XROrigin3D`, `XRCamera3D`, mandos con físicas de `XRToolsPlayerBody`, manos dinámicas y proveedores de locomoción).
-  * **Emulación / Fallback Autónomo:** Integra un simulador de entradas (`XR Simulator`) para probar y desarrollar las mecánicas inmersivas completas desde el ratón y teclado sin requerir un casco XR físico.
+🌍 **Juega ahora en Itch.io:** *(Inserta aquí tu enlace de Itch.io)*
 
 ---
 
-## 🏗️ Arquitectura Técnica
+## ✨ Funcionalidades Principales
 
-### Stack Tecnológico
-* **Motor:** Godot Engine 4.x (renderizador *Compatibility* para máxima portabilidad en Web/Desktop).
-* **Ecosistema VR:** [Godot XR Tools](https://godotvr.github.io/godot-xr-tools/), plugin `XR Simulator` y estándar **OpenXR**.
-* **Lenguaje principal:** GDScript con tipado fuerte.
-
-## 🚀 Instalación y Configuración
-
-### Prerrequisitos
-1. Descargar e instalar **[Godot Engine 4.x](https://godotengine.org/download)** (versión *Standard* o *.NET*).
-2. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   ```
-
-### Pasos Iniciales en Godot
-1. Abre Godot Engine e importa el archivo `project.godot`.
-2. Ve a **Proyecto -> Configuración del Proyecto -> Plugins** y asegúrate de activar **Godot XR Tools**.
-3. Verifica en **Proyecto -> Configuración del Proyecto -> XR -> OpenXR** que el **Default Action Map** apunte a `openxr_action_map.tres` y que la opción **Enabled** esté activada.
-4. Para construir mapas con el `GridMap`, asegúrate de usar el script de herramienta incluido para organizar tus tiles como hermanos paralelos (`MeshInstance3D` y `StaticBody3D`) antes de exportar a `.tres` o `.meshlib`.
+* **Aprende Programando:** Construye la ruta del tractor usando un sistema de arrastrar y soltar bloques (Avanzar, Girar, Interactuar, Bucles y Condicionales).
+* **IA Adaptativa (Google Gemini):** Los niveles no están preprogramados. Una Inteligencia Artificial evalúa tu forma de programar y genera dinámicamente la posición de la meta y los obstáculos en tiempo real.
+* **Modo Híbrido (VR y Escritorio):** 
+  * Sumérgete completamente en la granja usando gafas de **Realidad Virtual**.
+  * O juega cómodamente desde tu navegador web o PC en el **Modo Escritorio**.
+* **Ejecución en Tiempo Real:** El tractor interpreta el código generado y se mueve físicamente por la cuadrícula del mundo 3D para completar la misión.
 
 ---
 
-## 🎮 Mandos y Controles de Desarrollo
+## 🎮 Controles
 
-### Modo Con Visor VR (OpenXR)
-* **Gatillo / Primary Action:** Interactuar con la consola de comandos y la UI.
-* **Joystick Izquierdo:** Caminar por el mapa (`MovementDirect`).
-* **Joystick Derecho:** Girar la vista (`MovementTurn`).
+### Modo Escritorio (Web / PC)
+* **W, A, S, D:** Moverse por la granja.
+* **Ratón (Mouse):** Mirar alrededor. *(Nota: En la versión Web, haz un clic en la pantalla al cargar la granja para capturar el ratón).*
+* **Clic Izquierdo:** Interactuar con los paneles de programación 3D, arrastrar bloques y ejecutar el código.
+* **Tecla ESC:** Liberar el cursor del ratón.
 
-### Modo Simulador (Desarrollo en Pantalla Plana)
-Si ejecutas el juego sin un visor conectado, `main.gd` detectará la ausencia del hardware e inyectará automáticamente el **XR Simulator**:
-* **W, A, S, D:** Desplazamiento por el mapa.
-* **Clic Derecho (Sostener) + Mover Ratón:** Rotar la cabeza / mirada (`XRCamera3D`).
-* **Shift (Sostener) + Mover Ratón:** Mover mano izquierda (`LeftHand`).
-* **Alt (Sostener) + Mover Ratón:** Mover mano derecha (`RightHand`).
-* **Clic Izquierdo:** Simular el gatillo del mando seleccionado.
+### Modo Realidad Virtual (Visores XR)
+* **Joysticks:** Moverse y girar suavemente por el entorno.
+* **Gatillos (Triggers) / Puntero Laser:** Apuntar e interactuar con los paneles de bloques.
 
 ---
 
-## 📄 Licencia
-Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
+## ⚙️ Aspectos Técnicos
+
+* **Motor Gráfico:** [Godot Engine 4.3+](https://godotengine.org/)
+* **Renderizado:** `gl_compatibility` optimizado para garantizar soporte amplio en navegadores web (WebGL 2.0).
+* **Lenguaje principal:** GDScript.
+* **Inteligencia Artificial:** Integración nativa mediante llamadas HTTP seguras a la API de **Google Gemini 3.5 Flash**.
+* **Framework XR:** Utiliza `godot-xr-tools` para el manejo avanzado de manos, interacciones y el sistema de simulador híbrido para escritorio.
+* **Plataforma de Exportación principal:** HTML5 (WebAssembly) con compresión VRAM `S3TC/BPTC` para escritorio y `ETC2/ASTC` para móviles/VR.
+
+---
+*Desarrollado con ❤️ para transformar la educación a través de la inmersión interactiva.*

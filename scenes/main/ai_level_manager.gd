@@ -20,6 +20,7 @@ var http_request: HTTPRequest
 
 func _ready() -> void:
 	http_request = HTTPRequest.new()
+	http_request.accept_gzip = false
 	add_child(http_request)
 	http_request.request_completed.connect(_on_request_completed)
 
@@ -80,18 +81,22 @@ func request_next_level(tractor_pos: Vector3i, user_code: String = "") -> void:
 		ai_error.emit("No se pudo contactar a Gemini (Error local).")
 
 func _on_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -> void:
-	if response_code != 200:
+	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
 		var err_str = body.get_string_from_utf8()
-		ai_error.emit("Error de API Gemini (Código " + str(response_code) + ")")
+		ai_error.emit("Fallo de red: Result " + str(result) + " / HTTP " + str(response_code))
 		print("AI Error: ", err_str)
 		return
 		
-	var response_string = body.get_string_from_utf8()
+	var response_string = body.get_string_from_utf8().trim_prefix("\uFEFF").strip_edges()
 	var json = JSON.new()
 	var err = json.parse(response_string)
 	
 	if err != OK:
-		ai_error.emit("Gemini devolvió un JSON inválido.")
+		var err_detail = json.get_error_message()
+		var snippet = response_string.substr(0, 40)
+		if response_string.is_empty():
+			snippet = "Cuerpo vacio. Error de Red o CORS."
+		ai_error.emit("Gemini JSON Invalido: " + err_detail + " | " + snippet)
 		return
 		
 	var root = json.data
