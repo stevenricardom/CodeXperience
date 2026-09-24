@@ -25,6 +25,7 @@ El juego cuenta con un sistema de **Generación de Niveles Adaptativos** potenci
 * **W y D:** Moverse por la granja.
 * **Ratón (Mouse):** Mirar alrededor. *(Nota: En la versión Web, haz un clic en la pantalla al cargar la granja para capturar el ratón).*
 * **Clic Izquierdo:** Interactuar con los paneles de programación 3D, arrastrar bloques y ejecutar el código.
+* **Rueda del raton:** Subir o bajar la camara.
 * **Tecla ESC:** Liberar el cursor del ratón.
 
 ### Modo Realidad Virtual (Visores XR)
