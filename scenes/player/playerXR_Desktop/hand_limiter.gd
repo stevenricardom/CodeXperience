@@ -1,130 +1,203 @@
 extends XRController3D
+## Seguimiento de la mano en el ESPACIO LOCAL de la cámara.
+##
+## Sustituye al antigo control por teclas Q/E: la mano se posiciona sola,
+## interpolada de forma exponencial (sin saltos ni overshoot) hacia un objetivo
+## calculado en el espacio local de la cámara. No lee ninguna tecla.
+##
+## Poses: reposo (idle), señalar (point, al programar) y agarrar (grab, con el
+## puntero pulsado). La pose solo anima el visual de la mano: ni la cámara ni
+## el cuerpo se mueven.
 
-## Posición de reposo en espacio LOCAL de la cámara.
-## X se espeja automáticamente para la mano izquierda.
-@export var rest_local: Vector3 = Vector3(0.12, -0.06, -0.22)
+enum HandPose { IDLE = 0, POINT = 1, GRAB = 2 }
 
-## Velocidad a la que la mano regresa al punto de reposo (0 = no regresa)
-@export var return_speed: float = 3.0
+## Posición de reposo en espacio local de la cámara (X se espeja en la izquierda).
+@export var rest_local: Vector3 = Vector3(0.16, -0.165, -0.30)
+## Velocidad de convergencia de la posición (1/s).
+@export var follow_speed: float = 6.0
+## Velocidad de convergencia de la orientación (1/s).
+@export var pose_blend_speed: float = 8.0
+## Amplitud del balanceo en reposo.
+@export var sway_amount: float = 0.010
+## Frecuencia del balanceo en reposo.
+@export var sway_speed: float = 0.9
+## Distancia a la que se apunta (metros, hacia delante de la cámara).
+@export var pointer_depth: float = 0.55
+## Cuánto se acerca la mano al centro al señalar.
+@export var point_inward: float = 0.030
+## Cuánto se acerca la mano al centro al agarrar.
+@export var grab_inward: float = 0.055
+## Inclinación de reposo de los dedos (negativo = dedos hacia abajo).
+@export var rest_pitch: float = -0.12
+## Giro de reposo hacia el centro de la vista.
+@export var rest_yaw: float = 0.30
 
-## Tecla que el XR Simulator usa para mover esta mano (Q = izquierda, E = derecha).
-## Se asigna automáticamente, pero puedes sobreescribirla en el Inspector.
-@export var controller_key: Key = KEY_E
+var hand_pose: int = HandPose.IDLE
+var pointer_normalized: Vector2 = Vector2(0.5, 0.5)
+var use_viewport_pointer: bool = true
 
-## Radio máximo de alcance desde la cámara
-@export var max_reach: float = 0.65
-## Cuánto puede bajar la mano bajo la cámara
-@export var max_drop: float = 0.35
-## Cuánto puede subir la mano SOBRE la cámara
-@export var max_above: float = 0.20
-## Cuánto puede alejarse a los lados
-@export var max_side: float = 0.4
-## Margen mínimo al frente (no puede quedar detrás de la cámara)
-@export var front_margin: float = 0.22
-
-## Rotación extra encima de la de la cámara (grados)
-@export var rotation_offset_deg: Vector3 = Vector3(0.0, 0.0, 0.0)
-
-## Velocidad a la que la rotación regresa al reposo tras soltar Shift
-@export var rotation_return_speed: float = 5.0
-
-@onready var camera: XRCamera3D = $"../XRCamera3D"
-
-var _is_left_hand: bool = false
-var _rot_offset: Basis
-var _prev_camera_basis: Basis
-var _rest: Vector3   # rest_local con X ya ajustada al lado correcto
-var _is_rotating: bool = false   # true mientras Shift + tecla de mano está presionado
+var _camera: Camera3D
+var _interaction: Node
+var _visual: Node3D
+var _is_left: bool = false
+var _rest: Vector3
+var _rest_basis: Basis
+var _local_position: Vector3
+var _local_basis: Basis
+var _time: float = 0.0
 
 func _ready() -> void:
-	_is_left_hand = (tracker == &"left_hand")
+	_is_left = tracker == &"left_hand"
 	_rest = rest_local
-	if _is_left_hand:
-		_rest.x = -abs(_rest.x)
-	else:
-		_rest.x =  abs(_rest.x)
-	_rot_offset = Basis.from_euler(rotation_offset_deg * (PI / 180.0))
-	# Asignamos la tecla por defecto según la mano (se puede sobreescribir en Inspector)
-	if _is_left_hand:
-		controller_key = KEY_Q
-	else:
-		controller_key = KEY_E
-	set_process(not get_viewport().use_xr)
-	# Guardamos la basis inicial de la cámara para calcular deltas
-	await get_tree().process_frame
-	if camera:
-		_prev_camera_basis = camera.global_basis
-
-func _process(_delta: float) -> void:
-	if get_viewport().use_xr:
+	_rest.x = -absf(_rest.x) if _is_left else absf(_rest.x)
+	var yaw: float = -rest_yaw if _is_left else rest_yaw
+	_rest_basis = Basis.from_euler(Vector3(rest_pitch, yaw, 0.0))
+	_local_position = _rest
+	_local_basis = _rest_basis
+	_interaction = get_node_or_null("../DesktopInteraction")
+	_visual = _find_visual()
+	_camera = _find_camera()
+	var in_xr: bool = get_viewport() != null and get_viewport().use_xr
+	if in_xr:
+		# En XR real el pose lo lleva el tracker: la mano no se recoloca.
 		set_process(false)
 		return
-	if not camera:
+	if _camera:
+		global_position = _camera.to_global(_local_position)
+
+func _process(delta: float) -> void:
+	# En XR real el pose viene del tracker: no lo sobrescribimos.
+	if get_viewport() and get_viewport().use_xr:
+		set_process(false)
 		return
+	tick(delta)
 
-	# ── 1. APLICAR DELTA DE ROTACIÓN DE CÁMARA ─────────────────────────────
-	# Calculamos cuánto rotó la cámara desde el último frame.
-	# Esa rotación se aplica directamente al offset de la mano respecto a la
-	# cámara, de modo que la mano SIEMPRE sigue la rotación de cámara
-	# de forma inmediata, sin zonas muertas.
-	var cam_delta: Basis = camera.global_basis * _prev_camera_basis.inverse()
-	var offset: Vector3 = global_position - camera.global_position
-	var rotated_offset: Vector3 = cam_delta * offset
+## Paso de simulación aislado (las pruebas pueden invocarlo directamente).
+func tick(delta: float) -> void:
+	var camera: Camera3D = _camera if is_instance_valid(_camera) else _find_camera()
+	if camera == null:
+		return
+	_time += delta
+	_update_pose_state()
+	_update_pointer(camera)
 
-	# ── 2. PASAR A ESPACIO LOCAL DE CÁMARA ────────────────────────────────────
-	var local_pos: Vector3 = camera.to_local(camera.global_position + rotated_offset)
+	var target_position: Vector3 = _target_position()
+	var position_alpha: float = 1.0 - exp(-follow_speed * delta)
+	_local_position = _local_position.lerp(target_position, position_alpha)
 
-	# ── 3. RETORNO AL PUNTO DE REPOSO ───────────────────────────────────────
-	# Solo regresa cuando el jugador NO está sosteniendo la tecla del simulador.
-	# Mientras Q / E está presionado, la mano la controla el XR Simulator.
-	var key_held: bool = Input.is_key_pressed(controller_key)
-	if return_speed > 0.0 and not key_held:
-		local_pos = local_pos.lerp(_rest, return_speed * _delta)
+	var target_basis: Basis = _target_basis(camera)
+	var basis_alpha: float = 1.0 - exp(-pose_blend_speed * delta)
+	_local_basis = _local_basis.slerp(target_basis, basis_alpha)
 
-	# ── 4. APLICAR LÍMITES ──────────────────────────────────────────────────
-	# Límite esférico
-	if local_pos.length() > max_reach:
-		local_pos = local_pos.normalized() * max_reach
+	global_position = camera.to_global(_local_position)
+	global_basis = camera.global_basis * _local_basis
 
-	# Vertical
-	local_pos.y = clamp(local_pos.y, -max_drop, max_above)
+	if not is_instance_valid(_visual):
+		_visual = _find_visual()
+	if is_instance_valid(_visual) and _visual.has_method("set_pose"):
+		_visual.set_pose(hand_pose_name(), delta)
 
-	# Frente
-	if local_pos.z > -front_margin:
-		local_pos.z = -front_margin
+func _find_camera() -> Camera3D:
+	var parent: Node = get_parent()
+	if parent == null:
+		return null
+	return parent.get_node_or_null("XRCamera3D") as Camera3D
 
-	# Lados — asimétrico por mano para evitar que se bloqueen
-	if _is_left_hand:
-		local_pos.x = clamp(local_pos.x, -max_side, 0.0)
-	else:
-		local_pos.x = clamp(local_pos.x, 0.0, max_side)
+func _find_visual() -> Node3D:
+	for child in get_children():
+		if child.has_method("set_pose"):
+			return child as Node3D
+	return null
 
-	global_position = camera.to_global(local_pos)
+func _update_pose_state() -> void:
+	var pose: int = HandPose.IDLE
+	if is_instance_valid(_interaction):
+		var programming: bool = false
+		if _interaction.has_method("is_programming"):
+			programming = _interaction.is_programming()
+		var pressed: bool = bool(_interaction.get("pointer_pressed"))
+		if programming:
+			pose = HandPose.GRAB if pressed else HandPose.POINT
+	hand_pose = pose
 
-	# ── 5. ROTACIÓN ─────────────────────────────────────────────────────────
-	# Cuando Shift + tecla de mano están presionados, el XR Simulator rota la
-	# mano vía rotate_device(). NO debemos sobrescribir la rotación en ese caso.
-	var shift_held: bool = Input.is_key_pressed(KEY_SHIFT)
-	var rest_basis: Basis = camera.global_basis * _rot_offset
+func _update_pointer(camera: Camera3D) -> void:
+	if not use_viewport_pointer:
+		return
+	if not is_instance_valid(_interaction) or not _interaction.has_method("is_programming"):
+		return
+	if not _interaction.is_programming():
+		return
+	var viewport: Viewport = get_viewport()
+	if viewport == null:
+		return
+	var rect: Rect2 = viewport.get_visible_rect()
+	if rect.size.x <= 0.0 or rect.size.y <= 0.0:
+		return
+	var mouse: Vector2 = viewport.get_mouse_position()
+	pointer_normalized = Vector2(
+		clampf(mouse.x / rect.size.x, 0.0, 1.0),
+		clampf(mouse.y / rect.size.y, 0.0, 1.0))
 
-	if key_held and shift_held:
-		# Modo rotación activa: dejamos que el XR Simulator controle la rotación.
-		# Solo aplicamos el delta de cámara para que la mano siga la cámara.
-		global_basis = cam_delta * global_basis
-		_is_rotating = true
-	elif _is_rotating:
-		# Acaba de soltar Shift o la tecla: interpolar de vuelta al reposo
-		var current_quat: Quaternion = Quaternion(global_basis.orthonormalized())
-		var rest_quat: Quaternion = Quaternion(rest_basis.orthonormalized())
-		var blended: Quaternion = current_quat.slerp(rest_quat, rotation_return_speed * _delta)
-		global_basis = Basis(blended)
-		# Cuando está suficientemente cerca del reposo, dejamos de interpolar
-		if current_quat.dot(rest_quat) > 0.999:
-			global_basis = rest_basis
-			_is_rotating = false
-	else:
-		# Estado normal: rotación fija siguiendo la cámara + offset
-		global_basis = rest_basis
+func _target_position() -> Vector3:
+	var sway: float = sin(_time * sway_speed * TAU) * sway_amount
+	match hand_pose:
+		HandPose.POINT:
+			return Vector3(
+				_rest.x * (1.0 - point_inward / maxf(absf(_rest.x), 0.001)),
+				_rest.y + 0.020 + sway * 0.5,
+				_rest.z - 0.030)
+		HandPose.GRAB:
+			return Vector3(
+				_rest.x * (1.0 - grab_inward / maxf(absf(_rest.x), 0.001)),
+				_rest.y + 0.030 + sway * 0.3,
+				_rest.z - 0.060)
+		_:
+			return Vector3(_rest.x, _rest.y + sway, _rest.z)
 
-	# ── 6. GUARDAR BASIS PARA EL PRÓXIMO FRAME ──────────────────────────────
-	_prev_camera_basis = camera.global_basis
+func _target_basis(camera: Camera3D) -> Basis:
+	if hand_pose == HandPose.IDLE:
+		return _rest_basis
+	var aim: Vector3 = _aim_local(camera)
+	if aim.length_squared() < 0.000001:
+		return _rest_basis
+	var up: Vector3 = Vector3.UP
+	if absf(aim.normalized().dot(up)) > 0.98:
+		up = Vector3.FORWARD
+	return Basis.looking_at(aim, up)
+
+func _aim_local(camera: Camera3D) -> Vector3:
+	var viewport: Viewport = get_viewport()
+	if viewport == null:
+		return Vector3.ZERO
+	var rect: Rect2 = viewport.get_visible_rect()
+	if rect.size.x <= 0.0 or rect.size.y <= 0.0:
+		return Vector3.ZERO
+	var screen: Vector2 = Vector2(
+		pointer_normalized.x * rect.size.x,
+		pointer_normalized.y * rect.size.y)
+	var origin: Vector3 = camera.project_ray_origin(screen)
+	var direction: Vector3 = camera.project_ray_normal(screen)
+	var local_direction: Vector3 = (camera.global_basis.inverse() * direction).normalized()
+	var depth: float = maxf(pointer_depth, 0.05)
+	var forward: float = -local_direction.z
+	if forward < 0.15:
+		forward = 0.15
+	return local_direction * (depth / forward)
+
+func get_local_position() -> Vector3:
+	return _local_position
+
+func get_local_basis() -> Basis:
+	return _local_basis
+
+func get_rest_local() -> Vector3:
+	return _rest
+
+func hand_pose_name() -> String:
+	match hand_pose:
+		HandPose.POINT:
+			return "point"
+		HandPose.GRAB:
+			return "grab"
+		_:
+			return "idle"

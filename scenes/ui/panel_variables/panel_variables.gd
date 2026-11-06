@@ -1,6 +1,8 @@
 extends Control
 ## Panel de Variables: Taller slot-machine + Variables creadas + Constructor de Condición
 
+const StationTheme = preload("res://scenes/ui/theme/station_theme.gd")
+
 signal add_code_line(line: String)
 signal block_requested(type: String, params: Dictionary)
 signal condition_changed(condition: String)
@@ -48,6 +50,9 @@ var cond_op_index: int = 0
 var cond_value: int = 5
 
 func _ready() -> void:
+	# Tema compartido de la estación.
+	theme = StationTheme.get_theme()
+
 	# Conectar señales de los botones manualmente
 	btn_var_name_left.pressed.connect(_var_name_left)
 	btn_var_name_right.pressed.connect(_var_name_right)
@@ -130,32 +135,33 @@ func _refresh_vars_ui() -> void:
 	if created_vars.is_empty():
 		var lbl = Label.new()
 		lbl.text = "(vacío)"
-		lbl.add_theme_font_size_override("font_size", 14)
-		lbl.add_theme_color_override("font_color", Color(0.5, 0.5, 0.5))
+		lbl.theme_type_variation = "StationHelp"
 		lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		created_vars_container.add_child(lbl)
 		return
-	
+
 	for vname in created_vars:
 		var info = created_vars[vname]
 		var hbox = HBoxContainer.new()
-		hbox.add_theme_constant_override("separation", 4)
-		
+		hbox.add_theme_constant_override("separation", 6)
+
 		var btn = Button.new()
 		btn.text = "📌 " + vname + " = " + info.value
-		btn.custom_minimum_size.y = 40
+		btn.custom_minimum_size.y = 44
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		btn.add_theme_font_size_override("font_size", 15)
+		btn.add_theme_font_size_override("font_size", 17)
+		btn.theme_type_variation = "StationGhost"
+		btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		var captured_name = vname
 		btn.pressed.connect(func(): block_requested.emit("var_ref", {"name": captured_name}))
 		hbox.add_child(btn)
-		
+
 		if info.type == "Número":
 			var btn_inc = Button.new()
 			btn_inc.text = "+1"
-			btn_inc.custom_minimum_size.y = 40
-			btn_inc.custom_minimum_size.x = 45
+			btn_inc.custom_minimum_size = Vector2(52, 44)
 			btn_inc.add_theme_font_size_override("font_size", 18)
+			btn_inc.theme_type_variation = "StationAccent"
 			btn_inc.pressed.connect(func(): block_requested.emit("var_inc", {"name": captured_name}))
 			hbox.add_child(btn_inc)
 		

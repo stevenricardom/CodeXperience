@@ -2,6 +2,7 @@ extends Control
 ## Panel de Código: Canvas de bloques + Terminal de mensajes
 
 const BlockCanvasScript = preload("res://scenes/ui/blocks/block_canvas.gd")
+const StationTheme = preload("res://scenes/ui/theme/station_theme.gd")
 
 signal code_execution_requested(code: String)
 signal clear_requested()
@@ -16,6 +17,9 @@ signal execution_stopped()
 var canvas: ScrollContainer  # BlockCanvas
 
 func _ready() -> void:
+	# Tema compartido de la estación.
+	theme = StationTheme.get_theme()
+
 	btn_execute.pressed.connect(execute)
 	btn_delete_block.pressed.connect(_delete_last_block)
 	btn_clear.pressed.connect(_on_clear_pressed)
@@ -67,10 +71,10 @@ func _delete_last_block() -> void:
 
 # --- Terminal ---
 func mostrar_error(msg: String) -> void:
-	terminal.text = "[color=red]Error:[/color] " + msg
+	terminal.text = "[color=" + StationTheme.ROSE.to_html(false) + "]Error:[/color] " + msg
 
 func mostrar_exito(msg: String) -> void:
-	terminal.text = "[color=green]Exito:[/color] " + msg
+	terminal.text = "[color=" + StationTheme.MINT.to_html(false) + "]Éxito:[/color] " + msg
 
 func mostrar_mensaje(msg: String) -> void:
-	terminal.text = "[color=gray]" + msg + "[/color]"
+	terminal.text = "[color=" + StationTheme.TEXT_MUTED.to_html(false) + "]" + msg + "[/color]"

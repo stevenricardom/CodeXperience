@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://eqg2hn2up722"]
 
-[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="2_eucq5"]
 [ext_resource type="Environment" uid="uid://dmdim3no8vdtl" path="res://assets/meshlibrary/camera_config_meshlibrary/config_camera_world.tres" id="2_qlui0"]
 [ext_resource type="Script" uid="uid://c42m42no6tqpn" path="res://scenes/player/playerXR_Desktop/hand_limiter.gd" id="2_r3hmc"]
-[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_r3hmc"]
-[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="4_owppr"]
-[ext_resource type="Script" uid="uid://ciqexxqb7lxs4" path="res://addons/godot-xr-tools/desktop-support/movement_desktop_direct.gd" id="4_ugdpv"]
+[ext_resource type="PackedScene" path="res://scenes/player/playerXR_Desktop/hands/stylized_hand.tscn" id="2_stylh"]
+[ext_resource type="Script" path="res://scenes/player/playerXR_Desktop/desktop_movement.gd" id="4_ugdpv"]
+[ext_resource type="Script" path="res://scenes/player/playerXR_Desktop/desktop_interaction.gd" id="9_desktop"]
 [ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="5_5ui7x"]
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="7_5ui7x"]
 
@@ -22,15 +21,15 @@ attributes = SubResource("CameraAttributesPractical_th5th")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11678755, 1.5183346, -0.21599197)
 tracker = &"right_hand"
 script = ExtResource("2_r3hmc")
-rest_local = Vector3(0.12, -0.15, -0.22)
+rest_local = Vector3(0.18, -0.22, -0.34)
 
-[node name="RightHand" parent="RightHand" unique_id=335709563 instance=ExtResource("2_eucq5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007300824, 0.00035625696, 0)
-
-[node name="FunctionPickup" parent="RightHand" unique_id=324515893 instance=ExtResource("4_owppr")]
+[node name="StylizedHand" parent="RightHand" instance=ExtResource("2_stylh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+handedness = 1
 
 [node name="FunctionPointer" parent="RightHand" unique_id=1804052717 instance=ExtResource("5_5ui7x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02, 0.05, -0.1)
+enabled = false
 show_laser = 0
 show_target = true
 collision_mask = 5242896
@@ -39,15 +38,15 @@ collision_mask = 5242896
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10802849, 1.5184232, -0.22431614)
 tracker = &"left_hand"
 script = ExtResource("2_r3hmc")
-rest_local = Vector3(0.12, -0.15, -0.22)
+rest_local = Vector3(0.18, -0.22, -0.34)
 
-[node name="FunctionPickup" parent="LeftHand" unique_id=962495096 instance=ExtResource("4_owppr")]
-
-[node name="LeftHand" parent="LeftHand" unique_id=295491913 instance=ExtResource("3_r3hmc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002142191, -0.000852406, 0)
+[node name="StylizedHand" parent="LeftHand" instance=ExtResource("2_stylh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+handedness = -1
 
 [node name="FunctionPointer" parent="LeftHand" unique_id=2113967010 instance=ExtResource("5_5ui7x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02, 0.05, -0.1)
+enabled = false
 show_laser = 0
 show_target = true
 collision_mask = 5242896
@@ -64,4 +63,10 @@ body_forward_mix = 0.0
 [node name="XRToolsDesktopMovementDirect" type="Node3D" parent="." unique_id=1246046616 groups=["movement_providers"]]
 script = ExtResource("4_ugdpv")
 strafe = true
-metadata/_custom_type_script = "uid://ciqexxqb7lxs4"
+input_forward = "desktop_forward"
+input_backward = "desktop_backward"
+input_left = "desktop_left"
+input_right = "desktop_right"
+
+[node name="DesktopInteraction" type="Node" parent="."]
+script = ExtResource("9_desktop")

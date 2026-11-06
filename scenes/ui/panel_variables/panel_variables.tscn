@@ -18,7 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.08, 0.08, 0.1, 1)
+color = Color(0.043137, 0.054902, 0.078431, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1526064345]
 layout_mode = 1
@@ -27,10 +27,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 15
-theme_override_constants/margin_right = 15
-theme_override_constants/margin_bottom = 15
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 16
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer" unique_id=1702872077]
 layout_mode = 2
@@ -39,125 +39,125 @@ horizontal_scroll_mode = 0
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer" unique_id=59350173]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = 8
+theme_override_constants/separation = 10
 
 [node name="TitleVars" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2106659983]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.53, 0.91, 0.53, 1)
-theme_override_font_sizes/font_size = 24
-text = "Creacion de Variables"
+theme_type_variation = "StationTitle"
+text = "🔧 Taller de Variables"
+
+[node name="SubtitleVars" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = "StationHelp"
+text = "Crea una variable y úsala después en las condiciones del tractor."
+autowrap_mode = 3
 
 [node name="LblName" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=655102773]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 14
+theme_type_variation = "StationHelp"
 text = "Nombre:"
 
 [node name="RowName" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1422615975]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 8
 
 [node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowName" unique_id=1291766869]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "◀"
 
 [node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowName" unique_id=56959802]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 22
+theme_type_variation = "StationValue"
 text = "pasos"
 horizontal_alignment = 1
 
 [node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowName" unique_id=1101729314]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "▶"
 
 [node name="LblType" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=746397973]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 14
+theme_type_variation = "StationHelp"
 text = "Tipo:"
 
 [node name="RowType" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1492076527]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 8
 
 [node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowType" unique_id=1433443581]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "◀"
 
 [node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowType" unique_id=1746476234]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 22
+theme_type_variation = "StationValue"
 text = "Número"
 horizontal_alignment = 1
 
 [node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowType" unique_id=2145375146]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "▶"
 
 [node name="LblValue" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1664835375]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 14
+theme_type_variation = "StationHelp"
 text = "Valor:"
 
 [node name="RowValue" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=361384322]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 8
 
 [node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowValue" unique_id=1774108292]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "−"
 
 [node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowValue" unique_id=548166570]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 22
+theme_type_variation = "StationValue"
 text = "0"
 horizontal_alignment = 1
 
 [node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowValue" unique_id=713508370]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "+"
 
 [node name="BtnCreate" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1198416806]
 custom_minimum_size = Vector2(0, 52)
 layout_mode = 2
-theme_override_colors/font_color = Color(0.53, 0.91, 0.53, 1)
-theme_override_font_sizes/font_size = 18
-text = "Crear Variable"
+theme_type_variation = "StationPrimary"
+text = "✨ Crear Variable"
 
 [node name="HSeparator1" type="HSeparator" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1097810738]
 layout_mode = 2
 
 [node name="TitleCreated" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=2066179109]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.53, 0.91, 0.53, 1)
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationSection"
+theme_override_colors/font_color = Color(0.43589, 0.890196, 0.690196, 1)
 text = "Variables creadas"
 
 [node name="CreatedVars" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=912949067]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 6
 
 [node name="Empty" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/CreatedVars" unique_id=1590860212]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
-theme_override_font_sizes/font_size = 14
+theme_type_variation = "StationHelp"
 text = "(vacío - Primero crea una variable)"
 horizontal_alignment = 1
 
@@ -166,100 +166,103 @@ layout_mode = 2
 
 [node name="TitleCond" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=454015765]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.6, 0.4, 1)
-theme_override_font_sizes/font_size = 20
-text = "Operadores de Comparacion"
+theme_type_variation = "StationSection"
+theme_override_colors/font_color = Color(0.956863, 0.768627, 0.419608, 1)
+text = "🎯 Operadores de Comparación"
 
 [node name="CondPreview" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=146553404]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.6, 0.4, 1)
-theme_override_font_sizes/font_size = 22
+theme_type_variation = "StationValue"
+theme_override_colors/font_color = Color(0.956863, 0.768627, 0.419608, 1)
 text = "Debes crear una variable primero"
 horizontal_alignment = 1
 
+[node name="SubtitleCond" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = "StationHelp"
+text = "Esta condición se usa en los bucles WHILE y en los bloques IF."
+autowrap_mode = 3
+
 [node name="LblCondVar" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=802542639]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 14
+theme_type_variation = "StationHelp"
 text = "Variable:"
 
 [node name="RowCondVar" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=432144029]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 8
 
 [node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVar" unique_id=2119070590]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "◀"
 
 [node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVar" unique_id=1689207174]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 22
+theme_type_variation = "StationValue"
 text = "---"
 horizontal_alignment = 1
 
 [node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVar" unique_id=498810789]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "▶"
 
 [node name="LblCondOp" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=242352578]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 14
+theme_type_variation = "StationHelp"
 text = "Comparar:"
 
 [node name="RowCondOp" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=129681715]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 8
 
 [node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondOp" unique_id=479439821]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "◀"
 
 [node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondOp" unique_id=706562514]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 22
+theme_type_variation = "StationValue"
 text = "<"
 horizontal_alignment = 1
 
 [node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondOp" unique_id=508416818]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "▶"
 
 [node name="LblCondVal" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=668149804]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 14
+theme_type_variation = "StationHelp"
 text = "Con valor:"
 
 [node name="RowCondVal" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer" unique_id=1920630823]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 8
 
 [node name="BtnLeft" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVal" unique_id=840419002]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "−"
 
 [node name="Value" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVal" unique_id=144004506]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 22
+theme_type_variation = "StationValue"
 text = "5"
 horizontal_alignment = 1
 
 [node name="BtnRight" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/RowCondVal" unique_id=748365956]
-custom_minimum_size = Vector2(50, 44)
+custom_minimum_size = Vector2(52, 48)
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_type_variation = "StationGhost"
 text = "+"
