@@ -18,7 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.043137, 0.054902, 0.078431, 1)
+color = Color(0.06, 0.09, 0.14, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1227879396]
 layout_mode = 1
@@ -39,7 +39,7 @@ theme_override_constants/separation = 10
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=22200231]
 layout_mode = 2
 theme_type_variation = "StationTitle"
-text = "💻 Bloques de Código"
+text = "Consola de Código"
 horizontal_alignment = 1
 
 [node name="Subtitle" type="Label" parent="MarginContainer/VBoxContainer"]
@@ -58,21 +58,28 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = "StationPrimary"
-text = "▶ Ejecutar"
+text = "Ejecutar"
 
 [node name="BtnDeleteBlock" type="Button" parent="MarginContainer/VBoxContainer/Toolbar"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = "StationGhost"
-text = "⟲ Borrar bloque"
+text = "Borrar bloque"
 
 [node name="BtnClear" type="Button" parent="MarginContainer/VBoxContainer/Toolbar" unique_id=1375269023]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = "StationDanger"
-text = "✖ Limpiar todo"
+text = "Limpiar todo"
+
+[node name="BtnHint" type="Button" parent="MarginContainer/VBoxContainer/Toolbar" unique_id=1894512340]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = "StationAccent"
+text = "Pista (5 monedas)"
 
 [node name="CanvasPlaceholder" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

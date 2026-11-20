@@ -40,6 +40,7 @@ var _camera: Camera3D
 var _interaction: Node
 var _visual: Node3D
 var _is_left: bool = false
+var _remote_pressing: bool = false
 var _rest: Vector3
 var _rest_basis: Basis
 var _local_position: Vector3
@@ -92,6 +93,11 @@ func tick(delta: float) -> void:
 	global_position = camera.to_global(_local_position)
 	global_basis = camera.global_basis * _local_basis
 
+	var remote := get_node_or_null("TractorRemote") as Node3D
+	if is_instance_valid(remote):
+		var programming_now: bool = is_instance_valid(_interaction) and _interaction.has_method("is_programming") and _interaction.is_programming()
+		remote.visible = not programming_now
+
 	if not is_instance_valid(_visual):
 		_visual = _find_visual()
 	if is_instance_valid(_visual) and _visual.has_method("set_pose"):
@@ -111,13 +117,20 @@ func _find_visual() -> Node3D:
 
 func _update_pose_state() -> void:
 	var pose: int = HandPose.IDLE
+	var programming: bool = false
+	var pressed: bool = false
 	if is_instance_valid(_interaction):
-		var programming: bool = false
 		if _interaction.has_method("is_programming"):
 			programming = _interaction.is_programming()
-		var pressed: bool = bool(_interaction.get("pointer_pressed"))
-		if programming:
-			pose = HandPose.GRAB if pressed else HandPose.POINT
+		pressed = _interaction.get("pointer_pressed") == true
+		_remote_pressing = (_interaction.get("remote_pressing") == true) and not programming
+	else:
+		_remote_pressing = false
+
+	if programming:
+		pose = HandPose.GRAB if pressed else HandPose.POINT
+	elif _remote_pressing:
+		pose = HandPose.GRAB if not _is_left else HandPose.POINT
 	hand_pose = pose
 
 func _update_pointer(camera: Camera3D) -> void:
@@ -139,6 +152,10 @@ func _update_pointer(camera: Camera3D) -> void:
 		clampf(mouse.y / rect.size.y, 0.0, 1.0))
 
 func _target_position() -> Vector3:
+	if _remote_pressing:
+		if not _is_left:
+			return Vector3(_rest.x - 0.045, _rest.y + 0.048, _rest.z - 0.055)
+		return Vector3(_rest.x + 0.015, _rest.y + 0.018, _rest.z - 0.020)
 	var sway: float = sin(_time * sway_speed * TAU) * sway_amount
 	match hand_pose:
 		HandPose.POINT:
@@ -155,6 +172,10 @@ func _target_position() -> Vector3:
 			return Vector3(_rest.x, _rest.y + sway, _rest.z)
 
 func _target_basis(camera: Camera3D) -> Basis:
+	if _remote_pressing:
+		if not _is_left:
+			return Basis.from_euler(Vector3(rest_pitch + 0.24, rest_yaw + 0.14, -0.10))
+		return Basis.from_euler(Vector3(rest_pitch + 0.08, -rest_yaw - 0.06, 0.04))
 	if hand_pose == HandPose.IDLE:
 		return _rest_basis
 	var aim: Vector3 = _aim_local(camera)

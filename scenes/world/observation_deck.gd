@@ -13,6 +13,23 @@ func _ready() -> void:
 			tile.position = Vector3(-3 + x * 2, 2.06, 45 + z * 2)
 			tile.scale = Vector3.ONE * 2.0
 			add_child(tile)
+			var col_body := tile.get_node_or_null("platform_col") as StaticBody3D
+			if col_body != null:
+				col_body.collision_layer = 0
+				col_body.collision_mask = 0
+				for child in col_body.get_children():
+					if child is CollisionShape3D:
+						child.disabled = true
+	var floor_body := StaticBody3D.new()
+	floor_body.name = "DeckFloorCollider"
+	floor_body.position = Vector3(1.0, 2.255, 48.0)
+	floor_body.collision_layer = 1
+	var floor_col := CollisionShape3D.new()
+	var floor_shape := BoxShape3D.new()
+	floor_shape.size = Vector3(10.0, 0.39, 8.0)
+	floor_col.shape = floor_shape
+	floor_body.add_child(floor_col)
+	add_child(floor_body)
 	# Rampa de pendiente 1:4, transitable sin saltar.
 	var ramp := _solid("AccessRamp", Vector3(6.185, 0.18, 3), Vector3(9, 1.60723, 45.5), timber)
 	ramp.rotation.z = -atan(0.25)

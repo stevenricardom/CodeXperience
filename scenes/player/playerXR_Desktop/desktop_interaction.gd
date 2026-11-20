@@ -2,6 +2,9 @@ extends Node
 ## Único propietario del ratón/teclado del simulador desktop, sin iniciar OpenXR.
 
 signal programming_changed(active: bool)
+signal remote_run_requested()
+
+const REMOTE_PRESS_DURATION := 0.36
 
 @export_range(1.0, 8.0, 0.1) var interaction_distance := 4.5
 @export_range(0.0005, 0.01, 0.0001) var mouse_sensitivity := 0.0022
@@ -9,6 +12,7 @@ signal programming_changed(active: bool)
 var active_panel: Node3D
 var hovered_panel: Node3D
 var pointer_pressed := false
+var remote_pressing: bool = false
 var _looking := true
 var _session_open := false
 var _buttons := 0
@@ -17,6 +21,9 @@ var _surface: SubViewport
 var _hint: Label
 var _reticle: Label
 var _simulator: Node
+var _remote_press_timer: float = 0.0
+var _status_message: String = ""
+var _status_timer: float = 0.0
 
 @onready var camera: Camera3D = get_parent().get_node("XRCamera3D")
 
@@ -101,10 +108,33 @@ func _input(event: InputEvent) -> void:
 		camera.rotation.y -= event.relative.x * mouse_sensitivity
 		camera.rotation.x = clampf(camera.rotation.x - event.relative.y * mouse_sensitivity, deg_to_rad(-80), deg_to_rad(80))
 		camera.rotation.z = 0.0
+	elif is_exploring() and event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		trigger_remote_control()
+		get_viewport().set_input_as_handled()
 	elif event is InputEventMouseButton and event.pressed and not _looking:
 		_looking = true
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		get_viewport().set_input_as_handled()
+
+func trigger_remote_control() -> void:
+	remote_pressing = true
+	_remote_press_timer = REMOTE_PRESS_DURATION
+	var parent := get_parent()
+	if parent != null:
+		var remote := parent.get_node_or_null("RightHand/TractorRemote")
+		if is_instance_valid(remote) and remote.has_method("play_press_animation"):
+			remote.play_press_animation("ok")
+	remote_run_requested.emit()
+
+func notify_remote_status(status: String, message: String, duration: float = 3.0) -> void:
+	var parent := get_parent()
+	if parent != null:
+		var remote := parent.get_node_or_null("RightHand/TractorRemote")
+		if is_instance_valid(remote) and remote.has_method("play_press_animation"):
+			remote.play_press_animation(status)
+	_status_message = message
+	_status_timer = duration
+	_update_hint()
 
 func _is_typing() -> bool:
 	if not is_instance_valid(_surface):
@@ -136,7 +166,17 @@ func _route_pointer(event: InputEventMouse) -> void:
 	_last_cursor = position
 	_surface.push_input(routed, true)
 
-func _physics_process(_delta: float) -> void:
+func _physics_process(delta: float) -> void:
+	if _remote_press_timer > 0.0:
+		_remote_press_timer = maxf(0.0, _remote_press_timer - delta)
+		if _remote_press_timer <= 0.0:
+			remote_pressing = false
+	if _status_timer > 0.0:
+		_status_timer = maxf(0.0, _status_timer - delta)
+		if _status_timer <= 0.0:
+			_status_message = ""
+			_update_hint()
+
 	if _session_open and not is_programming():
 		exit_programming()
 	if is_programming():
@@ -197,7 +237,9 @@ func _update_hint() -> void:
 	_reticle.visible = not is_programming()
 	if is_programming():
 		_hint.text = "PROGRAMANDO  ·  Clic: seleccionar / arrastrar  ·  Rueda: desplazar  ·  E / Esc: volver"
+	elif not _status_message.is_empty():
+		_hint.text = _status_message
 	elif is_instance_valid(hovered_panel):
-		_hint.text = "[ E ]  Programar  ·  " + str(hovered_panel.get_meta("display_name", "Panel"))
+		_hint.text = "[ E ]  Programar  ·  " + str(hovered_panel.get_meta("display_name", "Panel")) + "     ·     Clic Izq  Control Remoto"
 	else:
-		_hint.text = "WASD  Moverse     ·     Ratón  Mirar     ·     Acércate a un panel y pulsa E"
+		_hint.text = "WASD  Moverse   ·   Ratón  Mirar   ·   Clic Izq  Control Remoto (Ejecutar)   ·   [ E ] en panel  Programar"

@@ -48,6 +48,7 @@ var cond_var_index: int = 0
 var operators = ["<", ">", "==", "!=", "<=", ">="]
 var cond_op_index: int = 0
 var cond_value: int = 5
+var lock_overlay: ColorRect
 
 func _ready() -> void:
 	# Tema compartido de la estación.
@@ -68,6 +69,101 @@ func _ready() -> void:
 	btn_cond_op_right.pressed.connect(_cond_op_right)
 	btn_cond_val_left.pressed.connect(_cond_val_minus)
 	btn_cond_val_right.pressed.connect(_cond_val_plus)
+
+	_apply_visual_styling()
+	_build_lock_overlay()
+	var gs := get_node_or_null("/root/GameState")
+	if gs and gs.has_signal("blocks_updated") and not gs.blocks_updated.is_connected(refresh_unlocks):
+		gs.blocks_updated.connect(refresh_unlocks)
+	refresh_unlocks()
+
+func _apply_visual_styling() -> void:
+	var title_vars: Label = $MarginContainer/ScrollContainer/VBoxContainer/TitleVars
+	var title_created: Label = $MarginContainer/ScrollContainer/VBoxContainer/TitleCreated
+	var title_cond: Label = $MarginContainer/ScrollContainer/VBoxContainer/TitleCond
+	title_vars.add_theme_stylebox_override("normal", StationTheme.make_accent_card(StationTheme.SURFACE.lerp(StationTheme.MINT, 0.12), StationTheme.MINT, 5, 10, 14, 8))
+	title_created.add_theme_stylebox_override("normal", StationTheme.make_accent_card(StationTheme.SURFACE.lerp(StationTheme.SKY, 0.12), StationTheme.SKY, 5, 10, 14, 8))
+	title_created.add_theme_color_override("font_color", StationTheme.SKY)
+	title_cond.add_theme_stylebox_override("normal", StationTheme.make_accent_card(StationTheme.SURFACE.lerp(StationTheme.AMBER, 0.12), StationTheme.AMBER, 5, 10, 14, 8))
+
+	var mint_pill := _make_pill_style(StationTheme.SURFACE.lerp(StationTheme.MINT, 0.14), StationTheme.MINT)
+	for lbl in [lbl_var_name, lbl_var_type, lbl_var_value]:
+		lbl.add_theme_stylebox_override("normal", mint_pill)
+		lbl.add_theme_color_override("font_color", StationTheme.MINT)
+
+	var amber_pill := _make_pill_style(StationTheme.SURFACE.lerp(StationTheme.AMBER, 0.14), StationTheme.AMBER)
+	for lbl in [lbl_cond_var, lbl_cond_op, lbl_cond_val, lbl_cond_preview]:
+		lbl.add_theme_stylebox_override("normal", amber_pill)
+		lbl.add_theme_color_override("font_color", StationTheme.AMBER)
+
+func _make_pill_style(bg: Color, border: Color) -> StyleBoxFlat:
+	var s := StyleBoxFlat.new()
+	s.bg_color = bg
+	s.border_color = border
+	s.set_border_width_all(1)
+	s.set_corner_radius_all(12)
+	s.content_margin_left = 12
+	s.content_margin_right = 12
+	s.content_margin_top = 8
+	s.content_margin_bottom = 8
+	return s
+
+func _build_lock_overlay() -> void:
+	lock_overlay = ColorRect.new()
+	lock_overlay.name = "LockOverlay"
+	lock_overlay.color = Color(0.031, 0.043, 0.063, 0.84)
+	lock_overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	lock_overlay.mouse_filter = Control.MOUSE_FILTER_STOP
+	lock_overlay.visible = false
+	add_child(lock_overlay)
+
+	var center := CenterContainer.new()
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	lock_overlay.add_child(center)
+
+	var card := PanelContainer.new()
+	card.custom_minimum_size = Vector2(640, 0)
+	card.add_theme_stylebox_override(
+		"panel",
+		StationTheme.make_accent_card(Color(0.145, 0.115, 0.068), StationTheme.AMBER, 6, 14, 26, 24)
+	)
+	center.add_child(card)
+
+	var vbox := VBoxContainer.new()
+	vbox.add_theme_constant_override("separation", 10)
+	card.add_child(vbox)
+
+	var lbl_lock := Label.new()
+	lbl_lock.text = "Taller de Variables bloqueado — Desbloquéalo en la Tienda por 80 monedas"
+	lbl_lock.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	lbl_lock.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	lbl_lock.add_theme_font_size_override("font_size", 21)
+	lbl_lock.add_theme_color_override("font_color", StationTheme.AMBER)
+	vbox.add_child(lbl_lock)
+
+	var lbl_hint := Label.new()
+	lbl_hint.text = "Gana monedas completando niveles y acércate al Kiosco de la Tienda (tecla E) para comprarlo."
+	lbl_hint.theme_type_variation = "StationHelp"
+	lbl_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	lbl_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	vbox.add_child(lbl_hint)
+
+func refresh_unlocks() -> void:
+	var gs := get_node_or_null("/root/GameState")
+	var unlocked: bool = true if gs == null else gs.is_block_unlocked("variables")
+	if is_instance_valid(lock_overlay):
+		lock_overlay.visible = not unlocked
+	btn_create.disabled = not unlocked
+	for spinner_btn in [
+		btn_var_name_left, btn_var_name_right,
+		btn_var_type_left, btn_var_type_right,
+		btn_var_val_left, btn_var_val_right,
+		btn_cond_var_left, btn_cond_var_right,
+		btn_cond_op_left, btn_cond_op_right,
+		btn_cond_val_left, btn_cond_val_right,
+	]:
+		if is_instance_valid(spinner_btn):
+			spinner_btn.disabled = not unlocked
 
 # ============================================
 # TALLER DE VARIABLES
@@ -146,7 +242,7 @@ func _refresh_vars_ui() -> void:
 		hbox.add_theme_constant_override("separation", 6)
 
 		var btn = Button.new()
-		btn.text = "📌 " + vname + " = " + info.value
+		btn.text = vname + " = " + info.value
 		btn.custom_minimum_size.y = 44
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		btn.add_theme_font_size_override("font_size", 17)
@@ -213,7 +309,7 @@ func _cond_val_plus() -> void:
 func _update_condition_preview() -> void:
 	var cond = _get_condition()
 	if created_vars.is_empty():
-		lbl_cond_preview.text = "⚠ Crea una variable primero"
+		lbl_cond_preview.text = "Crea una variable primero"
 		lbl_cond_var.text = "---"
 	else:
 		var keys = created_vars.keys()

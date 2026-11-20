@@ -80,13 +80,22 @@ func test_deck_floor_physics() -> bool:
 	root.add_child(deck)
 	await physics_frame
 	await physics_frame
-	for point in [Vector2(-3, 45), Vector2(1, 47), Vector2(5, 49), Vector2(-1, 51)]:
+	for point in [
+		Vector2(-3, 45),
+		Vector2(1, 47),
+		Vector2(5, 49),
+		Vector2(-1, 51),
+		Vector2(-2.5, 45.28),
+		Vector2(0.5, 45.55),
+		Vector2(2.5, 47.28),
+		Vector2(-1.5, 49.55),
+	]:
 		var hit := ray_down(point.x, point.y)
-		check(not hit.is_empty(), "deck floor is solid at %.0f,%.0f" % [point.x, point.y])
+		check(not hit.is_empty(), "deck floor is solid at %.2f,%.2f" % [point.x, point.y])
 		if not hit.is_empty():
 			check(
-				absf(hit.position.y - DECK_TOP) < 0.12,
-				"deck floor height at %.0f,%.0f is %.2f" % [point.x, point.y, hit.position.y]
+				absf(hit.position.y - DECK_TOP) < 0.01,
+				"deck floor height at %.2f,%.2f is %.3f" % [point.x, point.y, hit.position.y]
 			)
 	return true
 
@@ -229,9 +238,10 @@ func test_main_keeps_node_paths() -> bool:
 		"ProgrammingConsole/panel_code",
 		"ProgrammingConsole/panel_actions",
 		"ProgrammingConsole/panel_variables",
-		"ProgrammingConsole/panel_camera",
+		"ProgrammingConsole/panel_shop",
 	]:
 		check(main.get_node_or_null(path) != null, "Main keeps the node path " + path)
+	check(main.get_node_or_null("ProgrammingConsole/panel_camera") == null, "Main removed panel_camera")
 	check(main.get("viewport_code") == main.get_node("ProgrammingConsole/panel_code"), "Main keeps the exported code path")
 	check(main.get("viewport_actions") == main.get_node("ProgrammingConsole/panel_actions"), "Main keeps the exported actions path")
 	check(main.get("viewport_variables") == main.get_node("ProgrammingConsole/panel_variables"), "Main keeps the exported variables path")

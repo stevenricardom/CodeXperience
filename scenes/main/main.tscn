@@ -8,35 +8,83 @@
 [ext_resource type="MeshLibrary" uid="uid://c6oyqldnxbto3" path="res://assets/meshlibrary/preset_result_tiles/tiles_meshlibrary/assets_nature_tiles.tres" id="83_5biqi"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="83_ia3vs"]
 [ext_resource type="PackedScene" uid="uid://cf84nuu3n7e7u" path="res://scenes/ui/panel_code/panel_code.tscn" id="85_1p6ov"]
-[ext_resource type="PackedScene" uid="uid://bi7lwtbo7xb4y" path="res://scenes/ui/panel_camera/panel_camera.tscn" id="86_wy6v6"]
 [ext_resource type="PackedScene" uid="uid://bpv7topb1u5g7" path="res://scenes/ui/panel_actions/panel_actions.tscn" id="87_5x6b6"]
-[ext_resource type="Script" uid="uid://eavk7267igp7" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.gd" id="87_flbmi"]
 [ext_resource type="PackedScene" uid="uid://d000hwyxhvd17" path="res://scenes/ui/panel_variables/panel_variables.tscn" id="88_2conb"]
-[ext_resource type="Script" uid="uid://cpl5yiyf1ypft" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d_body.gd" id="89_yv2hd"]
 [ext_resource type="PackedScene" path="res://scenes/world/observation_deck.tscn" id="90_deck"]
+[ext_resource type="PackedScene" uid="uid://cshopkiosk777" path="res://scenes/ui/panel_shop/panel_shop.tscn" id="91_shop"]
+[ext_resource type="Script" path="res://scenes/world/farm_lot.gd" id="92_lot"]
+[ext_resource type="PackedScene" uid="uid://bq1j5tx1bbdej" path="res://assets/scenes/farm_assets/structures/Bld_Well_01.tscn" id="93_well"]
+[ext_resource type="PackedScene" uid="uid://dh7b5qx6sa8sn" path="res://assets/scenes/farm_assets/structures/Bld_Chicken_Coop_01.tscn" id="94_coop"]
+[ext_resource type="PackedScene" uid="uid://c3wl4s1wj0mc6" path="res://assets/scenes/farm_assets/structures/Bld_Silo_01.tscn" id="95_silo"]
+[ext_resource type="PackedScene" uid="uid://dqp7c6krat0vn" path="res://assets/scenes/farm_assets/structures/Bld_Windmill_01.tscn" id="96_windmill"]
+[ext_resource type="PackedScene" uid="uid://1j44nhsyyw66" path="res://assets/scenes/farm_assets/structures/Bld_Barn_01.tscn" id="97_barn"]
 
-[sub_resource type="QuadMesh" id="QuadMesh_0jr6o"]
-resource_local_to_scene = true
-size = Vector2(4.5, 3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kiosk_wood"]
+albedo_color = Color(0.36, 0.22, 0.12, 1)
+roughness = 0.88
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_7smn1"]
-viewport_path = NodePath("ProgrammingConsole/panel_camera/Viewport")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kiosk_roof"]
+albedo_color = Color(0.62, 0.2, 0.16, 1)
+roughness = 0.8
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_raeie"]
-transparency = 1
-cull_mode = 2
-albedo_texture = SubResource("ViewportTexture_7smn1")
-texture_filter = 1
+[sub_resource type="BoxMesh" id="BoxMesh_kiosk_post"]
+material = SubResource("StandardMaterial3D_kiosk_wood")
+size = Vector3(0.14, 2.45, 0.14)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_6g21x"]
-resource_local_to_scene = true
-size = Vector3(4.5, 3, 0.02)
+[sub_resource type="BoxMesh" id="BoxMesh_kiosk_counter"]
+material = SubResource("StandardMaterial3D_kiosk_wood")
+size = Vector3(0.42, 0.12, 3.5)
 
-[node name="Main" type="Node3D" unique_id=2075806923 node_paths=PackedStringArray("viewport_actions", "viewport_code", "viewport_variables")]
+[sub_resource type="BoxMesh" id="BoxMesh_kiosk_fascia"]
+material = SubResource("StandardMaterial3D_kiosk_wood")
+size = Vector3(0.14, 0.42, 3.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kiosk_roof"]
+material = SubResource("StandardMaterial3D_kiosk_roof")
+size = Vector3(1.05, 0.1, 3.7)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kiosk_roof_actions"]
+albedo_color = Color(0.16, 0.48, 0.34, 1)
+roughness = 0.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kiosk_roof_code"]
+albedo_color = Color(0.18, 0.36, 0.58, 1)
+roughness = 0.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kiosk_roof_vars"]
+albedo_color = Color(0.68, 0.42, 0.14, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_kiosk_roof_actions"]
+material = SubResource("StandardMaterial3D_kiosk_roof_actions")
+size = Vector3(1.05, 0.1, 3.7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kiosk_roof_vars"]
+material = SubResource("StandardMaterial3D_kiosk_roof_vars")
+size = Vector3(1.05, 0.1, 3.7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_code_kiosk_post"]
+material = SubResource("StandardMaterial3D_kiosk_wood")
+size = Vector3(0.14, 2.45, 0.14)
+
+[sub_resource type="BoxMesh" id="BoxMesh_code_kiosk_counter"]
+material = SubResource("StandardMaterial3D_kiosk_wood")
+size = Vector3(3.5, 0.12, 0.42)
+
+[sub_resource type="BoxMesh" id="BoxMesh_code_kiosk_fascia"]
+material = SubResource("StandardMaterial3D_kiosk_wood")
+size = Vector3(3.5, 0.42, 0.14)
+
+[sub_resource type="BoxMesh" id="BoxMesh_code_kiosk_roof"]
+material = SubResource("StandardMaterial3D_kiosk_roof_code")
+size = Vector3(3.7, 0.1, 1.05)
+
+[node name="Main" type="Node3D" unique_id=2075806923 node_paths=PackedStringArray("viewport_actions", "viewport_code", "viewport_variables", "viewport_shop")]
 script = ExtResource("1_main_ctrl")
 viewport_actions = NodePath("ProgrammingConsole/panel_actions")
 viewport_code = NodePath("ProgrammingConsole/panel_code")
 viewport_variables = NodePath("ProgrammingConsole/panel_variables")
+viewport_shop = NodePath("ProgrammingConsole/panel_shop")
 ai_meta_nombre = "crop_pumpkin3"
 ai_obstaculo_nombre = "statue_block3"
 
@@ -71,12 +119,56 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
+[node name="FarmLots" type="Node3D" parent="Environment"]
+
+[node name="LotFences" type="Node3D" parent="Environment/FarmLots"]
+position = Vector3(-9.5, 0.95, 41.0)
+script = ExtResource("92_lot")
+building_id = "fences"
+fence_field_center = Vector3(6.0, 0.95, 30.0)
+
+[node name="LotWell" type="Node3D" parent="Environment/FarmLots"]
+position = Vector3(-11.5, 0.95, 33.5)
+rotation = Vector3(0, 0.5, 0)
+script = ExtResource("92_lot")
+building_id = "well"
+building_scene = ExtResource("93_well")
+
+[node name="LotChickenCoop" type="Node3D" parent="Environment/FarmLots"]
+position = Vector3(22.0, 0.95, 34.0)
+rotation = Vector3(0, -0.5, 0)
+script = ExtResource("92_lot")
+building_id = "chicken_coop"
+building_scene = ExtResource("94_coop")
+
+[node name="LotSilo" type="Node3D" parent="Environment/FarmLots"]
+position = Vector3(-12.0, 0.95, 16.5)
+rotation = Vector3(0, 0.45, 0)
+script = ExtResource("92_lot")
+building_id = "silo"
+building_scene = ExtResource("95_silo")
+building_scale = Vector3(0.8, 0.8, 0.8)
+
+[node name="LotWindmill" type="Node3D" parent="Environment/FarmLots"]
+position = Vector3(22.5, 0.95, 22.0)
+rotation = Vector3(0, -0.45, 0)
+script = ExtResource("92_lot")
+building_id = "windmill"
+building_scene = ExtResource("96_windmill")
+building_scale = Vector3(1.35, 1.35, 1.35)
+
+[node name="LotBarn" type="Node3D" parent="Environment/FarmLots"]
+position = Vector3(6.0, 0.95, 9.5)
+script = ExtResource("92_lot")
+building_id = "barn"
+building_scene = ExtResource("97_barn")
+
 [node name="ProgrammingConsole" type="Node3D" parent="." unique_id=1132983887]
 
 [node name="ObservationDeck" parent="ProgrammingConsole" instance=ExtResource("90_deck")]
 
 [node name="panel_code" parent="ProgrammingConsole" unique_id=1279858705 groups=["desktop_panels"] instance=ExtResource("83_ia3vs")]
-position = Vector3(3.0, 3.5, 48.7)
+position = Vector3(1.0, 3.5, 51.2)
 rotation = Vector3(0, 3.1415927, 0)
 screen_size = Vector2(3.2, 1.8)
 metadata/display_name = "Código"
@@ -85,44 +177,6 @@ input_keyboard = false
 scene = ExtResource("85_1p6ov")
 viewport_size = Vector2(960, 540)
 scene_properties_keys = PackedStringArray("panel_code.gd")
-
-[node name="panel_camera" type="Node3D" parent="ProgrammingConsole" unique_id=1793234196 groups=["desktop_panels"]]
-position = Vector3(-1.0, 3.5, 48.7)
-rotation = Vector3(0, 3.1415927, 0)
-metadata/display_name = "Vista del campo"
-script = ExtResource("87_flbmi")
-screen_size = Vector2(3.2, 1.8)
-collision_layer = 16
-input_keyboard = false
-scene = ExtResource("86_wy6v6")
-viewport_size = Vector2(960, 540)
-transparent = 1
-alpha_scissor_threshold = 0.25
-unshaded = false
-filter = true
-scene_properties_keys = PackedStringArray("panel_camera.gd")
-
-[node name="Viewport" type="SubViewport" parent="ProgrammingConsole/panel_camera" unique_id=1590005199]
-disable_3d = true
-transparent_bg = true
-gui_embed_subwindows = true
-size = Vector2i(960, 540)
-render_target_update_mode = 1
-
-[node name="Screen" type="MeshInstance3D" parent="ProgrammingConsole/panel_camera" unique_id=621071539]
-mesh = SubResource("QuadMesh_0jr6o")
-surface_material_override/0 = SubResource("StandardMaterial3D_raeie")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ProgrammingConsole/panel_camera" unique_id=1633450836]
-collision_layer = 5242896
-collision_mask = 0
-script = ExtResource("89_yv2hd")
-screen_size = Vector2(4.5, 3)
-viewport_size = Vector2(960, 540)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ProgrammingConsole/panel_camera/StaticBody3D" unique_id=545594515]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.01)
-shape = SubResource("BoxShape3D_6g21x")
 
 [node name="panel_actions" parent="ProgrammingConsole" unique_id=639825041 groups=["desktop_panels"] instance=ExtResource("83_ia3vs")]
 position = Vector3(-2.8, 3.5, 45.5)
@@ -136,7 +190,7 @@ viewport_size = Vector2(960, 540)
 scene_properties_keys = PackedStringArray("panel_actions.gd")
 
 [node name="panel_variables" parent="ProgrammingConsole" unique_id=415920694 groups=["desktop_panels"] instance=ExtResource("83_ia3vs")]
-position = Vector3(4.8, 3.5, 50.0)
+position = Vector3(4.8, 3.5, 49.2)
 rotation = Vector3(0, -1.5707963, 0)
 screen_size = Vector2(3.2, 1.8)
 metadata/display_name = "Variables"
@@ -145,3 +199,151 @@ input_keyboard = false
 scene = ExtResource("88_2conb")
 viewport_size = Vector2(960, 540)
 scene_properties_keys = PackedStringArray("panel_variables.gd")
+
+[node name="panel_shop" parent="ProgrammingConsole" groups=["desktop_panels"] instance=ExtResource("83_ia3vs")]
+position = Vector3(-2.8, 3.5, 49.2)
+rotation = Vector3(0, 1.5707963, 0)
+screen_size = Vector2(3.2, 1.8)
+metadata/display_name = "Tienda de la Granja"
+collision_layer = 16
+input_keyboard = false
+scene = ExtResource("91_shop")
+viewport_size = Vector2(960, 540)
+scene_properties_keys = PackedStringArray("panel_shop.gd")
+
+[node name="ShopKiosk" type="Node3D" parent="ProgrammingConsole"]
+position = Vector3(-3.15, 2.45, 49.2)
+
+[node name="PostLeft" type="MeshInstance3D" parent="ProgrammingConsole/ShopKiosk"]
+position = Vector3(0, 1.225, -1.72)
+mesh = SubResource("BoxMesh_kiosk_post")
+
+[node name="PostRight" type="MeshInstance3D" parent="ProgrammingConsole/ShopKiosk"]
+position = Vector3(0, 1.225, 1.72)
+mesh = SubResource("BoxMesh_kiosk_post")
+
+[node name="Counter" type="MeshInstance3D" parent="ProgrammingConsole/ShopKiosk"]
+position = Vector3(0.22, 0.08, 0)
+mesh = SubResource("BoxMesh_kiosk_counter")
+
+[node name="FasciaBoard" type="MeshInstance3D" parent="ProgrammingConsole/ShopKiosk"]
+position = Vector3(0.18, 2.12, 0)
+mesh = SubResource("BoxMesh_kiosk_fascia")
+
+[node name="AwningRoof" type="MeshInstance3D" parent="ProgrammingConsole/ShopKiosk"]
+position = Vector3(0.28, 2.38, 0)
+rotation = Vector3(0, 0, -0.22)
+mesh = SubResource("BoxMesh_kiosk_roof")
+
+[node name="KioskSign" type="Label3D" parent="ProgrammingConsole/ShopKiosk"]
+position = Vector3(0.27, 2.12, 0)
+rotation = Vector3(0, 1.5707963, 0)
+modulate = Color(1, 0.92, 0.65, 1)
+outline_modulate = Color(0.12, 0.07, 0.03, 1)
+text = "TIENDA DE LA GRANJA"
+font_size = 34
+pixel_size = 0.006
+outline_size = 8
+
+[node name="ActionsKiosk" type="Node3D" parent="ProgrammingConsole"]
+position = Vector3(-3.15, 2.45, 45.5)
+
+[node name="PostLeft" type="MeshInstance3D" parent="ProgrammingConsole/ActionsKiosk"]
+position = Vector3(0, 1.225, -1.72)
+mesh = SubResource("BoxMesh_kiosk_post")
+
+[node name="PostRight" type="MeshInstance3D" parent="ProgrammingConsole/ActionsKiosk"]
+position = Vector3(0, 1.225, 1.72)
+mesh = SubResource("BoxMesh_kiosk_post")
+
+[node name="Counter" type="MeshInstance3D" parent="ProgrammingConsole/ActionsKiosk"]
+position = Vector3(0.22, 0.08, 0)
+mesh = SubResource("BoxMesh_kiosk_counter")
+
+[node name="FasciaBoard" type="MeshInstance3D" parent="ProgrammingConsole/ActionsKiosk"]
+position = Vector3(0.18, 2.12, 0)
+mesh = SubResource("BoxMesh_kiosk_fascia")
+
+[node name="AwningRoof" type="MeshInstance3D" parent="ProgrammingConsole/ActionsKiosk"]
+position = Vector3(0.28, 2.38, 0)
+rotation = Vector3(0, 0, -0.22)
+mesh = SubResource("BoxMesh_kiosk_roof_actions")
+
+[node name="KioskSign" type="Label3D" parent="ProgrammingConsole/ActionsKiosk"]
+position = Vector3(0.27, 2.12, 0)
+rotation = Vector3(0, 1.5707963, 0)
+modulate = Color(1, 0.92, 0.65, 1)
+outline_modulate = Color(0.12, 0.07, 0.03, 1)
+text = "PANEL DE ACCIONES"
+font_size = 34
+pixel_size = 0.006
+outline_size = 8
+
+[node name="VariablesKiosk" type="Node3D" parent="ProgrammingConsole"]
+position = Vector3(5.15, 2.45, 49.2)
+rotation = Vector3(0, 3.1415927, 0)
+
+[node name="PostLeft" type="MeshInstance3D" parent="ProgrammingConsole/VariablesKiosk"]
+position = Vector3(0, 1.225, -1.72)
+mesh = SubResource("BoxMesh_kiosk_post")
+
+[node name="PostRight" type="MeshInstance3D" parent="ProgrammingConsole/VariablesKiosk"]
+position = Vector3(0, 1.225, 1.72)
+mesh = SubResource("BoxMesh_kiosk_post")
+
+[node name="Counter" type="MeshInstance3D" parent="ProgrammingConsole/VariablesKiosk"]
+position = Vector3(0.22, 0.08, 0)
+mesh = SubResource("BoxMesh_kiosk_counter")
+
+[node name="FasciaBoard" type="MeshInstance3D" parent="ProgrammingConsole/VariablesKiosk"]
+position = Vector3(0.18, 2.12, 0)
+mesh = SubResource("BoxMesh_kiosk_fascia")
+
+[node name="AwningRoof" type="MeshInstance3D" parent="ProgrammingConsole/VariablesKiosk"]
+position = Vector3(0.28, 2.38, 0)
+rotation = Vector3(0, 0, -0.22)
+mesh = SubResource("BoxMesh_kiosk_roof_vars")
+
+[node name="KioskSign" type="Label3D" parent="ProgrammingConsole/VariablesKiosk"]
+position = Vector3(0.27, 2.12, 0)
+rotation = Vector3(0, 1.5707963, 0)
+modulate = Color(1, 0.92, 0.65, 1)
+outline_modulate = Color(0.12, 0.07, 0.03, 1)
+text = "TALLER DE VARIABLES"
+font_size = 34
+pixel_size = 0.006
+outline_size = 8
+
+[node name="CodeKiosk" type="Node3D" parent="ProgrammingConsole"]
+position = Vector3(1.0, 2.45, 51.55)
+
+[node name="PostLeft" type="MeshInstance3D" parent="ProgrammingConsole/CodeKiosk"]
+position = Vector3(-1.72, 1.225, 0)
+mesh = SubResource("BoxMesh_code_kiosk_post")
+
+[node name="PostRight" type="MeshInstance3D" parent="ProgrammingConsole/CodeKiosk"]
+position = Vector3(1.72, 1.225, 0)
+mesh = SubResource("BoxMesh_code_kiosk_post")
+
+[node name="Counter" type="MeshInstance3D" parent="ProgrammingConsole/CodeKiosk"]
+position = Vector3(0, 0.08, -0.22)
+mesh = SubResource("BoxMesh_code_kiosk_counter")
+
+[node name="FasciaBoard" type="MeshInstance3D" parent="ProgrammingConsole/CodeKiosk"]
+position = Vector3(0, 2.18, -0.18)
+mesh = SubResource("BoxMesh_code_kiosk_fascia")
+
+[node name="AwningRoof" type="MeshInstance3D" parent="ProgrammingConsole/CodeKiosk"]
+position = Vector3(0, 2.44, -0.28)
+rotation = Vector3(-0.22, 0, 0)
+mesh = SubResource("BoxMesh_code_kiosk_roof")
+
+[node name="KioskSignCode" type="Label3D" parent="ProgrammingConsole/CodeKiosk"]
+position = Vector3(0, 2.18, -0.27)
+rotation = Vector3(0, 3.1415927, 0)
+modulate = Color(1, 0.92, 0.65, 1)
+outline_modulate = Color(0.12, 0.07, 0.03, 1)
+text = "CONSOLA DE CODIGO"
+font_size = 34
+pixel_size = 0.006
+outline_size = 8

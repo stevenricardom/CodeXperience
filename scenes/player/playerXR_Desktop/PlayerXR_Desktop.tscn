@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://scenes/player/playerXR_Desktop/desktop_interaction.gd" id="9_desktop"]
 [ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="5_5ui7x"]
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="7_5ui7x"]
+[ext_resource type="Script" path="res://scenes/player/playerXR_Desktop/tractor_remote.gd" id="10_remote"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_th5th"]
 
@@ -33,6 +34,9 @@ enabled = false
 show_laser = 0
 show_target = true
 collision_mask = 5242896
+
+[node name="TractorRemote" type="Node3D" parent="RightHand"]
+script = ExtResource("10_remote")
 
 [node name="LeftHand" type="XRController3D" parent="." unique_id=1664995147]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10802849, 1.5184232, -0.22431614)

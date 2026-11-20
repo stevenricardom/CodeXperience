@@ -2,6 +2,52 @@
 
 [ext_resource type="Script" uid="uid://b3jn7rs0n323l" path="res://scenes/ui/main_menu/main_menu.gd" id="1_menu"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hero"]
+bg_color = Color(0.075, 0.11, 0.17, 0.94)
+border_width_left = 2
+border_width_top = 4
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.957, 0.769, 0.42, 0.9)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+shadow_color = Color(0, 0, 0, 0.55)
+shadow_size = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_badge"]
+content_margin_left = 14.0
+content_margin_top = 5.0
+content_margin_right = 14.0
+content_margin_bottom = 5.0
+bg_color = Color(0.24, 0.175, 0.07, 0.95)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.957, 0.769, 0.42, 0.85)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_controls"]
+content_margin_left = 16.0
+content_margin_top = 12.0
+content_margin_right = 16.0
+content_margin_bottom = 12.0
+bg_color = Color(0.095, 0.14, 0.21, 0.92)
+border_width_left = 4
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.541, 0.749, 0.965, 0.85)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [node name="MainMenu" type="Control" unique_id=2039835142]
 layout_mode = 3
 anchors_preset = 15
@@ -11,7 +57,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_menu")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1265500216]
+[node name="Backdrop" type="Control" parent="." unique_id=1265500216]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,7 +65,86 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0.043, 0.055, 0.078, 1)
+
+[node name="SkyUpper" type="ColorRect" parent="Backdrop" unique_id=1265500217]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.34
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.11, 0.15, 0.3, 1)
+
+[node name="SkyWarm" type="ColorRect" parent="Backdrop" unique_id=1265500218]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.32
+anchor_right = 1.0
+anchor_bottom = 0.54
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.32, 0.22, 0.35, 1)
+
+[node name="HorizonAmber" type="ColorRect" parent="Backdrop" unique_id=1265500219]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.52
+anchor_right = 1.0
+anchor_bottom = 0.65
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.76, 0.45, 0.18, 1)
+
+[node name="MeadowBand" type="ColorRect" parent="Backdrop" unique_id=1265500220]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.64
+anchor_right = 1.0
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.13, 0.38, 0.23, 1)
+
+[node name="SoilBand" type="ColorRect" parent="Backdrop" unique_id=1265500221]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.81
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.24, 0.15, 0.09, 1)
+
+[node name="ContrastVeil" type="ColorRect" parent="Backdrop" unique_id=1265500222]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.03, 0.05, 0.09, 0.32)
+
+[node name="HeroCard" type="PanelContainer" parent="." unique_id=1265500223]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -245.0
+offset_right = 360.0
+offset_bottom = 245.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hero")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=16712664]
 layout_mode = 1
@@ -28,44 +153,85 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -290.0
-offset_top = -100.0
-offset_right = 290.0
-offset_bottom = 100.0
+offset_left = -320.0
+offset_top = -210.0
+offset_right = 320.0
+offset_bottom = 210.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 16
+
+[node name="BadgeWrap" type="CenterContainer" parent="VBoxContainer" unique_id=16712665]
+layout_mode = 2
+
+[node name="BadgePanel" type="PanelContainer" parent="VBoxContainer/BadgeWrap" unique_id=16712666]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_badge")
+
+[node name="BadgeLabel" type="Label" parent="VBoxContainer/BadgeWrap/BadgePanel" unique_id=16712667]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.769, 0.42, 1)
+theme_override_font_sizes/font_size = 13
+text = "ESTACIÓN AGRÍCOLA INTERACTIVA"
+horizontal_alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=666659020]
 layout_mode = 2
 theme_type_variation = &"StationTitle"
-theme_override_font_sizes/font_size = 32
-text = "CodeXperience"
+theme_override_font_sizes/font_size = 34
+text = "CodeXperience · Granja Tycoon"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer" unique_id=28111034]
 layout_mode = 2
 theme_type_variation = &"StationHelp"
 theme_override_font_sizes/font_size = 18
-text = "Tu laboratorio de programación en el campo"
+text = "Restaura tu granja programando el tractor"
 horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1416548369]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 12
 
-[node name="BtnDesktop" type="Button" parent="VBoxContainer" unique_id=1387937357]
-custom_minimum_size = Vector2(0, 60)
+[node name="SaveProgressBox" type="VBoxContainer" parent="VBoxContainer" unique_id=1416548370]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SaveProgressLabel" type="Label" parent="VBoxContainer/SaveProgressBox" unique_id=1416548371]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.435, 0.89, 0.69, 1)
+theme_override_font_sizes/font_size = 15
+text = "Progreso de granja: 0 %"
+horizontal_alignment = 1
+
+[node name="SaveProgressBar" type="ProgressBar" parent="VBoxContainer/SaveProgressBox" unique_id=1416548372]
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+show_percentage = false
+
+[node name="BtnContinue" type="Button" parent="VBoxContainer" unique_id=1928374650]
+visible = false
+custom_minimum_size = Vector2(0, 58)
 layout_mode = 2
 theme_type_variation = &"StationPrimary"
 theme_override_font_sizes/font_size = 20
-text = "Entrar a la estación"
+text = "Continuar Granja"
 
-[node name="Controls" type="Label" parent="VBoxContainer" unique_id=540690941]
+[node name="BtnDesktop" type="Button" parent="VBoxContainer" unique_id=1387937357]
+custom_minimum_size = Vector2(0, 58)
+layout_mode = 2
+theme_type_variation = &"StationPrimary"
+theme_override_font_sizes/font_size = 20
+text = "Nueva Partida"
+
+[node name="ControlsCard" type="PanelContainer" parent="VBoxContainer" unique_id=540690940]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_controls")
+
+[node name="Controls" type="Label" parent="VBoxContainer/ControlsCard" unique_id=540690941]
 layout_mode = 2
 theme_type_variation = &"StationHelp"
-text = "WASD · Caminar     Ratón · Mirar
-E · Programar en un panel cercano
-Clic y arrastrar · Ordenar bloques
-E / Escape · Volver a explorar"
+text = "WASD: Moverse por la granja   |   Clic Izq: Control Remoto (Ejecutar)   |   E: Abrir panel   |   Escape: Salir del panel"
 horizontal_alignment = 1
+autowrap_mode = 3

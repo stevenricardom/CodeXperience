@@ -12,14 +12,14 @@ extends RefCounted
 # ============================================
 # PALETA
 # ============================================
-const BG_DEEP := Color(0.043, 0.055, 0.078)      # Fondo general de panel
-const SURFACE := Color(0.071, 0.090, 0.125)      # Fondo de tarjeta
-const CARD := Color(0.098, 0.125, 0.169)         # Tarjeta
-const CARD_HOVER := Color(0.129, 0.169, 0.220)   # Tarjeta en hover
-const CARD_PRESSED := Color(0.078, 0.106, 0.145) # Tarjeta presionada
-const INPUT_BG := Color(0.063, 0.082, 0.114)     # Campos de texto
-const BORDER := Color(0.180, 0.220, 0.286)       # Borde suave
-const BORDER_STRONG := Color(0.271, 0.333, 0.416)
+const BG_DEEP := Color(0.06, 0.09, 0.14)       # Fondo general de panel
+const SURFACE := Color(0.10, 0.145, 0.215)     # Fondo de tarjeta
+const CARD := Color(0.135, 0.19, 0.275)        # Tarjeta
+const CARD_HOVER := Color(0.175, 0.24, 0.34)   # Tarjeta en hover
+const CARD_PRESSED := Color(0.105, 0.150, 0.220) # Tarjeta presionada
+const INPUT_BG := Color(0.075, 0.105, 0.160)   # Campos de texto
+const BORDER := Color(0.215, 0.275, 0.365)     # Borde suave
+const BORDER_STRONG := Color(0.320, 0.405, 0.520)
 
 const TEXT := Color(0.886, 0.925, 0.965)         # Texto principal
 const TEXT_MUTED := Color(0.635, 0.694, 0.769)   # Texto secundario
@@ -125,51 +125,51 @@ static func _build_inputs(t: Theme) -> void:
 	t.set_stylebox("normal", "RichTextLabel", _flat(INPUT_BG, BORDER, 1, 10, 12, 12))
 
 static func _build_variations(t: Theme) -> void:
-	# --- Botón primario (menta): acción principal ---
+	# --- Botón primario (esmeralda vivo): acción principal ---
 	t.set_type_variation("StationPrimary", "Button")
-	t.set_stylebox("normal", "StationPrimary", _flat(Color(0.106, 0.196, 0.169), MINT_DEEP, 1, 10, 16, 9))
-	t.set_stylebox("hover", "StationPrimary", _flat(Color(0.145, 0.290, 0.239), MINT, 1, 10, 16, 9))
-	t.set_stylebox("pressed", "StationPrimary", _flat(Color(0.075, 0.157, 0.133), MINT, 2, 10, 16, 9))
-	t.set_stylebox("disabled", "StationPrimary", _flat(Color(0.078, 0.106, 0.110), Color(0.129, 0.157, 0.196), 1, 10, 16, 9))
+	t.set_stylebox("normal", "StationPrimary", _flat(Color(0.13, 0.48, 0.33), MINT, 2, 10, 16, 9))
+	t.set_stylebox("hover", "StationPrimary", _flat(Color(0.17, 0.59, 0.41), MINT, 2, 10, 16, 9))
+	t.set_stylebox("pressed", "StationPrimary", _flat(Color(0.10, 0.38, 0.26), MINT, 2, 10, 16, 9))
+	t.set_stylebox("disabled", "StationPrimary", _flat(Color(0.085, 0.125, 0.140), Color(0.17, 0.22, 0.26), 1, 10, 16, 9))
 	t.set_stylebox("focus", "StationPrimary", _flat(Color(0, 0, 0, 0), AMBER, 2, 10, 16, 9))
-	t.set_color("font_color", "StationPrimary", MINT)
+	t.set_color("font_color", "StationPrimary", Color(0.96, 1.0, 0.98))
 	t.set_color("font_hover_color", "StationPrimary", Color.WHITE)
-	t.set_color("font_pressed_color", "StationPrimary", Color.WHITE)
+	t.set_color("font_pressed_color", "StationPrimary", Color(0.96, 1.0, 0.98))
 	t.set_color("font_disabled_color", "StationPrimary", TEXT_FAINT)
 
-	# --- Botón de acento (ámbar): construir / confirmar ---
+	# --- Botón de acento (ámbar dorado): construir / confirmar / pista ---
 	t.set_type_variation("StationAccent", "Button")
-	t.set_stylebox("normal", "StationAccent", _flat(Color(0.184, 0.153, 0.090), AMBER_DEEP, 1, 10, 16, 9))
-	t.set_stylebox("hover", "StationAccent", _flat(Color(0.259, 0.208, 0.114), AMBER, 1, 10, 16, 9))
-	t.set_stylebox("pressed", "StationAccent", _flat(Color(0.133, 0.110, 0.063), AMBER, 2, 10, 16, 9))
-	t.set_stylebox("disabled", "StationAccent", _flat(Color(0.078, 0.106, 0.110), Color(0.129, 0.157, 0.196), 1, 10, 16, 9))
+	t.set_stylebox("normal", "StationAccent", _flat(Color(0.54, 0.35, 0.10), AMBER, 2, 10, 16, 9))
+	t.set_stylebox("hover", "StationAccent", _flat(Color(0.68, 0.45, 0.14), AMBER, 2, 10, 16, 9))
+	t.set_stylebox("pressed", "StationAccent", _flat(Color(0.42, 0.27, 0.08), AMBER, 2, 10, 16, 9))
+	t.set_stylebox("disabled", "StationAccent", _flat(Color(0.10, 0.12, 0.15), Color(0.18, 0.21, 0.25), 1, 10, 16, 9))
 	t.set_stylebox("focus", "StationAccent", _flat(Color(0, 0, 0, 0), AMBER, 2, 10, 16, 9))
-	t.set_color("font_color", "StationAccent", AMBER)
+	t.set_color("font_color", "StationAccent", Color(1.0, 0.97, 0.90))
 	t.set_color("font_hover_color", "StationAccent", Color.WHITE)
-	t.set_color("font_pressed_color", "StationAccent", Color.WHITE)
+	t.set_color("font_pressed_color", "StationAccent", Color(1.0, 0.97, 0.90))
 	t.set_color("font_disabled_color", "StationAccent", TEXT_FAINT)
 
-	# --- Botón de peligro (rosa): limpiar / cancelar ---
+	# --- Botón de peligro (coral/rojo): limpiar / cancelar ---
 	t.set_type_variation("StationDanger", "Button")
-	t.set_stylebox("normal", "StationDanger", _flat(Color(0.184, 0.106, 0.106), ROSE_DEEP, 1, 10, 16, 9))
-	t.set_stylebox("hover", "StationDanger", _flat(Color(0.259, 0.137, 0.137), ROSE, 1, 10, 16, 9))
-	t.set_stylebox("pressed", "StationDanger", _flat(Color(0.133, 0.078, 0.078), ROSE, 2, 10, 16, 9))
-	t.set_stylebox("disabled", "StationDanger", _flat(Color(0.078, 0.106, 0.110), Color(0.129, 0.157, 0.196), 1, 10, 16, 9))
+	t.set_stylebox("normal", "StationDanger", _flat(Color(0.50, 0.16, 0.18), ROSE, 2, 10, 16, 9))
+	t.set_stylebox("hover", "StationDanger", _flat(Color(0.64, 0.21, 0.23), ROSE, 2, 10, 16, 9))
+	t.set_stylebox("pressed", "StationDanger", _flat(Color(0.38, 0.12, 0.14), ROSE, 2, 10, 16, 9))
+	t.set_stylebox("disabled", "StationDanger", _flat(Color(0.10, 0.12, 0.15), Color(0.18, 0.21, 0.25), 1, 10, 16, 9))
 	t.set_stylebox("focus", "StationDanger", _flat(Color(0, 0, 0, 0), AMBER, 2, 10, 16, 9))
-	t.set_color("font_color", "StationDanger", ROSE)
+	t.set_color("font_color", "StationDanger", Color.WHITE)
 	t.set_color("font_hover_color", "StationDanger", Color.WHITE)
 	t.set_color("font_pressed_color", "StationDanger", Color.WHITE)
 	t.set_color("font_disabled_color", "StationDanger", TEXT_FAINT)
 
-	# --- Botón fantasma: acción secundaria sin peso visual ---
+	# --- Botón fantasma (azul acero): acción secundaria ---
 	t.set_type_variation("StationGhost", "Button")
-	t.set_stylebox("normal", "StationGhost", _flat(Color(0.078, 0.098, 0.133), BORDER, 1, 10, 14, 8))
-	t.set_stylebox("hover", "StationGhost", _flat(CARD_HOVER, BORDER_STRONG, 1, 10, 14, 8))
+	t.set_stylebox("normal", "StationGhost", _flat(Color(0.15, 0.21, 0.30), BORDER_STRONG, 1, 10, 14, 8))
+	t.set_stylebox("hover", "StationGhost", _flat(Color(0.21, 0.29, 0.41), BORDER_STRONG, 1, 10, 14, 8))
 	t.set_stylebox("pressed", "StationGhost", _flat(CARD_PRESSED, TEXT_MUTED, 1, 10, 14, 8))
-	t.set_stylebox("disabled", "StationGhost", _flat(Color(0.071, 0.086, 0.110), Color(0.129, 0.157, 0.196), 1, 10, 14, 8))
+	t.set_stylebox("disabled", "StationGhost", _flat(Color(0.085, 0.105, 0.140), Color(0.16, 0.20, 0.25), 1, 10, 14, 8))
 	t.set_stylebox("focus", "StationGhost", _flat(Color(0, 0, 0, 0), AMBER, 2, 10, 14, 8))
-	t.set_color("font_color", "StationGhost", TEXT_MUTED)
-	t.set_color("font_hover_color", "StationGhost", TEXT)
+	t.set_color("font_color", "StationGhost", TEXT)
+	t.set_color("font_hover_color", "StationGhost", Color.WHITE)
 	t.set_color("font_pressed_color", "StationGhost", TEXT)
 	t.set_color("font_disabled_color", "StationGhost", TEXT_FAINT)
 
@@ -203,6 +203,25 @@ static func _flat(bg: Color, border: Color, border_w: int, radius: int, pad_h: i
 	s.content_margin_right = pad_h
 	s.content_margin_top = pad_v
 	s.content_margin_bottom = pad_v
+	s.shadow_size = 4
+	s.shadow_color = Color(0, 0, 0, 0.28)
+	return s
+
+static func make_accent_card(bg: Color, accent: Color, stripe_left: int = 6, radius: int = 12, pad_h: int = 16, pad_v: int = 12) -> StyleBoxFlat:
+	var s := StyleBoxFlat.new()
+	s.bg_color = bg
+	s.border_color = accent
+	s.border_width_left = stripe_left
+	s.border_width_top = 1
+	s.border_width_right = 1
+	s.border_width_bottom = 1
+	s.set_corner_radius_all(radius)
+	s.content_margin_left = pad_h
+	s.content_margin_right = pad_h
+	s.content_margin_top = pad_v
+	s.content_margin_bottom = pad_v
+	s.shadow_size = 4
+	s.shadow_color = Color(0, 0, 0, 0.28)
 	return s
 
 ## Aplica el tema compartido a un control raíz (los hijos heredan el tema).
