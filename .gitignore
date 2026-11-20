@@ -1,3 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# AI skills & docs (excluded from repo)
+.agents/skills/
+docs/
