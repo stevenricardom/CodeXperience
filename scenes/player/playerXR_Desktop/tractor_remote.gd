@@ -2,6 +2,8 @@ class_name TractorRemote
 extends Node3D
 ## Control remoto 3D en la mano derecha del jugador para ejecutar el código del tractor.
 
+const STANDBY_COLOR := Color(0.12, 0.88, 0.42)
+
 var _built: bool = false
 var _run_button: MeshInstance3D = null
 var _status_led_mat: StandardMaterial3D = null
@@ -13,8 +15,8 @@ var _pulse_tween: Tween = null
 
 func _ready() -> void:
 	if position == Vector3.ZERO:
-		position = Vector3(-0.015, 0.018, -0.055)
-		rotation = Vector3(0.35, 0.18, 0.10)
+		position = Vector3(-0.014, -0.018, -0.062)
+		rotation = Vector3(0.18, -0.08, deg_to_rad(108.0))
 	_build_geometry()
 
 func _build_geometry() -> void:
@@ -29,7 +31,7 @@ func _build_geometry() -> void:
 	var body := MeshInstance3D.new()
 	body.name = "Body"
 	var body_mesh := BoxMesh.new()
-	body_mesh.size = Vector3(0.052, 0.020, 0.086)
+	body_mesh.size = Vector3(0.046, 0.018, 0.072)
 	body.mesh = body_mesh
 	body.material_override = body_mat
 	add_child(body)
@@ -41,9 +43,9 @@ func _build_geometry() -> void:
 	var top_plate := MeshInstance3D.new()
 	top_plate.name = "TopPlate"
 	var top_mesh := BoxMesh.new()
-	top_mesh.size = Vector3(0.044, 0.004, 0.076)
+	top_mesh.size = Vector3(0.038, 0.003, 0.062)
 	top_plate.mesh = top_mesh
-	top_plate.position = Vector3(0.0, 0.011, 0.0)
+	top_plate.position = Vector3(0.0, 0.010, 0.0)
 	top_plate.material_override = top_mat
 	add_child(top_plate)
 
@@ -56,27 +58,27 @@ func _build_geometry() -> void:
 	_run_button = MeshInstance3D.new()
 	_run_button.name = "RunButton"
 	var button_mesh := CylinderMesh.new()
-	button_mesh.top_radius = 0.014
-	button_mesh.bottom_radius = 0.015
-	button_mesh.height = 0.010
+	button_mesh.top_radius = 0.012
+	button_mesh.bottom_radius = 0.013
+	button_mesh.height = 0.009
 	_run_button.mesh = button_mesh
-	_run_button.position = Vector3(0.0, 0.016, 0.006)
+	_run_button.position = Vector3(0.0, 0.014, 0.005)
 	_run_button.material_override = button_mat
 	add_child(_run_button)
 
 	var button_label := Label3D.new()
 	button_label.name = "ButtonLabel"
-	button_label.position = Vector3(0.0, 0.022, 0.006)
+	button_label.position = Vector3(0.0, 0.0195, 0.005)
 	button_label.rotation = Vector3(-PI * 0.5, 0.0, 0.0)
 	button_label.text = "RUN"
-	button_label.font_size = 18
-	button_label.pixel_size = 0.0007
+	button_label.font_size = 16
+	button_label.pixel_size = 0.00045
 	button_label.outline_size = 4
 	button_label.outline_modulate = Color(0.03, 0.05, 0.08, 1.0)
 	button_label.modulate = Color(0.95, 1.0, 0.96, 1.0)
 	add_child(button_label)
 
-	var ok_color := Color(0.22, 0.98, 0.55)
+	var ok_color := STANDBY_COLOR
 	_status_led_mat = StandardMaterial3D.new()
 	_status_led_mat.albedo_color = ok_color
 	_status_led_mat.emission_enabled = true
@@ -86,10 +88,10 @@ func _build_geometry() -> void:
 	var status_led := MeshInstance3D.new()
 	status_led.name = "StatusLed"
 	var led_mesh := SphereMesh.new()
-	led_mesh.radius = 0.004
-	led_mesh.height = 0.008
+	led_mesh.radius = 0.0035
+	led_mesh.height = 0.007
 	status_led.mesh = led_mesh
-	status_led.position = Vector3(0.0, 0.014, -0.024)
+	status_led.position = Vector3(0.0, 0.0125, -0.020)
 	status_led.material_override = _status_led_mat
 	add_child(status_led)
 
@@ -101,11 +103,11 @@ func _build_geometry() -> void:
 	var antenna_stem := MeshInstance3D.new()
 	antenna_stem.name = "AntennaStem"
 	var stem_mesh := CylinderMesh.new()
-	stem_mesh.top_radius = 0.002
-	stem_mesh.bottom_radius = 0.003
-	stem_mesh.height = 0.042
+	stem_mesh.top_radius = 0.0018
+	stem_mesh.bottom_radius = 0.0026
+	stem_mesh.height = 0.036
 	antenna_stem.mesh = stem_mesh
-	antenna_stem.position = Vector3(0.014, 0.012, -0.062)
+	antenna_stem.position = Vector3(0.011, 0.004, -0.052)
 	antenna_stem.rotation = Vector3(PI * 0.5, 0.0, 0.0)
 	antenna_stem.material_override = stem_mat
 	add_child(antenna_stem)
@@ -119,10 +121,10 @@ func _build_geometry() -> void:
 	var antenna_tip := MeshInstance3D.new()
 	antenna_tip.name = "AntennaTip"
 	var tip_mesh := SphereMesh.new()
-	tip_mesh.radius = 0.005
-	tip_mesh.height = 0.010
+	tip_mesh.radius = 0.0042
+	tip_mesh.height = 0.0084
 	antenna_tip.mesh = tip_mesh
-	antenna_tip.position = Vector3(0.014, 0.012, -0.084)
+	antenna_tip.position = Vector3(0.011, 0.004, -0.072)
 	antenna_tip.material_override = _antenna_tip_mat
 	add_child(antenna_tip)
 
@@ -141,7 +143,7 @@ func _build_geometry() -> void:
 	pulse_mesh.bottom_radius = 0.012
 	pulse_mesh.height = 0.002
 	_signal_pulse.mesh = pulse_mesh
-	_signal_pulse.position = Vector3(0.014, 0.012, -0.084)
+	_signal_pulse.position = Vector3(0.011, 0.004, -0.072)
 	_signal_pulse.visible = false
 	_signal_pulse.material_override = _signal_pulse_mat
 	add_child(_signal_pulse)
@@ -161,15 +163,24 @@ func play_press_animation(status: String = "ok") -> void:
 	if _pulse_tween != null and _pulse_tween.is_valid():
 		_pulse_tween.kill()
 
-	_run_button.position.y = 0.016
+	_run_button.position.y = 0.014
 	if not is_inside_tree():
 		_signal_pulse.visible = false
 		return
 
 	_press_tween = create_tween()
-	_press_tween.tween_property(_run_button, "position:y", 0.0105, 0.07)
-	_press_tween.tween_property(_run_button, "position:y", 0.016, 0.18)\
+	_press_tween.tween_property(_run_button, "position:y", 0.0095, 0.07)
+	_press_tween.tween_property(_run_button, "position:y", 0.014, 0.18)\
 		.set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	_press_tween.tween_interval(0.45)
+	_press_tween.tween_callback(func() -> void:
+		if _status_led_mat != null:
+			_status_led_mat.albedo_color = STANDBY_COLOR
+			_status_led_mat.emission = STANDBY_COLOR
+		if _antenna_tip_mat != null:
+			_antenna_tip_mat.albedo_color = STANDBY_COLOR
+			_antenna_tip_mat.emission = STANDBY_COLOR
+	)
 
 	_signal_pulse.visible = true
 	_signal_pulse.scale = Vector3.ONE * 0.4
@@ -186,8 +197,8 @@ func play_press_animation(status: String = "ok") -> void:
 func _status_color(status: String) -> Color:
 	match status:
 		"busy":
-			return Color(0.98, 0.74, 0.20)
+			return Color(0.95, 0.65, 0.10)
 		"error":
-			return Color(0.96, 0.32, 0.36)
+			return Color(0.90, 0.16, 0.20)
 		_:
-			return Color(0.22, 0.98, 0.55)
+			return STANDBY_COLOR

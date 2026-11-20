@@ -101,7 +101,15 @@ func tick(delta: float) -> void:
 	if not is_instance_valid(_visual):
 		_visual = _find_visual()
 	if is_instance_valid(_visual) and _visual.has_method("set_pose"):
-		_visual.set_pose(hand_pose_name(), delta)
+		var visual_pose: String = ("press_remote" if _remote_pressing else "hold_remote") if _is_holding_remote() else hand_pose_name()
+		_visual.set_pose(visual_pose, delta)
+
+func _is_holding_remote() -> bool:
+	if _is_left:
+		return false
+	if is_instance_valid(_interaction) and _interaction.has_method("is_programming") and _interaction.is_programming():
+		return false
+	return get_node_or_null("TractorRemote") != null
 
 func _find_camera() -> Camera3D:
 	var parent: Node = get_parent()
@@ -172,6 +180,10 @@ func _target_position() -> Vector3:
 			return Vector3(_rest.x, _rest.y + sway, _rest.z)
 
 func _target_basis(camera: Camera3D) -> Basis:
+	if _is_holding_remote():
+		if _remote_pressing:
+			return Basis.from_euler(Vector3(rest_pitch + 0.34, rest_yaw + 0.18, deg_to_rad(-102.0)))
+		return Basis.from_euler(Vector3(rest_pitch + 0.20, rest_yaw + 0.12, deg_to_rad(-108.0)))
 	if _remote_pressing:
 		if not _is_left:
 			return Basis.from_euler(Vector3(rest_pitch + 0.24, rest_yaw + 0.14, -0.10))

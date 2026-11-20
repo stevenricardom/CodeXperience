@@ -29,6 +29,14 @@ func _ready() -> void:
 	floor_shape.size = Vector3(10.0, 0.39, 8.0)
 	floor_col.shape = floor_shape
 	floor_body.add_child(floor_col)
+	var sub_floor := MeshInstance3D.new()
+	sub_floor.name = "DeckSubFloor"
+	var sub_floor_mesh := BoxMesh.new()
+	sub_floor_mesh.size = Vector3(9.96, 0.36, 7.96)
+	sub_floor.mesh = sub_floor_mesh
+	sub_floor.position = Vector3(0.0, -0.012, 0.0)
+	sub_floor.material_override = timber
+	floor_body.add_child(sub_floor)
 	add_child(floor_body)
 	# Rampa de pendiente 1:4, transitable sin saltar.
 	var ramp := _solid("AccessRamp", Vector3(6.185, 0.18, 3), Vector3(9, 1.60723, 45.5), timber)

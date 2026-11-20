@@ -7,6 +7,8 @@ extends Node3D
 const POSE_IDLE := "idle"
 const POSE_POINT := "point"
 const POSE_GRAB := "grab"
+const POSE_HOLD_REMOTE := "hold_remote"
+const POSE_PRESS_REMOTE := "press_remote"
 
 @export var handedness: int = 1  ## 1 = derecha, -1 = izquierda
 @export var skin_color: Color = Color(0.93, 0.78, 0.68)
@@ -68,7 +70,7 @@ func _build_geometry() -> void:
 	palm.name = "Palm"
 	palm.mesh = palm_mesh
 	palm.material_override = _skin
-	palm.scale = Vector3(1.0, 0.52, 1.05)
+	palm.scale = Vector3(1.06, 0.56, 1.10)
 	palm.position = Vector3(0.0, 0.0, -0.045)
 	add_child(palm)
 
@@ -98,7 +100,12 @@ func _build_geometry() -> void:
 			parent.add_child(joint)
 			var capsule := CapsuleMesh.new()
 			capsule.radius = float(radii[index])
-			capsule.height = maxf(float(lengths[index]), float(radii[index]) * 2.0 + 0.002)
+			var seg_len: float = float(lengths[index])
+			var seg_rad: float = float(radii[index])
+			if index < lengths.size() - 1:
+				capsule.height = seg_len + seg_rad * 1.8
+			else:
+				capsule.height = seg_len + seg_rad * 1.1
 			capsule.radial_segments = 12
 			capsule.rings = 4
 			var segment := MeshInstance3D.new()
@@ -106,7 +113,10 @@ func _build_geometry() -> void:
 			segment.mesh = capsule
 			segment.material_override = _skin
 			segment.rotation = Vector3(PI * 0.5, 0.0, 0.0)
-			segment.position = Vector3(0.0, 0.0, -float(lengths[index]) * 0.5)
+			if index < lengths.size() - 1:
+				segment.position = Vector3(0.0, 0.0, -seg_len * 0.5)
+			else:
+				segment.position = Vector3(0.0, 0.0, -seg_len * 0.45)
 			joint.add_child(segment)
 			_joints.append(joint)
 			parent = joint
@@ -127,7 +137,12 @@ func _build_geometry() -> void:
 		thumb_parent.add_child(joint)
 		var capsule := CapsuleMesh.new()
 		capsule.radius = float(thumb_radii[index])
-		capsule.height = maxf(float(thumb_lengths[index]), float(thumb_radii[index]) * 2.0 + 0.002)
+		var t_len: float = float(thumb_lengths[index])
+		var t_rad: float = float(thumb_radii[index])
+		if index < thumb_lengths.size() - 1:
+			capsule.height = t_len + t_rad * 1.8
+		else:
+			capsule.height = t_len + t_rad * 1.1
 		capsule.radial_segments = 12
 		capsule.rings = 4
 		var segment := MeshInstance3D.new()
@@ -135,7 +150,10 @@ func _build_geometry() -> void:
 		segment.mesh = capsule
 		segment.material_override = _skin
 		segment.rotation = Vector3(PI * 0.5, 0.0, 0.0)
-		segment.position = Vector3(0.0, 0.0, -float(thumb_lengths[index]) * 0.5)
+		if index < thumb_lengths.size() - 1:
+			segment.position = Vector3(0.0, 0.0, -t_len * 0.5)
+		else:
+			segment.position = Vector3(0.0, 0.0, -t_len * 0.45)
 		joint.add_child(segment)
 		_joints.append(joint)
 		thumb_parent = joint
@@ -144,6 +162,8 @@ func _collect_pose_angles() -> void:
 	var idle: Array[float] = []
 	var point: Array[float] = []
 	var grab: Array[float] = []
+	var hold_remote: Array[float] = []
+	var press_remote: Array[float] = []
 	for finger in FINGERS:
 		var curls: Array = finger["idle"]
 		for value in curls:
@@ -152,13 +172,23 @@ func _collect_pose_angles() -> void:
 			point.append(float(value))
 		for value in finger["grab"]:
 			grab.append(float(value))
+		hold_remote.append_array([0.55, 0.85, 0.65])
+		press_remote.append_array([0.65, 0.95, 0.75])
 	for value in THUMB_IDLE:
 		idle.append(float(value))
 	for value in THUMB_POINT:
 		point.append(float(value))
 	for value in THUMB_GRAB:
 		grab.append(float(value))
-	_pose_angles = {POSE_IDLE: idle, POSE_POINT: point, POSE_GRAB: grab}
+	hold_remote.append_array([0.35, 0.30])
+	press_remote.append_array([0.78, 0.88])
+	_pose_angles = {
+		POSE_IDLE: idle,
+		POSE_POINT: point,
+		POSE_GRAB: grab,
+		POSE_HOLD_REMOTE: hold_remote,
+		POSE_PRESS_REMOTE: press_remote,
+	}
 
 func _apply_target() -> void:
 	var values: Array = _pose_angles.get(_pose, [])
